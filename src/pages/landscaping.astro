@@ -1,0 +1,57 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.vue';
+import Hero from '../components/Hero.vue';
+import Services from '../components/Services.vue';
+import About from '../components/About.vue';
+import Projects from '../components/Projects.vue';
+import Testimonials from '../components/Testimonials.vue';
+import ContactCTA from '../components/ContactCTA.vue';
+import Footer from '../components/Footer.vue';
+
+import * as data from '../data/landscaping';
+---
+
+<Layout
+  title="Landscaping Services - Greenscapes"
+  description="Expert landscaping design, installation, and maintenance services. Custom garden designs, lawn care, irrigation systems, and seasonal cleanup."
+>
+  <Navbar client:load />
+  <main class="pt-16">
+    <Hero
+      badge={data.hero.badge}
+      title={data.hero.title}
+      titleAccent={data.hero.titleAccent}
+      description={data.hero.description}
+      ctaPrimary={data.hero.ctaPrimary}
+      ctaSecondary={data.hero.ctaSecondary}
+      stats={data.hero.stats}
+    />
+    <Services
+      subtitle={data.services.subtitle}
+      title={data.services.title}
+      description={data.services.description}
+      items={data.services.items}
+    />
+    <About
+      title={data.about.title}
+      paragraphs={data.about.paragraphs}
+      features={data.about.features}
+      accentStat={data.about.accentStat}
+    />
+    <Projects
+      subtitle={data.projects.subtitle}
+      title={data.projects.title}
+      description={data.projects.description}
+      items={data.projects.items}
+    />
+    <Testimonials
+      subtitle={data.testimonials.subtitle}
+      title={data.testimonials.title}
+      description={data.testimonials.description}
+      items={data.testimonials.items}
+    />
+    <ContactCTA client:load />
+  </main>
+  <Footer />
+</Layout>
