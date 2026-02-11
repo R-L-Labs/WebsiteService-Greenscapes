@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx astro add:*)",
+      "Bash(npm run build:*)",
+      "WebSearch",
+      "WebFetch(domain:www.shadcn-vue.com)",
+      "WebFetch(domain:ui.shadcn.com)",
+      "Bash(npm install:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRestructure site to multi-page architecture with splash homepage\n\nRedesign from single-page scrolling layout to a splash homepage with 3\nfull-viewport panels \\(Landscaping, Hardscaping, Construction\\) that link\nto dedicated sub-pages. Each sub-page reuses data-driven Vue components\nwith division-specific content. Integrates shadcn-vue UI components\n\\(Button, Card, Badge\\) and adds TailwindCSS path aliases.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
