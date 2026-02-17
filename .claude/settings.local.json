@@ -9,7 +9,18 @@
       "WebFetch(domain:ui.shadcn.com)",
       "Bash(npm install:*)",
       "Bash(git add:*)",
-      "Bash(git commit -m \"$\\(cat <<''EOF''\nRestructure site to multi-page architecture with splash homepage\n\nRedesign from single-page scrolling layout to a splash homepage with 3\nfull-viewport panels \\(Landscaping, Hardscaping, Construction\\) that link\nto dedicated sub-pages. Each sub-page reuses data-driven Vue components\nwith division-specific content. Integrates shadcn-vue UI components\n\\(Button, Card, Badge\\) and adds TailwindCSS path aliases.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nRestructure site to multi-page architecture with splash homepage\n\nRedesign from single-page scrolling layout to a splash homepage with 3\nfull-viewport panels \\(Landscaping, Hardscaping, Construction\\) that link\nto dedicated sub-pages. Each sub-page reuses data-driven Vue components\nwith division-specific content. Integrates shadcn-vue UI components\n\\(Button, Card, Badge\\) and adds TailwindCSS path aliases.\n\nCo-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "WebFetch(domain:docs.kalshi.com)",
+      "WebFetch(domain:pypi.org)",
+      "WebFetch(domain:github.com)",
+      "Bash(pip install:*)",
+      "Bash(where:*)",
+      "Bash(python -m pip install:*)",
+      "WebFetch(domain:elfsight.com)",
+      "WebFetch(domain:docs.astro.build)",
+      "WebFetch(domain:embedsocial.com)",
+      "WebFetch(domain:sanderg.nl)",
+      "WebFetch(domain:paulcbauer.github.io)"
     ]
   }
 }

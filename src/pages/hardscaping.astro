@@ -10,6 +10,12 @@ import ContactCTA from '../components/ContactCTA.vue';
 import Footer from '../components/Footer.vue';
 
 import * as data from '../data/hardscaping';
+import { getSocialProjects, getSocialTestimonials } from '../lib/social';
+
+const instagramProjects = await getSocialProjects(6);
+const facebookTestimonials = await getSocialTestimonials(3);
+const projectItems = instagramProjects?.length ? instagramProjects : data.projects.items;
+const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : data.testimonials.items;
 ---
 
 <Layout
@@ -43,13 +49,13 @@ import * as data from '../data/hardscaping';
       subtitle={data.projects.subtitle}
       title={data.projects.title}
       description={data.projects.description}
-      items={data.projects.items}
+      items={projectItems}
     />
     <Testimonials
       subtitle={data.testimonials.subtitle}
       title={data.testimonials.title}
       description={data.testimonials.description}
-      items={data.testimonials.items}
+      items={testimonialItems}
     />
     <ContactCTA client:load />
   </main>

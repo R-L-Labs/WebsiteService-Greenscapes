@@ -17,6 +17,9 @@ pnpm-debug.log*
 .env
 .env.production
 
+# downloaded Instagram images (build-time artifacts)
+public/instagram/
+
 # macOS-specific files
 .DS_Store
 

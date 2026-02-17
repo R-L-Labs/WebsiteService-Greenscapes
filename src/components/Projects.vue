@@ -14,15 +14,24 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div v-for="project in items" :key="project.title"
           class="group relative bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300">
-          <!-- Image placeholder -->
+          <!-- Image -->
           <div class="aspect-[16/10] bg-surface-light relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br" :class="project.gradient"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-              <svg class="w-10 h-10 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                  d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a1.5 1.5 0 001.5-1.5V4.5a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v15a1.5 1.5 0 001.5 1.5z" />
-              </svg>
-            </div>
+            <img
+              v-if="project.imageUrl"
+              :src="project.imageUrl"
+              :alt="project.title"
+              class="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
+            />
+            <template v-else>
+              <div class="absolute inset-0 bg-gradient-to-br" :class="project.gradient"></div>
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-10 h-10 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a1.5 1.5 0 001.5-1.5V4.5a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v15a1.5 1.5 0 001.5 1.5z" />
+                </svg>
+              </div>
+            </template>
             <!-- Hover overlay -->
             <div class="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-300"></div>
           </div>
@@ -36,6 +45,19 @@
             </div>
             <h3 class="text-lg font-semibold text-text mb-1">{{ project.title }}</h3>
             <p class="text-text-muted text-sm">{{ project.description }}</p>
+            <a
+              v-if="project.permalink"
+              :href="project.permalink"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-1 text-primary text-xs font-medium mt-2 hover:underline"
+            >
+              View on Instagram
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -49,6 +71,8 @@ interface ProjectItem {
   category: string;
   description: string;
   gradient: string;
+  imageUrl?: string;
+  permalink?: string;
 }
 
 interface Props {
