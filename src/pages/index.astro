@@ -4,40 +4,42 @@ import HomePanel from '../components/HomePanel.vue';
 ---
 
 <Layout title="Greenscapes - Landscaping, Hardscaping & Construction" description="Greenscapes delivers expert landscaping, hardscaping, and construction services. Explore our three divisions and transform your outdoor space.">
-  <div class="relative">
-    <!-- Greenscapes logo watermark -->
-    <div class="fixed top-6 left-6 z-50 flex items-center gap-2 pointer-events-none">
-      <div class="w-10 h-10 bg-primary/90 rounded-lg flex items-center justify-center shadow-lg">
-        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+  <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 bg-neutral-950">
+    <!-- Greenscapes logo -->
+    <div class="flex flex-col items-center gap-2 mb-6">
+      <div class="w-12 h-12 bg-primary/90 rounded-lg flex items-center justify-center shadow-lg">
+        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
           <path d="M10 2c-1.5 3-4.5 6-4.5 9a4.5 4.5 0 0 0 9 0c0-3-3-6-4.5-9z" />
         </svg>
       </div>
       <span class="text-2xl font-bold text-white drop-shadow-lg">Green<span class="text-primary-light">scapes</span></span>
     </div>
 
-    <!-- 3 panels: side-by-side on desktop, stacked on mobile -->
-    <div class="flex flex-col md:flex-row w-full">
-      <HomePanel
-        client:load
-        title="Landscaping"
-        description="From custom garden designs to complete landscape transformations, our team creates stunning outdoor spaces that enhance your property and lifestyle."
-        href="/landscaping"
-        gradient="from-emerald-950 via-emerald-900 to-green-950"
-      />
-      <HomePanel
-        client:load
-        title="Hardscaping"
-        description="Expert patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship."
-        href="/hardscaping"
-        gradient="from-stone-900 via-stone-800 to-zinc-900"
-      />
-      <HomePanel
-        client:load
-        title="Construction"
-        description="Comprehensive outdoor construction including pergolas, decks, fencing, and drainage systems built to code and built to last."
-        href="/construction"
-        gradient="from-amber-950 via-amber-900 to-yellow-950"
-      />
+    <div class="relative w-full max-w-[120rem]">
+      <!-- 3 panels: side-by-side on desktop, stacked on mobile -->
+      <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4">
+        <HomePanel
+          client:load
+          title="Landscaping"
+          description="From custom garden designs to complete landscape transformations, our team creates stunning outdoor spaces that enhance your property and lifestyle."
+          href="/landscaping"
+          gradient="from-emerald-950 via-emerald-900 to-green-950"
+        />
+        <HomePanel
+          client:load
+          title="Hardscaping"
+          description="Expert patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship."
+          href="/hardscaping"
+          gradient="from-stone-900 via-stone-800 to-zinc-900"
+        />
+        <HomePanel
+          client:load
+          title="Construction"
+          description="Comprehensive outdoor construction including pergolas, decks, fencing, and drainage systems built to code and built to last."
+          href="/construction"
+          gradient="from-amber-950 via-amber-900 to-yellow-950"
+        />
+      </div>
     </div>
   </div>
 </Layout>

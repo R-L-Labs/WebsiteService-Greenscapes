@@ -1,7 +1,7 @@
 <template>
   <a
     :href="href"
-    class="home-panel group relative block overflow-hidden"
+    class="home-panel group relative block overflow-hidden rounded-2xl"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
@@ -57,14 +57,13 @@ const isHovered = ref(false);
 
 <style scoped>
 .home-panel {
-  height: 100vh;
-  height: 100dvh;
+  height: 28vh;
 }
 
 @media (min-width: 768px) {
   .home-panel {
-    height: 100vh;
-    height: 100dvh;
+    height: calc(85vh - 4rem);
+    height: calc(85dvh - 4rem);
   }
 }
 </style>
