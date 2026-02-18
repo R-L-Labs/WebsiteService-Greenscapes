@@ -31,7 +31,10 @@
           {{ description }}
         </p>
         <span
-          class="inline-flex items-center gap-2 bg-primary hover:bg-primary-light text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+          class="inline-flex items-center gap-2 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+          :style="{ backgroundColor: buttonColor, '--hover-color': buttonHoverColor }"
+          @mouseenter="($event.target as HTMLElement).style.backgroundColor = buttonHoverColor"
+          @mouseleave="($event.target as HTMLElement).style.backgroundColor = buttonColor"
         >
           Explore {{ title }}
           <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -46,13 +49,18 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-defineProps<{
+withDefaults(defineProps<{
   title: string;
   description: string;
   href: string;
   gradient: string;
   image?: string;
-}>();
+  buttonColor?: string;
+  buttonHoverColor?: string;
+}>(), {
+  buttonColor: '#1e7d1e',
+  buttonHoverColor: '#2ca02c',
+});
 
 const isHovered = ref(false);
 </script>
