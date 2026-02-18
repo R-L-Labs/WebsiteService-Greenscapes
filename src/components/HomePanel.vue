@@ -5,8 +5,9 @@
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
-    <!-- Background image placeholder with gradient overlay -->
-    <div class="absolute inset-0 bg-gradient-to-br" :class="gradient"></div>
+    <!-- Background: image if provided, otherwise gradient -->
+    <img v-if="image" :src="image" :alt="title" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 group-hover:blur-sm group-hover:scale-105" />
+    <div v-else class="absolute inset-0 bg-gradient-to-br" :class="gradient"></div>
     <div class="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-500"></div>
 
     <!-- Division label (always visible, top area) -->
@@ -50,6 +51,7 @@ defineProps<{
   description: string;
   href: string;
   gradient: string;
+  image?: string;
 }>();
 
 const isHovered = ref(false);
