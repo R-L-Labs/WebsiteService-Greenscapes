@@ -1,13 +1,13 @@
 export const hero = {
-  badge: 'Professional Landscaping Services',
+  badge: 'Professional Landscaping Services - Sicklerville, NJ',
   title: 'Beautiful Landscapes',
   titleAccent: 'Built to Last',
   description:
     'From custom garden designs to complete landscape transformations, our team creates stunning outdoor spaces that enhance your property and lifestyle.',
-  ctaPrimary: { label: 'Get a Free Quote', href: '#contact' },
+  ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
-    { value: '15+', label: 'Years Experience' },
+    { value: '5+', label: 'Years Experience' },
     { value: '300+', label: 'Landscapes Designed' },
     { value: '100%', label: 'Satisfaction' },
   ],
@@ -65,9 +65,9 @@ export const services = {
 };
 
 export const about = {
-  title: 'Crafting Beautiful Landscapes Since 2010',
+  title: 'Crafting Beautiful Landscapes Since 2020',
   paragraphs: [
-    'Our landscaping division transforms ordinary yards into extraordinary outdoor living spaces. We combine artistic design with horticultural expertise to create landscapes that are both beautiful and sustainable.',
+    'At Greenscapes SJ, we have been providing expert landscaping services to residential and commercial clients for over 5 years. We combine artistic design with horticultural expertise to create landscapes that are both beautiful and sustainable.',
     'Every landscape we design considers the local climate, soil conditions, and your unique preferences to ensure long-lasting results that grow more beautiful with time.',
   ],
   features: [

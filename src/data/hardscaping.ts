@@ -1,13 +1,13 @@
 export const hero = {
-  badge: 'Professional Hardscaping Services',
+  badge: 'Professional Hardscaping Services - Sicklerville, NJ',
   title: 'Durable Hardscapes',
   titleAccent: 'Built to Endure',
   description:
     'Expert patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship.',
-  ctaPrimary: { label: 'Get a Free Quote', href: '#contact' },
+  ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
-    { value: '10+', label: 'Years Experience' },
+    { value: '5+', label: 'Years Experience' },
     { value: '200+', label: 'Projects Built' },
     { value: '100%', label: 'Satisfaction' },
   ],
@@ -67,7 +67,7 @@ export const services = {
 export const about = {
   title: 'Expert Hardscaping With Lasting Quality',
   paragraphs: [
-    'Our hardscaping division specializes in building durable outdoor structures that withstand the elements while enhancing your landscape. We use premium materials and proven construction techniques to deliver results that last decades.',
+    'At Greenscapes SJ, our hardscaping division specializes in building durable outdoor structures that withstand the elements while enhancing your landscape. We use premium materials and proven construction techniques to deliver results that last.',
     'Every hardscape project is engineered for proper drainage, structural integrity, and visual impact. We take pride in precision work that adds lasting value to your property.',
   ],
   features: [

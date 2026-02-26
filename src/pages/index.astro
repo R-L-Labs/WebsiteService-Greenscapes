@@ -3,12 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import HomePanel from '../components/HomePanel.vue';
 ---
 
-<Layout title="Greenscapes - Landscaping, Hardscaping & Construction" description="Greenscapes delivers expert landscaping, hardscaping, and construction services. Explore our three divisions and transform your outdoor space.">
+<Layout title="Greenscapes South Jersey - Landscaping, Hardscaping & Construction" description="Greenscapes South Jersey is a property maintenance company based out of Sicklerville, NJ providing expert landscaping services to residential and commercial clients.">
   <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 bg-neutral-950">
     <!-- Greenscapes logo -->
     <div class="flex flex-col items-center gap-2 mb-6">
       <img src="/images/logo.png" alt="Greenscapes" class="h-12 sm:h-14 object-contain" />
-      <span class="text-2xl font-bold text-white drop-shadow-lg">Green<span class="text-primary-light">scapes</span></span>
+      <span class="text-2xl font-bold text-white drop-shadow-lg">Green<span class="text-primary-light">scapes</span> <span class="text-sm font-normal text-neutral-400">South Jersey</span></span>
     </div>
 
     <div class="relative w-full max-w-[120rem]">
@@ -17,7 +17,7 @@ import HomePanel from '../components/HomePanel.vue';
         <HomePanel
           client:load
           title="Landscaping"
-          description="From custom garden designs to complete landscape transformations, our team creates stunning outdoor spaces that enhance your property and lifestyle."
+          description="Expert landscaping services for residential and commercial clients. From custom garden designs to complete landscape transformations."
           href="/landscaping"
           gradient="from-emerald-950 via-emerald-900 to-green-950"
           image="/images/landscaping.JPG"
@@ -25,7 +25,7 @@ import HomePanel from '../components/HomePanel.vue';
         <HomePanel
           client:load
           title="Hardscaping"
-          description="Expert patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship."
+          description="Patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship."
           href="/hardscaping"
           gradient="from-stone-900 via-stone-800 to-zinc-900"
           image="/images/hardscaping.jpg"
@@ -35,7 +35,7 @@ import HomePanel from '../components/HomePanel.vue';
         <HomePanel
           client:load
           title="Construction"
-          description="Comprehensive outdoor construction including pergolas, decks, fencing, and drainage systems built to code and built to last."
+          description="Outdoor construction including pergolas, decks, fencing, and drainage systems built to code and built to last."
           href="/construction"
           gradient="from-amber-950 via-amber-900 to-yellow-950"
           image="/images/construction.jpg"

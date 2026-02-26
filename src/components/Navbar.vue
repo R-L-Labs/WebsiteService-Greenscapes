@@ -9,7 +9,7 @@
               <path d="M10 2c-1.5 3-4.5 6-4.5 9a4.5 4.5 0 0 0 9 0c0-3-3-6-4.5-9z" />
             </svg>
           </div>
-          <span class="text-xl font-bold text-text">Green<span class="text-primary">scapes</span></span>
+          <span class="text-xl font-bold text-text">Green<span class="text-primary">scapes</span> <span class="text-xs font-normal text-text-muted">SJ</span></span>
         </a>
 
         <!-- Desktop Nav -->
@@ -20,7 +20,7 @@
           </a>
           <a href="#contact"
             class="bg-primary hover:bg-primary-light text-white px-5 py-2 rounded-lg text-sm font-semibold transition-colors">
-            Get a Quote
+            Free Estimate
           </a>
         </div>
 
@@ -54,7 +54,7 @@
           </a>
           <a href="#contact" @click="isOpen = false"
             class="block bg-primary hover:bg-primary-light text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors text-center mt-4">
-            Get a Quote
+            Free Estimate
           </a>
         </div>
       </div>

@@ -58,19 +58,19 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-  title: 'Building Landscapes That Last',
+  title: 'Our Expertise',
   paragraphs: () => [
-    'Greenscapes was founded with a simple mission: to create outdoor spaces that bring people together and stand the test of time. With over 15 years of experience in landscaping and construction, our team brings expertise, creativity, and dedication to every project.',
-    'From residential gardens to commercial properties, we handle projects of all sizes with the same commitment to quality. Our team of certified professionals uses the best materials and proven techniques to deliver results that exceed expectations.',
+    'At Greenscapes SJ, we have been providing expert landscaping services to residential and commercial clients for over 5 years. Our team has the knowledge and experience to handle your property with precision and efficiency.',
+    'Big or Small we ensure every project or service exceeds our clients expectations and leaves them more than satisfied. Send us a message today to schedule your free estimate!',
   ],
   features: () => [
     'Licensed & Insured',
-    'Free Consultations',
-    'Certified Professionals',
+    'Free Estimates',
+    'Residential & Commercial',
     'Satisfaction Guaranteed',
     'Eco-Friendly Practices',
     'On-Time Delivery',
   ],
-  accentStat: () => ({ value: '15+', label: 'Years of Excellence' }),
+  accentStat: () => ({ value: '5+', label: 'Years of Excellence' }),
 });
 </script>

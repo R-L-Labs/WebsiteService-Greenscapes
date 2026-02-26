@@ -63,14 +63,14 @@ interface Props {
 }
 
 withDefaults(defineProps<Props>(), {
-  badge: 'Professional Landscaping & Construction',
-  title: 'Transform Your',
-  titleAccent: 'Outdoor Space',
-  description: 'From landscape design to hardscaping and maintenance, Greenscapes brings your vision to life with craftsmanship you can trust.',
-  ctaPrimary: () => ({ label: 'Get a Free Quote', href: '#contact' }),
+  badge: 'Property Maintenance Company - Sicklerville, NJ',
+  title: 'Greenscapes',
+  titleAccent: 'South Jersey',
+  description: 'At Greenscapes SJ, we have been providing expert landscaping services to residential and commercial clients for over 5 years. Big or Small we ensure every project or service exceeds our clients expectations.',
+  ctaPrimary: () => ({ label: 'Get a Free Estimate', href: '#contact' }),
   ctaSecondary: () => ({ label: 'Our Services', href: '#services' }),
   stats: () => [
-    { value: '15+', label: 'Years Experience' },
+    { value: '5+', label: 'Years Experience' },
     { value: '500+', label: 'Projects Completed' },
     { value: '100%', label: 'Satisfaction' },
   ],

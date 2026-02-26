@@ -1,13 +1,13 @@
 export const hero = {
-  badge: 'Professional Construction Services',
+  badge: 'Professional Construction Services - Sicklerville, NJ',
   title: 'Quality Construction',
   titleAccent: 'From Ground Up',
   description:
     'Comprehensive outdoor construction services including pergolas, decks, fencing, drainage systems, and structural projects built to code and built to last.',
-  ctaPrimary: { label: 'Get a Free Quote', href: '#contact' },
+  ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
-    { value: '12+', label: 'Years Experience' },
+    { value: '5+', label: 'Years Experience' },
     { value: '150+', label: 'Structures Built' },
     { value: '100%', label: 'Code Compliant' },
   ],
@@ -67,7 +67,7 @@ export const services = {
 export const about = {
   title: 'Building Outdoor Structures That Stand the Test of Time',
   paragraphs: [
-    'Our construction division delivers high-quality outdoor structures built to code and engineered for durability. From planning and permits to final inspection, we manage every phase of the construction process with professionalism and precision.',
+    'At Greenscapes SJ, our construction division delivers high-quality outdoor structures built to code and engineered for durability. From planning and permits to final inspection, we manage every phase of the construction process with professionalism and precision.',
     'We combine modern construction techniques with quality materials to build structures that are safe, functional, and visually impressive. Every project is backed by our workmanship warranty.',
   ],
   features: [
