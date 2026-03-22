@@ -23,7 +23,8 @@
       "WebFetch(domain:paulcbauer.github.io)",
       "Bash(git commit:*)",
       "WebFetch(domain:greenscapesj.com)",
-      "Bash(cd \"H:/Github Repos/WebsiteService-Greenscapes\" && npx astro build 2>&1)"
+      "Bash(cd \"H:/Github Repos/WebsiteService-Greenscapes\" && npx astro build 2>&1)",
+      "Bash(ls:*)"
     ]
   }
 }

@@ -12,6 +12,7 @@ import Footer from '../components/Footer.vue';
 import * as data from '../data/construction';
 import { getSocialProjects, getSocialTestimonials } from '../lib/social';
 
+const jobberUrl = import.meta.env.JOBBER_URL || '';
 const instagramProjects = await getSocialProjects(6);
 const facebookTestimonials = await getSocialTestimonials(3);
 const projectItems = instagramProjects?.length ? instagramProjects : data.projects.items;
@@ -22,6 +23,16 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
   title="Construction Services - Greenscapes South Jersey"
   description="Professional outdoor construction services in Sicklerville, NJ including pergolas, decks, fencing, drainage solutions, gazebos, and site grading."
 >
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Construction Services",
+    "description": "Professional outdoor construction services including pergolas, decks, fencing, drainage solutions, gazebos, and site grading.",
+    "provider": { "@id": "https://greenscapessj.com/#business" },
+    "url": "https://greenscapessj.com/construction",
+    "areaServed": { "@type": "Place", "name": "South Jersey, NJ" },
+    "serviceType": "Outdoor Construction"
+  })} />
   <Navbar client:load />
   <main class="pt-16" style="--color-primary: #8B5E3C; --color-primary-light: #A0724F; --color-primary-dark: #6B4226;">
     <Hero
@@ -57,7 +68,7 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
       description={data.testimonials.description}
       items={testimonialItems}
     />
-    <ContactCTA client:load />
+    <ContactCTA client:load jobberUrl={jobberUrl} />
   </main>
   <Footer />
 </Layout>

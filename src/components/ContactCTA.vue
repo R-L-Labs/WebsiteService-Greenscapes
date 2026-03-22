@@ -5,8 +5,26 @@
         <!-- Decorative -->
         <div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
 
-        <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
-          <!-- Left: CTA Content -->
+        <!-- Jobber embed: full-width -->
+        <div v-if="jobberUrl" class="relative z-10">
+          <div class="text-center mb-8">
+            <span class="text-primary text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
+            <h2 class="text-3xl sm:text-4xl font-bold text-text mt-3 mb-4">
+              Request a Free Estimate
+            </h2>
+          </div>
+          <div class="rounded-xl overflow-hidden border border-border min-h-[1750px]">
+            <iframe
+              :src="jobberUrl"
+              class="w-full min-h-[1750px]"
+              frameborder="0"
+              title="Request a Free Estimate"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Fallback: two-column layout with contact info + form -->
+        <div v-else class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <span class="text-primary text-sm font-semibold uppercase tracking-wider">Get In Touch</span>
             <h2 class="text-3xl sm:text-4xl font-bold text-text mt-3 mb-4">
@@ -53,7 +71,6 @@
             </div>
           </div>
 
-          <!-- Right: Contact Form -->
           <div class="bg-surface-dark/50 border border-border rounded-xl p-6 sm:p-8">
             <h3 class="text-lg font-semibold text-text mb-6">Inquire Here</h3>
             <form @submit.prevent="handleSubmit" class="space-y-4">
@@ -106,8 +123,15 @@
 </template>
 
 <script setup lang="ts">
+interface Props {
+  jobberUrl?: string;
+}
+
+withDefaults(defineProps<Props>(), {
+  jobberUrl: '',
+});
+
 const handleSubmit = () => {
-  // Form submission logic will be added later
   alert('Thank you! We will be in touch soon.');
 };
 </script>
