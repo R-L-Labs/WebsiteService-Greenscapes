@@ -5,6 +5,7 @@ import Hero from '../components/Hero.vue';
 import Services from '../components/Services.vue';
 import About from '../components/About.vue';
 import Projects from '../components/Projects.vue';
+import InstagramGallery from '../components/InstagramGallery.astro';
 import Testimonials from '../components/Testimonials.vue';
 import ContactCTA from '../components/ContactCTA.vue';
 import Footer from '../components/Footer.vue';
@@ -13,6 +14,7 @@ import * as data from '../data/hardscaping';
 import { getSocialProjects, getSocialTestimonials } from '../lib/social';
 
 const jobberUrl = import.meta.env.JOBBER_URL || '';
+const lightwidgetUrl = import.meta.env.LIGHTWIDGET_URL || '';
 const instagramProjects = await getSocialProjects(6);
 const facebookTestimonials = await getSocialTestimonials(3);
 const projectItems = instagramProjects?.length ? instagramProjects : data.projects.items;
@@ -56,12 +58,16 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
       features={data.about.features}
       accentStat={data.about.accentStat}
     />
-    <Projects
-      subtitle={data.projects.subtitle}
-      title={data.projects.title}
-      description={data.projects.description}
-      items={projectItems}
-    />
+    {lightwidgetUrl ? (
+      <InstagramGallery widgetUrl={lightwidgetUrl} />
+    ) : (
+      <Projects
+        subtitle={data.projects.subtitle}
+        title={data.projects.title}
+        description={data.projects.description}
+        items={projectItems}
+      />
+    )}
     <Testimonials
       subtitle={data.testimonials.subtitle}
       title={data.testimonials.title}

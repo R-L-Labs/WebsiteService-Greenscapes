@@ -1,0 +1,36 @@
+---
+interface Props {
+  widgetUrl: string;
+  username?: string;
+}
+
+const { widgetUrl, username = 'GREENSCAPESSJ' } = Astro.props;
+---
+
+<section id="projects" class="py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="text-primary text-sm font-semibold uppercase tracking-wider">Our Work</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-text mt-3">Follow Us on Instagram</h2>
+      <p class="text-text-muted mt-4 max-w-2xl mx-auto">
+        Check out our latest projects and transformations.
+        <a
+          href={`https://www.instagram.com/${username}/`}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-primary hover:underline"
+        >
+          @{username}
+        </a>
+      </p>
+    </div>
+    <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+    <iframe
+      src={widgetUrl}
+      scrolling="no"
+      allowtransparency="true"
+      class="lightwidget-widget"
+      style="width:100%;border:0;overflow:hidden;"
+    ></iframe>
+  </div>
+</section>
