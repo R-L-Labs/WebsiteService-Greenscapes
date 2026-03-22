@@ -5,15 +5,12 @@
         <!-- Image placeholder -->
         <div class="relative">
           <div class="aspect-[4/3] bg-surface-light rounded-2xl border border-border overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
-              <div class="text-center">
-                <svg class="w-16 h-16 text-primary/40 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                    d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a1.5 1.5 0 001.5-1.5V4.5a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v15a1.5 1.5 0 001.5 1.5z" />
-                </svg>
-                <p class="text-text-muted text-sm">Team / Project Photo</p>
-              </div>
-            </div>
+            <img
+              :src="image"
+              alt="Greenscapes South Jersey project"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
           </div>
           <!-- Accent card -->
           <div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-xl shadow-lg hidden sm:block">
@@ -52,6 +49,7 @@
 <script setup lang="ts">
 interface Props {
   title?: string;
+  image?: string;
   paragraphs?: string[];
   features?: string[];
   accentStat?: { value: string; label: string };
@@ -59,6 +57,7 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   title: 'Our Expertise',
+  image: '/images/hardscaping.jpg',
   paragraphs: () => [
     'At Greenscapes SJ, we have been providing expert landscaping services to residential and commercial clients for over 5 years. Our team has the knowledge and experience to handle your property with precision and efficiency.',
     'Big or Small we ensure every project or service exceeds our clients expectations and leaves them more than satisfied. Send us a message today to schedule your free estimate!',
