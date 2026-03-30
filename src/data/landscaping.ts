@@ -11,6 +11,7 @@ export const hero = {
     { value: '300+', label: 'Landscapes Designed' },
     { value: '100%', label: 'Satisfaction' },
   ],
+  image: '/images/gallery/landscaping/IMG_6460.JPG',
 };
 
 export const services = {
