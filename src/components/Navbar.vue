@@ -4,7 +4,7 @@
       <div class="flex items-center justify-between h-30">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Greenscapes South Jersey" class="h-22 object-contain" />
+          <img src="/images/logo.png" alt="Greenscapes Landscaping & Construction" class="h-22 object-contain" />
           <div class="hidden sm:block h-16 w-px bg-gray-400"></div>
           <div class="hidden sm:flex flex-col leading-tight">
             <span class="text-2xl font-bold text-text">Greenscapes</span>

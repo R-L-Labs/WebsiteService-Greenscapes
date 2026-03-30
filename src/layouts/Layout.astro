@@ -9,8 +9,8 @@ interface Props {
 }
 
 const {
-  title = 'Greenscapes South Jersey - Landscaping, Hardscaping & Construction',
-  description = 'Greenscapes South Jersey is a property maintenance company based out of Sicklerville, NJ providing expert landscaping services to residential and commercial clients.',
+  title = 'Greenscapes - Landscaping, Hardscaping & Construction',
+  description = 'Greenscapes - Landscaping & Construction is a property maintenance company based out of Sicklerville, NJ providing expert landscaping services to residential and commercial clients.',
   image = '/images/logo.png',
   type = 'website',
 } = Astro.props;
@@ -38,7 +38,7 @@ const imageUrl = new URL(image, Astro.site);
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl.href} />
     <meta property="og:image" content={imageUrl.href} />
-    <meta property="og:site_name" content="Greenscapes South Jersey" />
+    <meta property="og:site_name" content="Greenscapes Landscaping & Construction" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
@@ -60,7 +60,7 @@ const imageUrl = new URL(image, Astro.site);
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "@id": "https://greenscapessj.com/#business",
-      "name": "Greenscapes South Jersey",
+      "name": "Greenscapes Landscaping & Construction",
       "description": "Property maintenance company providing expert landscaping, hardscaping, and construction services to residential and commercial clients in South Jersey.",
       "url": "https://greenscapessj.com",
       "telephone": "+1-856-472-5751",
