@@ -11,6 +11,7 @@ export const hero = {
     { value: '300+', label: 'Landscapes Designed' },
     { value: '100%', label: 'Satisfaction' },
   ],
+  image: '/images/gallery/landscaping/IMG_6460.JPG',
 };
 
 export const services = {
@@ -25,7 +26,7 @@ export const services = {
         'Custom landscape plans that blend beauty and function. We design outdoor spaces that reflect your style and complement your property.',
       iconPath:
         'M12 21v-6m0 0l-3-3m3 3l3-3m-3-3a4.5 4.5 0 110-9 4.5 4.5 0 010 9z',
-      image: '/images/services/landscape-design.jpg',
+      image: '/images/gallery/landscaping/IMG_6071.JPG',
     },
     {
       title: 'Garden Installation',
@@ -33,7 +34,7 @@ export const services = {
         'Full garden installations with native and ornamental plantings, mulching, and soil preparation for thriving gardens.',
       iconPath:
         'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
-      image: '/images/services/garden-installation.jpg',
+      image: '/images/gallery/landscaping/IMG_6037.JPG',
     },
     {
       title: 'Lawn Care & Maintenance',
@@ -41,7 +42,7 @@ export const services = {
         'Regular mowing, fertilization, aeration, and seasonal care to keep your lawn lush, healthy, and looking its best year-round.',
       iconPath:
         'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z',
-      image: '/images/services/lawn-care.jpg',
+      image: '/images/gallery/landscaping/landscape_1.JPG',
     },
     {
       title: 'Irrigation Systems',
@@ -49,7 +50,7 @@ export const services = {
         'Smart irrigation design and installation that conserves water while keeping your landscape properly hydrated throughout the seasons.',
       iconPath:
         'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
-      image: '/images/services/irrigation.jpg',
+      image: '/images/gallery/landscaping/landscape_8.JPG',
     },
     {
       title: 'Tree & Shrub Care',
@@ -57,7 +58,7 @@ export const services = {
         'Professional pruning, trimming, removal, and planting services to maintain the health and beauty of your trees and shrubs.',
       iconPath:
         'M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm9.2 0l-1.535.887M17.048 8.25a3 3 0 105.196-3 3 3 0 00-5.196 3zM12 20.25l4.286-12.346M12 20.25l-4.286-12.346',
-      image: '/images/services/tree-shrub.jpg',
+      image: '/images/gallery/landscaping/landscape_2.JPG',
     },
     {
       title: 'Seasonal Cleanup',
@@ -65,7 +66,7 @@ export const services = {
         'Spring and fall cleanup services including leaf removal, bed preparation, mulching, and winterization to keep your property pristine.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/services/seasonal-cleanup.jpg',
+      image: '/images/gallery/landscaping/landscape_7.JPG',
     },
   ],
 };
