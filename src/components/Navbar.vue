@@ -50,7 +50,7 @@
 
         <!-- Right section: contact info + CTA -->
         <div class="hidden lg:flex flex-col items-center gap-1">
-          <a href="#contact"
+          <a href="/about#contact"
             class="bg-[#4a6741] hover:bg-[#5a7a51] text-white px-8 py-2.5 rounded-lg text-base font-semibold transition-colors">
             Free Estimate
           </a>
@@ -114,7 +114,7 @@
             class="block text-text-muted hover:text-primary transition-colors text-sm font-medium py-2">
             {{ link.label }}
           </a>
-          <a href="#contact" @click="isOpen = false"
+          <a href="/about#contact" @click="isOpen = false"
             class="block bg-primary hover:bg-primary-light text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors text-center mt-4">
             Free Estimate
           </a>
