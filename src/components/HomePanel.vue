@@ -1,7 +1,7 @@
 <template>
   <a
     :href="href"
-    class="home-panel group relative block overflow-hidden rounded-2xl"
+    class="home-panel group relative block overflow-hidden rounded-2xl shadow-lg"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
@@ -31,7 +31,7 @@
           {{ description }}
         </p>
         <span
-          class="inline-flex items-center gap-2 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors"
+          class="inline-flex items-center gap-2 text-white px-6 py-2.5 rounded-lg font-semibold text-sm transition-colors shadow-md"
           :style="{ backgroundColor: buttonColor, '--hover-color': buttonHoverColor }"
           @mouseenter="($event.target as HTMLElement).style.backgroundColor = buttonHoverColor"
           @mouseleave="($event.target as HTMLElement).style.backgroundColor = buttonColor"

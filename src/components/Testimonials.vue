@@ -1,11 +1,11 @@
 <template>
-  <section id="testimonials" class="py-24 bg-surface">
+  <section id="testimonials" class="py-24" :style="{ backgroundColor: bgColor }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center mb-16">
-        <span class="text-primary text-sm font-semibold uppercase tracking-wider">{{ subtitle }}</span>
-        <h2 class="text-3xl sm:text-4xl font-bold text-text mt-3">{{ title }}</h2>
-        <p class="text-text-muted mt-4 max-w-2xl mx-auto">
+        <span class="text-sm font-semibold uppercase tracking-wider" :style="{ color: accentColor }">{{ subtitle }}</span>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3">{{ title }}</h2>
+        <p class="text-white/70 mt-4 max-w-2xl mx-auto">
           {{ description }}
         </p>
       </div>
@@ -13,32 +13,32 @@
       <!-- Testimonials Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div v-for="testimonial in items" :key="testimonial.name"
-          class="bg-surface-light border border-border rounded-xl p-6">
+          class="bg-white/10 border border-white/20 rounded-xl p-6">
           <!-- Quote -->
-          <p class="text-text-muted text-sm leading-relaxed mb-6">
+          <p class="text-white/80 text-sm leading-relaxed mb-6">
             "{{ testimonial.quote }}"
           </p>
 
           <!-- Author -->
           <div class="flex items-center gap-3">
-            <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center">
-              <span class="text-primary font-semibold text-sm">{{ testimonial.initials }}</span>
+            <div class="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center">
+              <span class="text-white font-semibold text-sm">{{ testimonial.initials }}</span>
             </div>
             <div>
-              <div class="text-text font-medium text-sm">{{ testimonial.name }}</div>
-              <div class="text-text-muted text-xs">{{ testimonial.role }}</div>
+              <div class="text-white font-medium text-sm">{{ testimonial.name }}</div>
+              <div class="text-white/50 text-xs">{{ testimonial.role }}</div>
             </div>
           </div>
 
           <!-- Stars -->
           <div class="flex gap-1 mt-4">
-            <svg v-for="n in 5" :key="n" class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+            <svg v-for="n in 5" :key="n" class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
             </svg>
           </div>
 
           <!-- Facebook verification badge -->
-          <div v-if="testimonial.rating" class="mt-2 flex items-center gap-1.5 text-text-muted text-xs">
+          <div v-if="testimonial.rating" class="mt-2 flex items-center gap-1.5 text-white/50 text-xs">
             <svg class="w-3.5 h-3.5 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879V14.89h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.989C18.343 21.129 22 16.99 22 12c0-5.523-4.477-10-10-10z"/>
             </svg>
@@ -64,12 +64,16 @@ interface Props {
   title?: string;
   description?: string;
   items?: TestimonialItem[];
+  bgColor?: string;
+  accentColor?: string;
 }
 
 withDefaults(defineProps<Props>(), {
   subtitle: 'Testimonials',
   title: 'What Our Clients Say',
   description: "Don't just take our word for it. Here's what homeowners and businesses have to say about working with Greenscapes.",
+  bgColor: '#22311d',
+  accentColor: '#1e7d1e',
   items: () => [
     {
       name: 'Sarah Mitchell',

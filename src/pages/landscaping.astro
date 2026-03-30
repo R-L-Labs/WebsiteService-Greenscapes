@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.vue';
 import Hero from '../components/Hero.vue';
 import Services from '../components/Services.vue';
-import About from '../components/About.vue';
 import Projects from '../components/Projects.vue';
 import InstagramGallery from '../components/InstagramGallery.astro';
 import Testimonials from '../components/Testimonials.vue';
@@ -45,21 +44,26 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
       ctaPrimary={data.hero.ctaPrimary}
       ctaSecondary={data.hero.ctaSecondary}
       stats={data.hero.stats}
+      backgroundImage="/images/landscaping.JPG"
+      accentColor="#1e7d1e"
     />
     <Services
       subtitle={data.services.subtitle}
       title={data.services.title}
       description={data.services.description}
       items={data.services.items}
+      accentColor="#1e7d1e"
     />
-    <About
-      title={data.about.title}
-      paragraphs={data.about.paragraphs}
-      features={data.about.features}
-      accentStat={data.about.accentStat}
+    <Testimonials
+      subtitle={data.testimonials.subtitle}
+      title={data.testimonials.title}
+      description={data.testimonials.description}
+      items={testimonialItems}
+      bgColor="#22311d"
+      accentColor="#1e7d1e"
     />
     {lightwidgetUrl ? (
-      <InstagramGallery widgetUrl={lightwidgetUrl} />
+      <InstagramGallery widgetUrl={lightwidgetUrl} accentColor="#1e7d1e" />
     ) : (
       <Projects
         subtitle={data.projects.subtitle}
@@ -68,13 +72,7 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
         items={projectItems}
       />
     )}
-    <Testimonials
-      subtitle={data.testimonials.subtitle}
-      title={data.testimonials.title}
-      description={data.testimonials.description}
-      items={testimonialItems}
-    />
-    <ContactCTA client:load jobberUrl={jobberUrl} />
+    <ContactCTA client:load jobberUrl={jobberUrl} bgColorFrom="#4a6741" bgColorTo="#22311d" />
   </main>
   <Footer />
 </Layout>
