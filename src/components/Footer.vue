@@ -4,17 +4,16 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
-          <a href="/" class="flex items-center gap-2 mb-4">
-            <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M10 2c-1.5 3-4.5 6-4.5 9a4.5 4.5 0 0 0 9 0c0-3-3-6-4.5-9z" />
-              </svg>
+          <a href="/" class="flex items-center gap-3 mb-4">
+            <img src="/images/logo.png" alt="Greenscapes" class="h-12 object-contain" />
+            <div class="flex flex-col leading-tight">
+              <span class="text-lg font-bold text-text">Greenscapes</span>
+              <span class="text-xs font-medium text-text-muted">Landscaping & Construction</span>
             </div>
-            <span class="text-xl font-bold text-text">Green<span class="text-primary">scapes</span> <span class="text-xs font-normal text-text-muted">SJ</span></span>
           </a>
-          <p class="text-text-muted text-sm leading-relaxed">
-            Property maintenance company based out of Sicklerville, NJ. Providing expert landscaping services to residential and commercial clients for over 5 years.
-          </p>
+          <a href="/about#contact" class="inline-block bg-[#4a6741] hover:bg-[#5a7a51] text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-colors">
+            Free Estimate
+          </a>
         </div>
 
         <!-- Quick Links -->
@@ -55,12 +54,6 @@
                 greenscapessj@gmail.com
               </a>
             </li>
-            <li class="text-text-muted text-sm">
-              Mon - Fri: 7am - 6pm
-            </li>
-            <li class="text-text-muted text-sm">
-              Sat: 8am - 4pm
-            </li>
           </ul>
         </div>
       </div>
@@ -84,7 +77,6 @@
 
 <script setup lang="ts">
 const quickLinks = [
-  { label: 'Home', href: '/' },
   { label: 'Landscaping', href: '/landscaping' },
   { label: 'Hardscaping', href: '/hardscaping' },
   { label: 'Construction', href: '/construction' },
@@ -92,7 +84,7 @@ const quickLinks = [
 
 const serviceLinks = [
   'Landscape Design',
-  'Lawn Maintenance',
+  'Commercial Maintenance',
   'Patios & Walkways',
   'Retaining Walls',
   'Pergolas & Decks',

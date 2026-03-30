@@ -26,7 +26,7 @@
             <template v-else>
               <div class="absolute inset-0 bg-gradient-to-br" :class="project.gradient"></div>
               <div class="absolute inset-0 flex items-center justify-center">
-                <svg class="w-10 h-10 text-white/20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg class="w-10 h-10 text-gray-400/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                     d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M3.75 21h16.5a1.5 1.5 0 001.5-1.5V4.5a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v15a1.5 1.5 0 001.5 1.5z" />
                 </svg>
@@ -91,37 +91,37 @@ withDefaults(defineProps<Props>(), {
       title: 'Modern Patio & Fire Pit',
       category: 'Hardscaping',
       description: 'Custom stone patio with built-in fire pit and seating area for a residential backyard.',
-      gradient: 'from-primary/30 to-primary/10',
+      gradient: 'from-primary/20 to-primary/5',
     },
     {
       title: 'Estate Garden Design',
       category: 'Landscape Design',
       description: 'Full landscape overhaul with native plantings, water features, and pathway lighting.',
-      gradient: 'from-emerald-900/40 to-emerald-800/20',
+      gradient: 'from-emerald-200 to-emerald-100',
     },
     {
       title: 'Commercial Property Grounds',
       category: 'Maintenance',
       description: 'Year-round maintenance program for a 5-acre commercial office park.',
-      gradient: 'from-green-900/40 to-green-700/20',
+      gradient: 'from-green-200 to-green-100',
     },
     {
       title: 'Retaining Wall System',
       category: 'Construction',
       description: 'Multi-tier retaining wall with integrated drainage and landscape lighting.',
-      gradient: 'from-lime-900/30 to-lime-800/10',
+      gradient: 'from-lime-200 to-lime-100',
     },
     {
       title: 'Backyard Oasis',
       category: 'Full Service',
       description: 'Complete backyard transformation with pool deck, pergola, and outdoor kitchen.',
-      gradient: 'from-teal-900/30 to-teal-800/10',
+      gradient: 'from-teal-200 to-teal-100',
     },
     {
       title: 'Smart Irrigation Install',
       category: 'Irrigation',
       description: 'Zone-based smart irrigation system covering 2 acres of residential property.',
-      gradient: 'from-cyan-900/30 to-cyan-800/10',
+      gradient: 'from-cyan-200 to-cyan-100',
     },
   ],
 });

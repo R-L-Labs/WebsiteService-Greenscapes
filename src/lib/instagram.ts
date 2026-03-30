@@ -113,7 +113,7 @@ export async function fetchInstagramProjects(limit = 6): Promise<ProjectItem[] |
           title,
           category,
           description,
-          gradient: 'from-primary/30 to-primary/10',
+          gradient: 'from-primary/20 to-primary/5',
           imageUrl: fs.existsSync(localPath) ? `/instagram/${localFilename}` : undefined,
           permalink: media.permalink,
         };

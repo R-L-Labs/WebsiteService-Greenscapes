@@ -13,14 +13,34 @@
       <!-- Services Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div v-for="service in items" :key="service.title"
-          class="group bg-surface border border-border rounded-xl p-6 hover:border-primary/30 transition-all duration-300">
-          <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-            <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" :d="service.iconPath" />
-            </svg>
+          class="group relative bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300">
+          <!-- Background color fallback on hover -->
+          <div
+            v-if="accentColor"
+            class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            :style="{ backgroundColor: accentColor }"
+          ></div>
+          <!-- Background image on hover (layers on top of color) -->
+          <div
+            v-if="service.image"
+            class="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            :style="{ backgroundImage: `url(${service.image})` }"
+          ></div>
+          <div
+            v-if="service.image"
+            class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          ></div>
+
+          <!-- Content -->
+          <div class="relative z-10 p-6">
+            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
+              <svg class="w-6 h-6 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" :d="service.iconPath" />
+              </svg>
+            </div>
+            <h3 class="text-lg font-semibold text-text mb-2 transition-colors" :class="{ 'group-hover:text-white': accentColor || service.image }">{{ service.title }}</h3>
+            <p class="text-text-muted text-sm leading-relaxed transition-colors" :class="{ 'group-hover:text-white/80': accentColor || service.image }">{{ service.description }}</p>
           </div>
-          <h3 class="text-lg font-semibold text-text mb-2">{{ service.title }}</h3>
-          <p class="text-text-muted text-sm leading-relaxed">{{ service.description }}</p>
         </div>
       </div>
     </div>
@@ -32,6 +52,7 @@ interface ServiceItem {
   title: string;
   description: string;
   iconPath: string;
+  image?: string;
 }
 
 interface Props {
@@ -39,12 +60,14 @@ interface Props {
   title?: string;
   description?: string;
   items?: ServiceItem[];
+  accentColor?: string;
 }
 
 withDefaults(defineProps<Props>(), {
   subtitle: 'What We Do',
   title: 'Our Services',
   description: 'Comprehensive landscaping and construction solutions tailored to transform your property into something extraordinary.',
+  accentColor: '',
   items: () => [
     {
       title: 'Landscape Design',

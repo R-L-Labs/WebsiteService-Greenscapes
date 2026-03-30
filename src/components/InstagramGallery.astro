@@ -2,15 +2,17 @@
 interface Props {
   widgetUrl: string;
   username?: string;
+  accentColor?: string;
 }
 
-const { widgetUrl, username = 'GREENSCAPESSJ' } = Astro.props;
+const { widgetUrl, username = 'GREENSCAPESSJ', accentColor = '#1e7d1e' } = Astro.props;
 ---
 
 <section id="projects" class="py-24">
+  <div class="w-1/2 mx-auto border-t border-gray-400 mb-16"></div>
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16">
-      <span class="text-primary text-sm font-semibold uppercase tracking-wider">Our Work</span>
+      <span class="text-sm font-semibold uppercase tracking-wider" style={`color: ${accentColor}`}>Our Work</span>
       <h2 class="text-3xl sm:text-4xl font-bold text-text mt-3">Follow Us on Instagram</h2>
       <p class="text-text-muted mt-4 max-w-2xl mx-auto">
         Check out our latest projects and transformations.
@@ -18,7 +20,8 @@ const { widgetUrl, username = 'GREENSCAPESSJ' } = Astro.props;
           href={`https://www.instagram.com/${username}/`}
           target="_blank"
           rel="noopener noreferrer"
-          class="text-primary hover:underline"
+          class="hover:underline"
+          style={`color: ${accentColor}`}
         >
           @{username}
         </a>
@@ -33,4 +36,5 @@ const { widgetUrl, username = 'GREENSCAPESSJ' } = Astro.props;
       style="width:100%;border:0;overflow:hidden;"
     ></iframe>
   </div>
+  <div class="w-1/2 mx-auto border-t border-gray-400 mt-16"></div>
 </section>

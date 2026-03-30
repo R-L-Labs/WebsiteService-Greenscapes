@@ -3,7 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.vue';
 import Hero from '../components/Hero.vue';
 import Services from '../components/Services.vue';
-import About from '../components/About.vue';
 import Projects from '../components/Projects.vue';
 import InstagramGallery from '../components/InstagramGallery.astro';
 import Testimonials from '../components/Testimonials.vue';
@@ -19,6 +18,11 @@ const instagramProjects = await getSocialProjects(6);
 const facebookTestimonials = await getSocialTestimonials(3);
 const projectItems = instagramProjects?.length ? instagramProjects : data.projects.items;
 const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : data.testimonials.items;
+
+// Construction colors — 3 shades of brown/tan
+const bright = '#a07040';
+const mid = '#7a6041';
+const dark = '#31261d';
 ---
 
 <Layout
@@ -36,7 +40,7 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
     "serviceType": "Outdoor Construction"
   })} />
   <Navbar client:load />
-  <main class="pt-16" style="--color-primary: #8B5E3C; --color-primary-light: #A0724F; --color-primary-dark: #6B4226;">
+  <main class="pt-16" style={`--color-primary: ${bright}; --color-primary-light: ${mid}; --color-primary-dark: ${dark};`}>
     <Hero
       badge={data.hero.badge}
       title={data.hero.title}
@@ -45,21 +49,26 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
       ctaPrimary={data.hero.ctaPrimary}
       ctaSecondary={data.hero.ctaSecondary}
       stats={data.hero.stats}
+      backgroundImage="/images/construction.jpg"
+      accentColor={bright}
     />
     <Services
       subtitle={data.services.subtitle}
       title={data.services.title}
       description={data.services.description}
       items={data.services.items}
+      accentColor={bright}
     />
-    <About
-      title={data.about.title}
-      paragraphs={data.about.paragraphs}
-      features={data.about.features}
-      accentStat={data.about.accentStat}
+    <Testimonials
+      subtitle={data.testimonials.subtitle}
+      title={data.testimonials.title}
+      description={data.testimonials.description}
+      items={testimonialItems}
+      bgColor={dark}
+      accentColor={bright}
     />
     {lightwidgetUrl ? (
-      <InstagramGallery widgetUrl={lightwidgetUrl} />
+      <InstagramGallery widgetUrl={lightwidgetUrl} accentColor={bright} />
     ) : (
       <Projects
         subtitle={data.projects.subtitle}
@@ -68,13 +77,7 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
         items={projectItems}
       />
     )}
-    <Testimonials
-      subtitle={data.testimonials.subtitle}
-      title={data.testimonials.title}
-      description={data.testimonials.description}
-      items={testimonialItems}
-    />
-    <ContactCTA client:load jobberUrl={jobberUrl} />
+    <ContactCTA client:load jobberUrl={jobberUrl} bgColorFrom={mid} bgColorTo={dark} />
   </main>
   <Footer />
 </Layout>
