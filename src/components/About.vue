@@ -10,7 +10,7 @@
           <div class="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl shadow-black/30">
             <img
               :src="image"
-              alt="Greenscapes South Jersey project"
+              alt="Greenscapes Landscaping & Construction project"
               class="w-full h-full object-cover"
               loading="lazy"
             />
