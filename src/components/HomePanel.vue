@@ -21,7 +21,7 @@
     <div
       class="absolute bottom-0 left-0 right-0 z-10 p-6 sm:p-8 transform transition-all duration-500 ease-out"
       :class="[
-        'translate-y-0 opacity-100',
+        'hidden md:block',
         'md:translate-y-full md:opacity-0',
         'md:group-hover:translate-y-0 md:group-hover:opacity-100'
       ]"
