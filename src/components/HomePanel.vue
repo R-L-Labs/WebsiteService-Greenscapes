@@ -1,7 +1,7 @@
 <template>
   <a
     :href="href"
-    class="home-panel group relative block overflow-hidden rounded-2xl shadow-lg"
+    class="home-panel group relative block overflow-hidden rounded-2xl shadow-2xl"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >

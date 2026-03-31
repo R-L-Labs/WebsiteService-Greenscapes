@@ -26,48 +26,97 @@ export const services = {
         'Custom landscape plans that blend beauty and function. We design outdoor spaces that reflect your style and complement your property.',
       iconPath:
         'M12 21v-6m0 0l-3-3m3 3l3-3m-3-3a4.5 4.5 0 110-9 4.5 4.5 0 010 9z',
-      image: '/images/gallery/landscaping/IMG_6071.JPG',
+      image: '/images/gallery/landscaping/landscape_2.JPG',
     },
     {
-      title: 'Garden Installation',
+      title: 'Mulch Installation',
       description:
-        'Full garden installations with native and ornamental plantings, mulching, and soil preparation for thriving gardens.',
+        'Professional mulch installation that enhances the appearance of your garden beds while promoting healthy plant growth.',
       iconPath:
-        'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
+        'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
       image: '/images/gallery/landscaping/IMG_6037.JPG',
     },
     {
-      title: 'Lawn Care & Maintenance',
+      title: 'Property Cleanups',
       description:
-        'Regular mowing, fertilization, aeration, and seasonal care to keep your lawn lush, healthy, and looking its best year-round.',
+        'Comprehensive property cleanups including debris removal, overgrowth clearing, and site preparation to get your landscape ready for planting or renovation.',
+      iconPath:
+        'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
+      image: '/images/gallery/landscaping/landscape_5.JPG',
+    },
+    {
+      title: 'Stone Installation',
+      description:
+        'Natural stone installation for patios, walkways, and garden features that adds timeless beauty and durability to your landscape.',
       iconPath:
         'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z',
       image: '/images/gallery/landscaping/landscape_1.JPG',
     },
     {
-      title: 'Irrigation Systems',
+      title: 'Planting, Trimming, and Pruning',
       description:
-        'Smart irrigation design and installation that conserves water while keeping your landscape properly hydrated throughout the seasons.',
+        'Professional planting, trimming, and pruning services that promote healthy growth and enhance the beauty of your trees, shrubs, and garden beds.',
       iconPath:
         'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
-      image: '/images/gallery/landscaping/landscape_8.JPG',
+      image: '/images/gallery/landscaping/landscape_10.png',
     },
     {
-      title: 'Tree & Shrub Care',
+      title: 'Sodding, Grading, and Leveling',
       description:
-        'Professional pruning, trimming, removal, and planting services to maintain the health and beauty of your trees and shrubs.',
+        'Professional sodding, grading, and leveling services to create a perfect foundation for your landscape.',
       iconPath:
         'M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm9.2 0l-1.535.887M17.048 8.25a3 3 0 105.196-3 3 3 0 00-5.196 3zM12 20.25l4.286-12.346M12 20.25l-4.286-12.346',
-      image: '/images/gallery/landscaping/landscape_2.JPG',
+      image: '/images/gallery/landscaping/landscape_6.JPG',
     },
     {
-      title: 'Seasonal Cleanup',
+      title: 'Bed Creations',
       description:
-        'Spring and fall cleanup services including leaf removal, bed preparation, mulching, and winterization to keep your property pristine.',
+        'Custom garden bed creation and design services that add structure, color, and visual interest to your landscape.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/landscape_7.JPG',
+      image: '/images/gallery/landscaping/landscape_4.JPG',
     },
+    {
+      title: 'Gravel Driveways',
+      description:
+        'Gravel driveway installation and maintenance services that provide a cost-effective and attractive solution for your property access needs.',
+      iconPath:
+        'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
+      image: '/images/gallery/landscaping/IMG_8899.JPG',
+    },
+    {
+      title: 'Commercial Maintenance and Mulching',
+      description:
+        'Comprehensive commercial landscaping maintenance services to keep your property looking its best year-round.',
+      iconPath:
+        'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
+      image: '/images/gallery/landscaping/IMG_8995.JPG',
+    },
+    {
+      title: 'Aeration, Dethatching, and Overseeding',
+      description:
+        'Professional aeration, dethatching, and overseeding services that promote healthy lawn growth and improve the overall health of your turf.',
+      iconPath:
+        'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
+      image: '/images/gallery/landscaping/landscape_1.JPG',
+    },
+    {
+      title: 'Leaf and Debris Removal',
+      description:
+        'Efficient leaf and debris removal services to keep your property clean and well-maintained throughout the seasons.',
+      iconPath:
+        'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
+      image: '/images/gallery/landscaping/IMG_8995.JPG',
+    },
+    {
+      title: 'Gutter Cleanouts and Christmas Lights',
+      description:
+        'Professional gutter cleanout services to prevent water damage and seasonal Christmas light installation to make your home shine during the holidays.',
+      iconPath:
+        'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
+      image: '/images/gallery/landscaping/sign.PNG',
+    },
+
   ],
 };
 
