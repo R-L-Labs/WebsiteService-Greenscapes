@@ -14,6 +14,21 @@ import HomePanel from '../components/HomePanel.vue';
           <span class="text-sm sm:text-base font-medium text-gray-500">Landscaping & Construction</span>
         </div>
       </div>
+      <!-- About dropdown (center) -->
+      <div class="hidden sm:block relative" id="about-dropdown">
+        <button onclick="document.getElementById('about-menu').classList.toggle('hidden')"
+          class="flex items-center gap-1 text-gray-700 hover:text-[#4a6741] font-semibold text-base transition-colors">
+          About
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="about-menu" class="hidden absolute top-full left-1/2 -translate-x-1/2 mt-2 w-44 bg-white border border-gray-200 rounded-lg shadow-lg py-1 z-50">
+          <a href="/about" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#4a6741] transition-colors">About Us</a>
+          <a href="/gallery" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-[#4a6741] transition-colors">Gallery</a>
+        </div>
+      </div>
+
       <div class="hidden sm:flex flex-col items-center gap-1 self-center">
         <a href="/about#contact"
           class="bg-[#4a6741] hover:bg-[#5a7a51] text-white px-8 py-2.5 rounded-lg text-base font-semibold transition-colors shadow-md">
@@ -61,7 +76,7 @@ import HomePanel from '../components/HomePanel.vue';
         <HomePanel
           client:load
           title="Construction"
-          description="Outdoor construction including pergolas, decks, fencing, and drainage systems built to code and built to last."
+          description="Outdoor construction including roofing, siding, gutters, windows, and gazebos built to code and built to last."
           href="/construction"
           gradient="from-amber-950 via-amber-900 to-yellow-950"
           image="/images/construction.jpg"
@@ -71,4 +86,13 @@ import HomePanel from '../components/HomePanel.vue';
       </div>
     </div>
   </div>
+  <script>
+    document.addEventListener('click', (e) => {
+      const dropdown = document.getElementById('about-dropdown');
+      const menu = document.getElementById('about-menu');
+      if (dropdown && menu && !dropdown.contains(e.target as Node)) {
+        menu.classList.add('hidden');
+      }
+    });
+  </script>
 </Layout>
