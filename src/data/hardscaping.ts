@@ -44,12 +44,12 @@ export const services = {
       image: '/images/gallery/hardscaping/IMG_4984.JPG',
     },
     {
-      title: 'Mulching & Edging',
+      title: 'Outdoor Kitchens & Living Areas',
       description:
-        'Professional mulching and clean edging services that enhance the appearance of your garden beds while promoting healthy plant growth.',
+        'Custom outdoor kitchens and living areas designed to extend your indoor lifestyle outdoors.',
       iconPath:
-        'M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z',
-      image: '/images/gallery/hardscaping/hardscaping.JPG',
+        'M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25',
+      image: '/images/gallery/hardscaping/IMG_6304.JPG',
     },
     {
       title: 'Fire Pits & Fireplaces',
@@ -60,9 +60,9 @@ export const services = {
       image: '/images/gallery/hardscaping/IMG_5205.JPG',
     },
     {
-      title: 'Driveways & Borders',
+      title: 'Landscape Walls & Brick Borders',
       description:
-        'Paver driveways, decorative edging, and border installations that define spaces and add curb appeal to your property.',
+        'Low walls and borders that define garden beds, create visual interest, and add structure to your landscape design.',
       iconPath:
         'M11.42 15.17l-5.59 5.59a2.1 2.1 0 01-2.97-2.97l5.59-5.59m2.97 2.97l5.59-5.59a2.1 2.1 0 00-2.97-2.97l-5.59 5.59m2.97 2.97L7.05 19.36',
       image: '/images/gallery/hardscaping/IMG_7036.JPG',

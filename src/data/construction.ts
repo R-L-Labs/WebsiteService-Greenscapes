@@ -3,7 +3,7 @@ export const hero = {
   title: 'Quality Construction',
   titleAccent: 'From Ground Up',
   description:
-    'Comprehensive outdoor construction services including pergolas, decks, fencing, drainage systems, and structural projects built to code and built to last.',
+    'Comprehensive construction services including roofing, siding, gutters, windows, and outdoor structures built to code and built to last.',
   ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
@@ -20,36 +20,36 @@ export const services = {
     'From custom gazebos to complete outdoor structures, we handle every phase of construction with precision engineering and quality materials.',
   items: [
     {
-      title: 'Gazebos',
+      title: 'Roofing',
       description:
-        'Custom-designed pergolas and arbors in wood, vinyl, or aluminum that add shade, structure, and elegance to your outdoor living space.',
+        'Complete roofing services including new installations, replacements, and repairs using quality shingles, metal, and flat roofing systems built to withstand the elements.',
       iconPath:
         'M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25',
-      image: '/images/services/gazebos.jpg',
+      image: '/images/services/roofing.jpg',
     },
     {
-      title: 'Deck Construction',
+      title: 'Siding',
       description:
-        'Composite and wood decks designed for durability and low maintenance. Includes railing systems, built-in seating, and multi-level options.',
+        'Professional siding installation and replacement in vinyl, fiber cement, and wood options that protect your home and boost curb appeal.',
       iconPath:
         'M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z',
-      image: '/images/services/deck-construction.jpg',
+      image: '/images/services/siding.jpg',
     },
     {
-      title: 'Fencing & Gates',
+      title: 'Gutters & Gutter Guards',
       description:
-        'Privacy fences, ornamental fencing, and custom gates in wood, vinyl, aluminum, and chain link to secure and beautify your property.',
-      iconPath:
-        'M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z',
-      image: '/images/services/fencing.jpg',
-    },
-    {
-      title: 'Drainage Solutions',
-      description:
-        'French drains, grading, downspout routing, and drainage systems that protect your foundation and prevent water damage to your landscape.',
+        'Seamless gutter installation, gutter guards, and downspout systems that protect your foundation and landscaping from water damage.',
       iconPath:
         'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
-      image: '/images/services/drainage.jpg',
+      image: '/images/services/gutters.jpg',
+    },
+    {
+      title: 'Windows',
+      description:
+        'Energy-efficient window installation and replacement services. We offer a variety of styles including double-hung, casement, bay, and picture windows.',
+      iconPath:
+        'M3 8.25V18a2.25 2.25 0 002.25 2.25h13.5A2.25 2.25 0 0021 18V8.25m-18 0V6a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 6v2.25m-18 0h18M12 3.75v16.5m-9-8.25h18',
+      image: '/images/services/windows.jpg',
     },
     {
       title: 'Gazebos & Pavilions',
