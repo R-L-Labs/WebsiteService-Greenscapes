@@ -3,8 +3,26 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Section Header -->
       <div class="text-center mb-16">
-        <span class="text-primary text-sm font-semibold uppercase tracking-wider">{{ subtitle }}</span>
+        <span
+          class="text-sm font-semibold uppercase tracking-wider"
+          :style="accentColor ? { color: accentColor } : {}"
+          :class="{ 'text-primary': !accentColor }"
+        >{{ subtitle }}</span>
         <h2 class="text-3xl sm:text-4xl font-bold text-text mt-3">{{ title }}</h2>
+        <div class="mt-4 flex justify-center">
+          <span
+            class="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider"
+            :style="accentColor ? { color: accentColor, borderColor: accentColor + '55', backgroundColor: accentColor + '10' } : {}"
+            :class="{ 'text-primary border-primary/30 bg-primary/10': !accentColor }"
+          >
+            <span
+              class="w-1.5 h-1.5 rounded-full"
+              :style="accentColor ? { backgroundColor: accentColor } : {}"
+              :class="{ 'bg-primary': !accentColor }"
+            ></span>
+            Serving Commercial &amp; Residential Properties
+          </span>
+        </div>
         <p class="text-text-muted mt-4 max-w-2xl mx-auto">
           {{ description }}
         </p>

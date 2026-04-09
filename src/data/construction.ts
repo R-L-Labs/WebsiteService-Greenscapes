@@ -1,5 +1,5 @@
 export const hero = {
-  badge: 'Professional Construction Services - Sicklerville, NJ',
+  badge: 'Commercial & Residential Construction - Sicklerville, NJ',
   title: 'Quality Construction',
   titleAccent: 'From Ground Up',
   description:

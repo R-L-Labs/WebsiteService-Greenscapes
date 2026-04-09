@@ -1,5 +1,5 @@
 export const hero = {
-  badge: 'Professional Landscaping Services - Sicklerville, NJ',
+  badge: 'Commercial & Residential Landscaping - Sicklerville, NJ',
   title: 'Beautiful Landscapes',
   titleAccent: 'Built to Last',
   description:

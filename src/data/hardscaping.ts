@@ -1,5 +1,5 @@
 export const hero = {
-  badge: 'Professional Hardscaping Services - Sicklerville, NJ',
+  badge: 'Commercial & Residential Hardscaping - Sicklerville, NJ',
   title: 'Durable Hardscapes',
   titleAccent: 'Built to Endure',
   description:
