@@ -9,6 +9,10 @@
           <div class="hidden sm:flex flex-col leading-tight">
             <span class="text-2xl font-bold text-text">Greenscapes</span>
             <span class="text-base font-medium text-text-muted">Landscaping & Construction</span>
+            <span class="mt-0.5 inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-primary">
+              <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Commercial &amp; Residential
+            </span>
           </div>
         </a>
 
