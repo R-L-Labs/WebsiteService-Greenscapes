@@ -7,20 +7,32 @@ import path from 'node:path';
 
 const galleryDir = path.resolve('public/images/gallery');
 const extensions = new Set(['.jpg', '.jpeg', '.png', '.webp']);
+// Non-project marketing/branding assets that live in gallery folders but
+// shouldn't appear in the public portfolio.
+const excludedFiles = new Set(['greenscapes-yard-sign-south-jersey.png']);
 
 const images: string[] = [];
 
 for (const cat of ['landscaping', 'hardscaping', 'construction']) {
   const dir = path.join(galleryDir, cat);
   if (!fs.existsSync(dir)) continue;
-  const files = fs.readdirSync(dir).filter(f => extensions.has(path.extname(f).toLowerCase()));
+  const files = fs.readdirSync(dir).filter(f =>
+    extensions.has(path.extname(f).toLowerCase()) && !excludedFiles.has(f)
+  );
   for (const file of files) {
     images.push(`/images/gallery/${cat}/${file}`);
   }
 }
 ---
 
-<Layout title="Gallery - Greenscapes Landscaping & Construction" description="Browse our portfolio of landscaping, hardscaping, and construction projects completed by Greenscapes Landscaping & Construction.">
+<Layout
+  title="Gallery — Greenscapes Landscaping & Construction"
+  description="Browse our portfolio of landscaping, hardscaping, and construction projects completed by Greenscapes Landscaping & Construction."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Gallery', url: '/gallery' },
+  ]}
+>
   <Navbar client:load />
   <main class="pt-24 pb-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

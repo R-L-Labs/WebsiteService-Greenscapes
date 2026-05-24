@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://greenscapessj.com/sitemap-index.xml

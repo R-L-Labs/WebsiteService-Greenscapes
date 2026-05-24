@@ -26,8 +26,12 @@ const dark = '#31261d';
 ---
 
 <Layout
-  title="Construction Services - Greenscapes Landscaping & Construction"
+  title="Construction Services — Greenscapes Landscaping & Construction"
   description="Professional outdoor construction services in Sicklerville, NJ including pergolas, decks, fencing, drainage solutions, gazebos, and site grading."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Construction', url: '/construction' },
+  ]}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

@@ -26,8 +26,12 @@ const dark = '#1d2b3d';
 ---
 
 <Layout
-  title="Hardscaping Services - Greenscapes Landscaping & Construction"
+  title="Hardscaping Services — Greenscapes Landscaping & Construction"
   description="Professional hardscaping services in Sicklerville, NJ including patios, retaining walls, walkways, outdoor kitchens, fire pits, and driveway construction."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Hardscaping', url: '/hardscaping' },
+  ]}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
