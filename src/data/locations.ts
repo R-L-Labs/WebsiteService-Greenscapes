@@ -1,4 +1,5 @@
-// Add or remove counties here to update the Service Area section on the About page
+// Counties Greenscapes serves across South Jersey. Kept as a flat list for
+// backward compatibility with the existing About page Service Area section.
 export const counties = [
   'Camden County',
   'Gloucester County',
@@ -8,4 +9,129 @@ export const counties = [
   'Cumberland County',
   'Cape May County',
   'Ocean County',
+];
+
+// Full town-level service area, grouped by county. Used by /service-areas.
+// Order within each county is roughly by market priority (largest / most
+// active markets first), not alphabetical, so the most relevant towns appear
+// near the top of each list.
+export const serviceAreas: Record<string, string[]> = {
+  'Camden County': [
+    'Cherry Hill',
+    'Voorhees',
+    'Haddonfield',
+    'Haddon Township',
+    'Collingswood',
+    'Gloucester Township',
+    'Blackwood',
+    'Sicklerville',
+    'Berlin',
+    'Winslow Township',
+    'Audubon',
+    'Barrington',
+  ],
+  'Gloucester County': [
+    'Washington Township',
+    'Sewell',
+    'Mullica Hill',
+    'Turnersville',
+    'Williamstown',
+    'Glassboro',
+    'Deptford',
+    'Mantua',
+    'Pitman',
+    'Monroe Township',
+    'Mickleton',
+    'Swedesboro',
+    'Woolwich Township',
+    'East Greenwich Township',
+  ],
+  'Burlington County': [
+    'Marlton',
+    'Mount Laurel',
+    'Moorestown',
+    'Medford',
+    'Medford Lakes',
+    'Cinnaminson',
+    'Evesham Township',
+    'Hainesport',
+    'Lumberton',
+    'Shamong',
+    'Tabernacle',
+    'Southampton',
+    'Delran',
+    'Florence',
+    'Bordentown',
+  ],
+  'Atlantic County': [
+    'Egg Harbor Township',
+    'Galloway',
+    'Hamilton Township',
+    'Absecon',
+    'Linwood',
+    'Northfield',
+    'Somers Point',
+    'Margate City',
+    'Ventnor City',
+    'Longport',
+  ],
+  'Cape May County': [
+    'Ocean City',
+    'Avalon',
+    'Stone Harbor',
+    'Cape May',
+    'Sea Isle City',
+    'Wildwood Crest',
+    'Upper Township',
+    'Lower Township',
+  ],
+  'Ocean County': [
+    'Toms River',
+    'Brick Township',
+    'Jackson Township',
+    'Manchester Township',
+    'Lacey Township',
+    'Stafford Township',
+    'Barnegat',
+    'Point Pleasant',
+    'Point Pleasant Beach',
+    'Beachwood',
+    'Forked River',
+  ],
+  'Salem County': [
+    'Woodstown',
+    'Pilesgrove',
+    'Woolwich Township',
+    'Alloway',
+    'Elmer',
+  ],
+  'Cumberland County': [
+    'Vineland',
+    'Millville',
+    'Bridgeton',
+    'Upper Deerfield',
+    'Deerfield Township',
+  ],
+};
+
+// Top-priority towns surfaced as hero chips on /service-areas and used to
+// emphasize core markets in copy. Sourced from the client's strongest
+// homeowner / commercial markets across all counties.
+export const priorityTowns = [
+  'Cherry Hill',
+  'Voorhees',
+  'Haddonfield',
+  'Washington Township',
+  'Sewell',
+  'Mullica Hill',
+  'Marlton',
+  'Medford',
+  'Mount Laurel',
+  'Moorestown',
+  'Egg Harbor Township',
+  'Ocean City',
+  'Avalon',
+  'Stone Harbor',
+  'Toms River',
+  'Brick Township',
 ];

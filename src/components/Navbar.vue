@@ -138,6 +138,7 @@ const mobileAboutOpen = ref(false);
 const aboutLinks = [
   { label: 'About Us', href: '/about' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Service Areas', href: '/service-areas' },
 ];
 
 const navLinks = [

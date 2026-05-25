@@ -6,6 +6,7 @@ import Services from '../components/Services.vue';
 import Projects from '../components/Projects.vue';
 import InstagramGallery from '../components/InstagramGallery.astro';
 import Testimonials from '../components/Testimonials.vue';
+import FAQ from '../components/FAQ.vue';
 import ContactCTA from '../components/ContactCTA.vue';
 import Footer from '../components/Footer.vue';
 
@@ -36,12 +37,21 @@ const dark = '#31261d';
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Construction Services",
-    "description": "Professional outdoor construction services including pergolas, decks, fencing, drainage solutions, gazebos, and site grading.",
+    "name": "Exterior Construction & Remodeling Services",
+    "description": "Full-service exterior contractor: roofing, siding, replacement windows, seamless gutters, commercial snow removal, storm damage repair, and outdoor structures.",
     "provider": { "@id": "https://greenscapessj.com/#business" },
     "url": "https://greenscapessj.com/construction",
     "areaServed": { "@type": "Place", "name": "South Jersey, NJ" },
-    "serviceType": "Outdoor Construction"
+    "serviceType": ["Roofing", "Siding", "Windows", "Gutters", "Snow Removal", "Storm Damage Repair"]
+  })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faqs.items.map((f) => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+    })),
   })} />
   <Navbar client:load />
   <main class="pt-16" style={`--color-primary: ${bright}; --color-primary-light: ${mid}; --color-primary-dark: ${dark};`}>
@@ -81,6 +91,13 @@ const dark = '#31261d';
         items={projectItems}
       />
     )}
+    <FAQ
+      client:visible
+      subtitle={data.faqs.subtitle}
+      title={data.faqs.title}
+      items={data.faqs.items}
+      accentColor={bright}
+    />
     <ContactCTA client:load jobberUrl={jobberUrl} bgColorFrom={mid} bgColorTo={dark} />
   </main>
   <Footer />

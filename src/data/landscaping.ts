@@ -3,7 +3,7 @@ export const hero = {
   title: 'Beautiful Landscapes',
   titleAccent: 'Built to Last',
   description:
-    'From custom garden designs to complete landscape transformations, our team creates stunning outdoor spaces that enhance your property and lifestyle.',
+    'Landscaping company serving South Jersey — mulch installation, lawn care, spring and fall cleanup, plant and shrub installation, and full landscape design for residential and commercial properties.',
   ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
@@ -184,6 +184,48 @@ export const projects = {
       description:
         'Zone-based smart irrigation system covering 2 acres of residential property with app-controlled zones.',
       gradient: 'from-cyan-200 to-cyan-100',
+    },
+  ],
+};
+
+export const faqs = {
+  subtitle: 'Frequently Asked Questions',
+  title: 'Landscaping FAQs',
+  items: [
+    {
+      question: 'How much does landscaping cost in South Jersey?',
+      answer:
+        'Landscaping costs vary widely depending on the scope of work. Routine services like weekly lawn mowing or a basic mulch refresh typically range from a few hundred dollars per visit, while full landscape design and installation projects can run from $3,000 to $20,000+. We provide free, no-obligation estimates so you know exactly what to expect before any work starts.',
+    },
+    {
+      question: 'When should I schedule spring cleanup and mulch installation?',
+      answer:
+        'Most South Jersey properties benefit from spring cleanup between mid-March and late April, once the ground thaws but before perennials push new growth. Mulch installation is best done right after cleanup so it locks in moisture and suppresses early-season weeds.',
+    },
+    {
+      question: 'When should I schedule fall cleanup and leaf removal?',
+      answer:
+        'Fall cleanup is typically scheduled from late October through early December, after most leaves have dropped. Removing leaves and debris before winter prevents lawn smothering, reduces snow mold, and protects garden beds. We offer one-time fall cleanups as well as multi-visit packages.',
+    },
+    {
+      question: 'Do you handle plant, shrub, and tree installation?',
+      answer:
+        'Yes. We install everything from foundation shrubs (boxwoods, hydrangeas, hollies) to ornamental trees, perennials, and annual color. We also handle full bed redesigns, including removing old or overgrown plantings and starting fresh with low-maintenance options that thrive in South Jersey’s climate.',
+    },
+    {
+      question: 'Do you offer commercial landscaping and grounds maintenance?',
+      answer:
+        'Yes. We service commercial properties across South Jersey including HOAs, office parks, shopping centers, banks, medical offices, churches, and rental properties. Most commercial clients are on a weekly mowing schedule with seasonal cleanups, mulching, and shrub trimming included in a year-round maintenance contract.',
+    },
+    {
+      question: 'What areas in South Jersey do you serve?',
+      answer:
+        'We serve Camden, Gloucester, Burlington, Atlantic, Cape May, Ocean, Salem, and Cumberland counties — including Cherry Hill, Voorhees, Haddonfield, Washington Township, Sewell, Mullica Hill, Marlton, Medford, Mount Laurel, Moorestown, Egg Harbor Township, Ocean City, and Toms River. See our service areas page for the full list.',
+    },
+    {
+      question: 'How do I get a landscaping estimate?',
+      answer:
+        'Free estimates are easy — call (856) 472-5751, email greenscapessj@gmail.com, or use the contact form on this page. For most projects we’ll schedule a quick on-site visit within a few business days, then send a written quote you can review at your leisure.',
     },
   ],
 };

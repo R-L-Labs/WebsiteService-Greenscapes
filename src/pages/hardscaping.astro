@@ -6,6 +6,7 @@ import Services from '../components/Services.vue';
 import Projects from '../components/Projects.vue';
 import InstagramGallery from '../components/InstagramGallery.astro';
 import Testimonials from '../components/Testimonials.vue';
+import FAQ from '../components/FAQ.vue';
 import ContactCTA from '../components/ContactCTA.vue';
 import Footer from '../components/Footer.vue';
 
@@ -42,6 +43,15 @@ const dark = '#1d2b3d';
     "url": "https://greenscapessj.com/hardscaping",
     "areaServed": { "@type": "Place", "name": "South Jersey, NJ" },
     "serviceType": "Hardscaping"
+  })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faqs.items.map((f) => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+    })),
   })} />
   <Navbar client:load />
   <main class="pt-16" style={`--color-primary: ${bright}; --color-primary-light: ${mid}; --color-primary-dark: ${dark};`}>
@@ -81,6 +91,13 @@ const dark = '#1d2b3d';
         items={projectItems}
       />
     )}
+    <FAQ
+      client:visible
+      subtitle={data.faqs.subtitle}
+      title={data.faqs.title}
+      items={data.faqs.items}
+      accentColor={bright}
+    />
     <ContactCTA client:load jobberUrl={jobberUrl} bgColorFrom={mid} bgColorTo={dark} />
   </main>
   <Footer />

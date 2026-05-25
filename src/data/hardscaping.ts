@@ -3,7 +3,7 @@ export const hero = {
   title: 'Durable Hardscapes',
   titleAccent: 'Built to Endure',
   description:
-    'Expert patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship.',
+    'South Jersey hardscape contractor — paver patios, flagstone walkways, retaining walls, fire pits, and outdoor living areas built with premium materials and precision workmanship.',
   ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
@@ -134,6 +134,48 @@ export const projects = {
       description:
         'Custom natural stone fireplace with seating walls and gas-powered fire, designed for four-season enjoyment.',
       gradient: 'from-red-200 to-red-100',
+    },
+  ],
+};
+
+export const faqs = {
+  subtitle: 'Frequently Asked Questions',
+  title: 'Hardscaping FAQs',
+  items: [
+    {
+      question: 'How much does a paver patio cost in South Jersey?',
+      answer:
+        'Paver patio pricing varies based on size, materials, site prep, and added features like fire pits or seat walls. As a rough range, most residential paver patios in South Jersey run between $4,000 and $25,000+. We provide free on-site estimates with a detailed scope so there are no surprises.',
+    },
+    {
+      question: 'How long do paver walkways and patios last?',
+      answer:
+        'A properly installed paver walkway or patio — with a compacted base, edge restraints, and polymeric sand joints — typically lasts 25–30+ years with only minor maintenance. The biggest factors are base preparation and drainage, which we engineer carefully on every install.',
+    },
+    {
+      question: 'Can you repair my existing paver patio or walkway?',
+      answer:
+        'Yes. Common repairs include releveling sunken pavers, replacing failed polymeric sand, fixing edge restraints, and addressing trip hazards. If your walkway is sinking, has wide gaps, or weeds are growing through the joints, those are usually fixable without a full rebuild.',
+    },
+    {
+      question: 'What\'s the difference between paver and flagstone walkways?',
+      answer:
+        'Pavers are uniform manufactured stones — predictable look, faster install, and easier repairs. Flagstone is natural stone with irregular shapes and a more rustic, custom look. Flagstone typically costs more per square foot and requires mortar or polymeric joints, but produces a one-of-a-kind result.',
+    },
+    {
+      question: 'Do you install retaining walls?',
+      answer:
+        'Yes. We build segmental block retaining walls, natural stone walls, and decorative landscape walls. For walls over 4 feet or those holding back significant grade, we engineer for proper drainage and reinforcement to prevent leaning or failure.',
+    },
+    {
+      question: 'Do you do commercial hardscaping?',
+      answer:
+        'Yes. We handle commercial walkways, patios, retaining walls, and entrance features for HOAs, office parks, restaurants, and retail properties across South Jersey. Commercial projects include ADA-compliant grades and engineered drainage where required.',
+    },
+    {
+      question: 'How do I get a hardscaping estimate?',
+      answer:
+        'Call (856) 472-5751, email greenscapessj@gmail.com, or fill out the contact form. For hardscaping we always come on-site to measure, assess grade and drainage, and discuss material options before pricing.',
     },
   ],
 };

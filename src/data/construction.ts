@@ -3,7 +3,7 @@ export const hero = {
   title: 'Quality Construction',
   titleAccent: 'From Ground Up',
   description:
-    'Comprehensive construction services including roofing, siding, gutters, windows, and outdoor structures built to code and built to last.',
+    'Full-service exterior contractor in South Jersey: roofing, siding, replacement windows, seamless gutters, commercial snow removal, and storm damage repair. Built to code, built to last.',
   ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
@@ -17,7 +17,7 @@ export const services = {
   subtitle: 'What We Build',
   title: 'Construction Services',
   description:
-    'From custom gazebos to complete outdoor structures, we handle every phase of construction with precision engineering and quality materials.',
+    'Roofing, siding, replacement windows, gutters, snow removal, and outdoor structures — South Jersey exterior contractor serving Camden, Gloucester, Burlington, and surrounding counties.',
   items: [
     {
       title: 'Roofing',
@@ -66,6 +66,22 @@ export const services = {
       iconPath:
         'M11.42 15.17l-5.59 5.59a2.1 2.1 0 01-2.97-2.97l5.59-5.59m2.97 2.97l5.59-5.59a2.1 2.1 0 00-2.97-2.97l-5.59 5.59m2.97 2.97L7.05 19.36',
       image: '/images/services/grading.jpg',
+    },
+    {
+      title: 'Commercial Snow Removal & Plowing',
+      description:
+        'Reliable commercial snow plowing, salting, and ice management for parking lots, sidewalks, and storefronts across South Jersey. Per-push and seasonal contracts available.',
+      iconPath:
+        'M12 3v18m9-9H3M5.636 5.636l12.728 12.728M5.636 18.364L18.364 5.636',
+      image: '/images/services/snow-removal.jpg',
+    },
+    {
+      title: 'Storm Damage & Insurance Repair',
+      description:
+        'Fast-response storm damage repair for wind, hail, and water damage to roofs, siding, and windows. We work with insurance claims and provide free damage inspections.',
+      iconPath:
+        'M13 10V3L4 14h7v7l9-11h-7z',
+      image: '/images/services/storm-damage.jpg',
     },
   ],
 };
@@ -134,6 +150,53 @@ export const projects = {
       description:
         'Complete lot grading and excavation for a new home construction site, including drainage routing and soil stabilization.',
       gradient: 'from-zinc-200 to-zinc-100',
+    },
+  ],
+};
+
+export const faqs = {
+  subtitle: 'Frequently Asked Questions',
+  title: 'Exterior & Construction FAQs',
+  items: [
+    {
+      question: 'Do you do roof replacement and roof repair?',
+      answer:
+        'Yes. We handle asphalt shingle and architectural shingle roof replacements, as well as repairs for leaks, missing shingles, flashing, chimney flashing, and storm damage. We provide free roof inspections and written estimates across South Jersey.',
+    },
+    {
+      question: 'Do you install siding (vinyl, James Hardie, fiber cement)?',
+      answer:
+        'Yes. We install and replace vinyl siding, insulated vinyl, fiber cement (including James Hardie / Hardie board), cedar shake, and board-and-batten. We also handle siding repairs for storm damage, wind damage, and rot.',
+    },
+    {
+      question: 'Do you replace windows?',
+      answer:
+        'Yes. We install energy-efficient replacement windows including double-hung, casement, bay, bow, picture, sliding, basement, and specialty shapes. Foggy windows, broken seals, and drafty single-pane windows are common reasons homeowners call us.',
+    },
+    {
+      question: 'Do you handle gutters, soffit, and fascia?',
+      answer:
+        'Yes. We install seamless aluminum gutters, gutter guards, and downspouts, and we repair or replace rotted soffit and fascia boards. We also do gutter cleaning as a standalone service.',
+    },
+    {
+      question: 'Do you offer commercial snow removal and plowing?',
+      answer:
+        'Yes. We handle commercial snow plowing, parking lot clearing, sidewalk shoveling, salting, and ice management for storefronts, retail centers, office buildings, and property managers across South Jersey. Per-push and seasonal contracts available.',
+    },
+    {
+      question: 'Do you work with insurance for storm damage repair?',
+      answer:
+        'Yes. After major wind, hail, or storm events we provide free damage inspections, document the damage for your insurance carrier, and coordinate the repair scope with your adjuster. We handle roof, siding, window, and gutter storm damage claims.',
+    },
+    {
+      question: 'How much does a new roof cost in South Jersey?',
+      answer:
+        'A typical asphalt shingle roof replacement on a South Jersey home runs $8,000–$20,000+ depending on roof size, pitch, material upgrade choices (e.g. architectural vs. 3-tab shingles), and whether decking or flashing needs replacement. We provide free written estimates.',
+    },
+    {
+      question: 'Do you offer free exterior estimates?',
+      answer:
+        'Yes — all roofing, siding, window, gutter, and storm damage estimates are free. Call (856) 472-5751, email greenscapessj@gmail.com, or fill out the contact form to schedule an on-site visit.',
     },
   ],
 };
