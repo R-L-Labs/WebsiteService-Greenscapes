@@ -1,22 +1,45 @@
 ---
 import '../styles/global.css';
 
+interface BreadcrumbItem {
+  name: string;
+  url: string;
+}
+
 interface Props {
   title?: string;
   description?: string;
   image?: string;
   type?: string;
+  breadcrumbs?: BreadcrumbItem[];
 }
 
 const {
-  title = 'Greenscapes - Landscaping, Hardscaping & Construction',
-  description = 'Greenscapes - Landscaping & Construction is a property maintenance company based out of Sicklerville, NJ providing expert landscaping services to residential and commercial clients.',
+  title = 'Greenscapes — Landscaping, Hardscaping & Construction',
+  description = 'Greenscapes — South Jersey landscaping, hardscaping, and outdoor construction for residential and commercial clients. Free estimates in Sicklerville, NJ.',
+  // Falls back to the square logo until a proper 1200×630 social card is added
+  // at public/og-default.jpg. Swap this default to '/og-default.jpg' once added.
   image = '/images/logo.png',
   type = 'website',
+  breadcrumbs,
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const imageUrl = new URL(image, Astro.site);
+const gscVerification = import.meta.env.PUBLIC_GSC_VERIFICATION;
+
+const breadcrumbSchema = breadcrumbs?.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'BreadcrumbList',
+      itemListElement: breadcrumbs.map((crumb, idx) => ({
+        '@type': 'ListItem',
+        position: idx + 1,
+        name: crumb.name,
+        item: new URL(crumb.url, Astro.site).href,
+      })),
+    }
+  : null;
 ---
 
 <!doctype html>
@@ -29,6 +52,10 @@ const imageUrl = new URL(image, Astro.site);
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
 
+    {gscVerification && (
+      <meta name="google-site-verification" content={gscVerification} />
+    )}
+
     <!-- Canonical -->
     <link rel="canonical" href={canonicalUrl.href} />
 
@@ -40,12 +67,6 @@ const imageUrl = new URL(image, Astro.site);
     <meta property="og:image" content={imageUrl.href} />
     <meta property="og:site_name" content="Greenscapes Landscaping & Construction" />
     <meta property="og:locale" content="en_US" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={imageUrl.href} />
 
     <!-- Additional SEO -->
     <meta name="robots" content="index, follow" />
@@ -88,12 +109,17 @@ const imageUrl = new URL(image, Astro.site);
       "image": "https://greenscapessj.com/images/logo.png",
       "logo": "https://greenscapessj.com/images/logo.png",
       "sameAs": [
-        "https://www.instagram.com/greenscapessj/",
-        "https://www.facebook.com/greenscapessj/"
+        "https://www.instagram.com/greenscapesconstruction/",
+        "https://www.facebook.com/105938601687540",
+        "https://www.tiktok.com/@greenscapesconstruction"
       ],
       "priceRange": "$$",
       "serviceType": ["Landscaping", "Hardscaping", "Outdoor Construction"]
     })} />
+
+    {breadcrumbSchema && (
+      <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+    )}
   </head>
   <body class="min-h-screen antialiased">
     <slot />

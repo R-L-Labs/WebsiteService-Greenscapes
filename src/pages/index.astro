@@ -3,12 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import HomePanel from '../components/HomePanel.vue';
 ---
 
-<Layout title="Greenscapes - Landscaping, Hardscaping & Construction" description="Greenscapes Landscaping & Construction is a property maintenance company based out of Sicklerville, NJ providing expert landscaping services to residential and commercial clients.">
+<Layout
+  title="Greenscapes — Landscaping, Hardscaping & Construction"
+  description="Greenscapes — South Jersey landscaping, hardscaping, and outdoor construction for residential and commercial clients. Free estimates in Sicklerville, NJ."
+>
   <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 bg-white">
     <!-- Header: logo + tagline + contact -->
     <div class="flex items-center justify-between mb-4 md:mt-[-4rem] w-full max-w-[120rem] px-4 sm:px-8">
       <div class="flex items-center gap-4">
-        <img src="/images/logo.png" alt="Greenscapes Landscaping & Construction" class="h-16 sm:h-20 object-contain" />
+        <img src="/images/logo.png" alt="Greenscapes Landscaping & Construction" width="337" height="337" fetchpriority="high" class="h-16 sm:h-20 object-contain" />
         <div class="flex flex-col leading-tight">
           <span class="text-xl sm:text-2xl font-bold text-gray-900">Greenscapes</span>
           <span class="text-sm sm:text-base font-medium text-gray-500">Landscaping & Construction</span>
@@ -65,7 +68,7 @@ import HomePanel from '../components/HomePanel.vue';
           description="Expert landscaping services for residential and commercial clients. From custom garden designs to complete landscape transformations."
           href="/landscaping"
           gradient="from-emerald-950 via-emerald-900 to-green-950"
-          image="/images/gallery/landscaping/landscape_7_2.JPG"
+          image="/images/gallery/landscaping/lakefront-willow-tree-paver-walkway.webp"
         />
         <HomePanel
           client:load
@@ -73,7 +76,7 @@ import HomePanel from '../components/HomePanel.vue';
           description="Patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship."
           href="/hardscaping"
           gradient="from-stone-900 via-stone-800 to-zinc-900"
-          image="/images/hardscaping.jpg"
+          image="/images/hardscaping.webp"
           buttonColor="#5b9bd5"
           buttonHoverColor="#7bb0e0"
         />
@@ -83,7 +86,7 @@ import HomePanel from '../components/HomePanel.vue';
           description="Outdoor construction including roofing, siding, gutters, windows, and gazebos built to code and built to last."
           href="/construction"
           gradient="from-amber-950 via-amber-900 to-yellow-950"
-          image="/images/construction.jpg"
+          image="/images/construction.webp"
           buttonColor="#8B5E3C"
           buttonHoverColor="#A0724F"
         />

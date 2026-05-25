@@ -7,20 +7,45 @@ import path from 'node:path';
 
 const galleryDir = path.resolve('public/images/gallery');
 const extensions = new Set(['.jpg', '.jpeg', '.png', '.webp']);
+// Non-project marketing/branding assets that live in gallery folders but
+// shouldn't appear in the public portfolio. Check against the basename
+// (extension-stripped) so excluding works regardless of file format.
+const excludedBases = new Set(['greenscapes-yard-sign-south-jersey']);
 
 const images: string[] = [];
 
 for (const cat of ['landscaping', 'hardscaping', 'construction']) {
   const dir = path.join(galleryDir, cat);
   if (!fs.existsSync(dir)) continue;
-  const files = fs.readdirSync(dir).filter(f => extensions.has(path.extname(f).toLowerCase()));
-  for (const file of files) {
+
+  const allFiles = fs.readdirSync(dir).filter(f => extensions.has(path.extname(f).toLowerCase()));
+
+  // Prefer .webp when both a webp and an original (jpg/png) exist for the
+  // same basename, so originals kept on disk for backup don't double-render.
+  const byBase = new Map<string, string>();
+  for (const file of allFiles) {
+    const base = file.replace(/\.[^.]+$/, '');
+    if (excludedBases.has(base)) continue;
+    const existing = byBase.get(base);
+    if (!existing || path.extname(file).toLowerCase() === '.webp') {
+      byBase.set(base, file);
+    }
+  }
+
+  for (const file of byBase.values()) {
     images.push(`/images/gallery/${cat}/${file}`);
   }
 }
 ---
 
-<Layout title="Gallery - Greenscapes Landscaping & Construction" description="Browse our portfolio of landscaping, hardscaping, and construction projects completed by Greenscapes Landscaping & Construction.">
+<Layout
+  title="Gallery — Greenscapes Landscaping & Construction"
+  description="Browse our portfolio of landscaping, hardscaping, and construction projects completed by Greenscapes Landscaping & Construction."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Gallery', url: '/gallery' },
+  ]}
+>
   <Navbar client:load />
   <main class="pt-24 pb-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

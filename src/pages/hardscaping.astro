@@ -6,6 +6,7 @@ import Services from '../components/Services.vue';
 import Projects from '../components/Projects.vue';
 import InstagramGallery from '../components/InstagramGallery.astro';
 import Testimonials from '../components/Testimonials.vue';
+import FAQ from '../components/FAQ.vue';
 import ContactCTA from '../components/ContactCTA.vue';
 import Footer from '../components/Footer.vue';
 
@@ -26,8 +27,12 @@ const dark = '#1d2b3d';
 ---
 
 <Layout
-  title="Hardscaping Services - Greenscapes Landscaping & Construction"
+  title="Hardscaping Services — Greenscapes Landscaping & Construction"
   description="Professional hardscaping services in Sicklerville, NJ including patios, retaining walls, walkways, outdoor kitchens, fire pits, and driveway construction."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Hardscaping', url: '/hardscaping' },
+  ]}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -39,6 +44,15 @@ const dark = '#1d2b3d';
     "areaServed": { "@type": "Place", "name": "South Jersey, NJ" },
     "serviceType": "Hardscaping"
   })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faqs.items.map((f) => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+    })),
+  })} />
   <Navbar client:load />
   <main class="pt-16" style={`--color-primary: ${bright}; --color-primary-light: ${mid}; --color-primary-dark: ${dark};`}>
     <Hero
@@ -49,7 +63,7 @@ const dark = '#1d2b3d';
       ctaPrimary={data.hero.ctaPrimary}
       ctaSecondary={data.hero.ctaSecondary}
       stats={data.hero.stats}
-      backgroundImage="/images/hardscaping.jpg"
+      backgroundImage="/images/hardscaping.webp"
       accentColor={bright}
     />
     <Services
@@ -77,6 +91,13 @@ const dark = '#1d2b3d';
         items={projectItems}
       />
     )}
+    <FAQ
+      client:visible
+      subtitle={data.faqs.subtitle}
+      title={data.faqs.title}
+      items={data.faqs.items}
+      accentColor={bright}
+    />
     <ContactCTA client:load jobberUrl={jobberUrl} bgColorFrom={mid} bgColorTo={dark} />
   </main>
   <Footer />

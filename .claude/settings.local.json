@@ -24,7 +24,13 @@
       "Bash(git commit:*)",
       "WebFetch(domain:greenscapesj.com)",
       "Bash(cd \"H:/Github Repos/WebsiteService-Greenscapes\" && npx astro build 2>&1)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(magick -version)",
+      "Bash(npm ls *)",
+      "Bash(ffmpeg -version)",
+      "Bash(cwebp -version)",
+      "Bash(node scripts/convert-gallery-to-webp.mjs)",
+      "Bash(git rm *)"
     ]
   }
 }

@@ -3,7 +3,7 @@ export const hero = {
   title: 'Durable Hardscapes',
   titleAccent: 'Built to Endure',
   description:
-    'Expert patio construction, retaining walls, walkways, and outdoor living areas crafted with premium materials and precision workmanship.',
+    'South Jersey hardscape contractor — paver patios, flagstone walkways, retaining walls, fire pits, and outdoor living areas built with premium materials and precision workmanship.',
   ctaPrimary: { label: 'Get a Free Estimate', href: '#contact' },
   ctaSecondary: { label: 'View Our Work', href: '#projects' },
   stats: [
@@ -25,7 +25,7 @@ export const services = {
         'Custom patios built with natural stone, pavers, or stamped concrete. Designed for entertaining, dining, or relaxing in your outdoor space.',
       iconPath:
         'M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25',
-      image: '/images/gallery/hardscaping/IMG_6304.JPG',
+      image: '/images/gallery/hardscaping/backyard-gazebo-paver-walkways-river-rock.webp',
     },
     {
       title: 'Retaining Walls',
@@ -33,7 +33,7 @@ export const services = {
         'Engineered retaining walls that prevent erosion, create level spaces, and add dramatic dimension to sloped landscapes.',
       iconPath:
         'M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z',
-      image: '/images/gallery/hardscaping/IMG_9542.JPG',
+      image: '/images/gallery/landscaping/gravel-patio-install-backyard.webp',
     },
     {
       title: 'Walkways & Pathways',
@@ -41,7 +41,7 @@ export const services = {
         'Beautiful walkways using flagstone, brick, or pavers that guide visitors through your landscape with style and safety.',
       iconPath:
         'M9 6.75V15m0-8.25H4.125c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h11.25c.621 0 1.125-.504 1.125-1.125V15M9 6.75h6.75M9 6.75L6.75 4.5m8.25 2.25L17.25 4.5',
-      image: '/images/gallery/hardscaping/IMG_4984.JPG',
+      image: '/images/gallery/hardscaping/gravel-walkway-natural-stone-border.webp',
     },
     {
       title: 'Outdoor Kitchens & Living Areas',
@@ -49,7 +49,7 @@ export const services = {
         'Custom outdoor kitchens and living areas designed to extend your indoor lifestyle outdoors.',
       iconPath:
         'M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25',
-      image: '/images/gallery/hardscaping/IMG_6304.JPG',
+      image: '/images/gallery/hardscaping/backyard-gazebo-paver-walkways-river-rock.webp',
     },
     {
       title: 'Fire Pits & Fireplaces',
@@ -57,7 +57,7 @@ export const services = {
         'Custom-built fire features that extend your outdoor living season and create a warm gathering point for family and friends.',
       iconPath:
         'M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z',
-      image: '/images/gallery/hardscaping/IMG_5205.JPG',
+      image: '/images/gallery/hardscaping/paver-patio-fire-pit-cobblestone-border.webp',
     },
     {
       title: 'Landscape Walls & Brick Borders',
@@ -65,7 +65,7 @@ export const services = {
         'Low walls and borders that define garden beds, create visual interest, and add structure to your landscape design.',
       iconPath:
         'M11.42 15.17l-5.59 5.59a2.1 2.1 0 01-2.97-2.97l5.59-5.59m2.97 2.97l5.59-5.59a2.1 2.1 0 00-2.97-2.97l-5.59 5.59m2.97 2.97L7.05 19.36',
-      image: '/images/gallery/hardscaping/IMG_7036.JPG',
+      image: '/images/gallery/hardscaping/mulch-bed-stone-border-driveway-edge.webp',
     },
   ],
 };
@@ -134,6 +134,48 @@ export const projects = {
       description:
         'Custom natural stone fireplace with seating walls and gas-powered fire, designed for four-season enjoyment.',
       gradient: 'from-red-200 to-red-100',
+    },
+  ],
+};
+
+export const faqs = {
+  subtitle: 'Frequently Asked Questions',
+  title: 'Hardscaping FAQs',
+  items: [
+    {
+      question: 'How much does a paver patio cost in South Jersey?',
+      answer:
+        'Paver patio pricing varies based on size, materials, site prep, and added features like fire pits or seat walls. As a rough range, most residential paver patios in South Jersey run between $4,000 and $25,000+. We provide free on-site estimates with a detailed scope so there are no surprises.',
+    },
+    {
+      question: 'How long do paver walkways and patios last?',
+      answer:
+        'A properly installed paver walkway or patio — with a compacted base, edge restraints, and polymeric sand joints — typically lasts 25–30+ years with only minor maintenance. The biggest factors are base preparation and drainage, which we engineer carefully on every install.',
+    },
+    {
+      question: 'Can you repair my existing paver patio or walkway?',
+      answer:
+        'Yes. Common repairs include releveling sunken pavers, replacing failed polymeric sand, fixing edge restraints, and addressing trip hazards. If your walkway is sinking, has wide gaps, or weeds are growing through the joints, those are usually fixable without a full rebuild.',
+    },
+    {
+      question: 'What\'s the difference between paver and flagstone walkways?',
+      answer:
+        'Pavers are uniform manufactured stones — predictable look, faster install, and easier repairs. Flagstone is natural stone with irregular shapes and a more rustic, custom look. Flagstone typically costs more per square foot and requires mortar or polymeric joints, but produces a one-of-a-kind result.',
+    },
+    {
+      question: 'Do you install retaining walls?',
+      answer:
+        'Yes. We build segmental block retaining walls, natural stone walls, and decorative landscape walls. For walls over 4 feet or those holding back significant grade, we engineer for proper drainage and reinforcement to prevent leaning or failure.',
+    },
+    {
+      question: 'Do you do commercial hardscaping?',
+      answer:
+        'Yes. We handle commercial walkways, patios, retaining walls, and entrance features for HOAs, office parks, restaurants, and retail properties across South Jersey. Commercial projects include ADA-compliant grades and engineered drainage where required.',
+    },
+    {
+      question: 'How do I get a hardscaping estimate?',
+      answer:
+        'Call (856) 472-5751, email greenscapessj@gmail.com, or fill out the contact form. For hardscaping we always come on-site to measure, assess grade and drainage, and discuss material options before pricing.',
     },
   ],
 };

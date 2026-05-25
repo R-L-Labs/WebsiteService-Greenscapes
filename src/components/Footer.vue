@@ -5,7 +5,7 @@
         <!-- Brand -->
         <div class="sm:col-span-2 lg:col-span-1">
           <a href="/" class="flex items-center gap-3 mb-4">
-            <img src="/images/logo.png" alt="Greenscapes" class="h-12 object-contain" />
+            <img src="/images/logo.png" alt="Greenscapes" width="337" height="337" loading="lazy" class="h-12 object-contain" />
             <div class="flex flex-col leading-tight">
               <span class="text-lg font-bold text-text">Greenscapes</span>
               <span class="text-xs font-medium text-text-muted">Landscaping & Construction</span>
@@ -80,6 +80,8 @@ const quickLinks = [
   { label: 'Landscaping', href: '/landscaping' },
   { label: 'Hardscaping', href: '/hardscaping' },
   { label: 'Construction', href: '/construction' },
+  { label: 'Service Areas', href: '/service-areas' },
+  { label: 'Gallery', href: '/gallery' },
 ];
 
 const serviceLinks = [

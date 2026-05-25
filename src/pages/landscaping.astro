@@ -6,6 +6,7 @@ import Services from '../components/Services.vue';
 import Projects from '../components/Projects.vue';
 import InstagramGallery from '../components/InstagramGallery.astro';
 import Testimonials from '../components/Testimonials.vue';
+import FAQ from '../components/FAQ.vue';
 import ContactCTA from '../components/ContactCTA.vue';
 import Footer from '../components/Footer.vue';
 
@@ -21,8 +22,12 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
 ---
 
 <Layout
-  title="Landscaping Services - Greenscapes Landscaping & Construction"
+  title="Landscaping Services — Greenscapes Landscaping & Construction"
   description="Expert landscaping design, installation, and maintenance services in Sicklerville, NJ. Custom garden designs, lawn care, irrigation systems, and seasonal cleanup."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Landscaping', url: '/landscaping' },
+  ]}
 >
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -33,6 +38,15 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
     "url": "https://greenscapessj.com/landscaping",
     "areaServed": { "@type": "Place", "name": "South Jersey, NJ" },
     "serviceType": "Landscaping"
+  })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": data.faqs.items.map((f) => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": { "@type": "Answer", "text": f.answer },
+    })),
   })} />
   <Navbar client:load />
   <main class="pt-16">
@@ -72,6 +86,13 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
         items={projectItems}
       />
     )}
+    <FAQ
+      client:visible
+      subtitle={data.faqs.subtitle}
+      title={data.faqs.title}
+      items={data.faqs.items}
+      accentColor="#1e7d1e"
+    />
     <ContactCTA client:load jobberUrl={jobberUrl} bgColorFrom="#4a6741" bgColorTo="#22311d" />
   </main>
   <Footer />

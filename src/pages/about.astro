@@ -8,7 +8,14 @@ import { counties } from '../data/locations';
 const jobberUrl = import.meta.env.JOBBER_URL || '';
 ---
 
-<Layout title="About Us - Greenscapes Landscaping & Construction" description="Learn about Greenscapes Landscaping & Construction, a property maintenance company based in Sicklerville, NJ providing expert landscaping, hardscaping, and construction services.">
+<Layout
+  title="About Us — Greenscapes Landscaping & Construction"
+  description="Greenscapes — a Sicklerville, NJ property maintenance company offering expert landscaping, hardscaping, and outdoor construction across South Jersey."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'About Us', url: '/about' },
+  ]}
+>
   <Navbar client:load />
   <main class="pt-16">
     <About />
@@ -54,7 +61,7 @@ const jobberUrl = import.meta.env.JOBBER_URL || '';
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Map image (replace src with your static image) -->
           <div class="rounded-2xl overflow-hidden shadow-xl">
-            <img src="/images/service-area-map.png" alt="Greenscapes Landscaping & Construction Service Area Map" class="w-full h-auto" loading="lazy" />
+            <img src="/images/service-area-map.webp" alt="Greenscapes Landscaping & Construction Service Area Map" width="1024" height="1024" class="w-full h-auto" loading="lazy" />
           </div>
 
           <!-- County list -->

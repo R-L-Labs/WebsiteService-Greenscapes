@@ -12,7 +12,13 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://astro.build/config
 export default defineConfig({
   site: 'https://greenscapessj.com',
-  integrations: [vue(), sitemap()],
+  integrations: [
+    vue(),
+    sitemap({
+      lastmod: new Date(),
+      filter: (page) => !page.includes('/robots.txt'),
+    }),
+  ],
 
   vite: {
     plugins: [tailwindcss()],
