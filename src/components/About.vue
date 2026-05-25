@@ -60,7 +60,7 @@ interface Props {
 
 withDefaults(defineProps<Props>(), {
   title: 'Our Expertise',
-  image: '/images/hardscaping.jpg',
+  image: '/images/hardscaping.webp',
   paragraphs: () => [
     'At Greenscapes SJ, we have been providing expert landscaping, hardscaping, and construction services to residential and commercial clients for over 5 years. Our team has the knowledge and experience to handle your property with precision and efficiency.',
     'Big or Small we ensure every project or service exceeds our clients expectations and leaves them more than satisfied. Send us a message today to schedule your free estimate!',

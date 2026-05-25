@@ -25,7 +25,7 @@ export const services = {
         'Custom patios built with natural stone, pavers, or stamped concrete. Designed for entertaining, dining, or relaxing in your outdoor space.',
       iconPath:
         'M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25',
-      image: '/images/gallery/hardscaping/backyard-gazebo-paver-walkways-river-rock.jpg',
+      image: '/images/gallery/hardscaping/backyard-gazebo-paver-walkways-river-rock.webp',
     },
     {
       title: 'Retaining Walls',
@@ -33,7 +33,7 @@ export const services = {
         'Engineered retaining walls that prevent erosion, create level spaces, and add dramatic dimension to sloped landscapes.',
       iconPath:
         'M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z',
-      image: '/images/gallery/landscaping/gravel-patio-install-backyard.jpg',
+      image: '/images/gallery/landscaping/gravel-patio-install-backyard.webp',
     },
     {
       title: 'Walkways & Pathways',
@@ -41,7 +41,7 @@ export const services = {
         'Beautiful walkways using flagstone, brick, or pavers that guide visitors through your landscape with style and safety.',
       iconPath:
         'M9 6.75V15m0-8.25H4.125c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h11.25c.621 0 1.125-.504 1.125-1.125V15M9 6.75h6.75M9 6.75L6.75 4.5m8.25 2.25L17.25 4.5',
-      image: '/images/gallery/hardscaping/gravel-walkway-natural-stone-border.jpg',
+      image: '/images/gallery/hardscaping/gravel-walkway-natural-stone-border.webp',
     },
     {
       title: 'Outdoor Kitchens & Living Areas',
@@ -49,7 +49,7 @@ export const services = {
         'Custom outdoor kitchens and living areas designed to extend your indoor lifestyle outdoors.',
       iconPath:
         'M2.25 12l8.954-8.955a1.126 1.126 0 011.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25',
-      image: '/images/gallery/hardscaping/backyard-gazebo-paver-walkways-river-rock.jpg',
+      image: '/images/gallery/hardscaping/backyard-gazebo-paver-walkways-river-rock.webp',
     },
     {
       title: 'Fire Pits & Fireplaces',
@@ -57,7 +57,7 @@ export const services = {
         'Custom-built fire features that extend your outdoor living season and create a warm gathering point for family and friends.',
       iconPath:
         'M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z',
-      image: '/images/gallery/hardscaping/paver-patio-fire-pit-cobblestone-border.jpg',
+      image: '/images/gallery/hardscaping/paver-patio-fire-pit-cobblestone-border.webp',
     },
     {
       title: 'Landscape Walls & Brick Borders',
@@ -65,7 +65,7 @@ export const services = {
         'Low walls and borders that define garden beds, create visual interest, and add structure to your landscape design.',
       iconPath:
         'M11.42 15.17l-5.59 5.59a2.1 2.1 0 01-2.97-2.97l5.59-5.59m2.97 2.97l5.59-5.59a2.1 2.1 0 00-2.97-2.97l-5.59 5.59m2.97 2.97L7.05 19.36',
-      image: '/images/gallery/hardscaping/mulch-bed-stone-border-driveway-edge.jpg',
+      image: '/images/gallery/hardscaping/mulch-bed-stone-border-driveway-edge.webp',
     },
   ],
 };

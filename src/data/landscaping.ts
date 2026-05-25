@@ -11,7 +11,7 @@ export const hero = {
     { value: '300+', label: 'Landscapes Designed' },
     { value: '100%', label: 'Satisfaction' },
   ],
-  image: '/images/gallery/landscaping/poolside-flower-beds-hydrangeas.jpg',
+  image: '/images/gallery/landscaping/poolside-flower-beds-hydrangeas.webp',
 };
 
 export const services = {
@@ -26,7 +26,7 @@ export const services = {
         'Custom landscape plans that blend beauty and function. We design outdoor spaces that reflect your style and complement your property.',
       iconPath:
         'M12 21v-6m0 0l-3-3m3 3l3-3m-3-3a4.5 4.5 0 110-9 4.5 4.5 0 010 9z',
-      image: '/images/gallery/landscaping/stone-house-foundation-plantings.jpg',
+      image: '/images/gallery/landscaping/stone-house-foundation-plantings.webp',
     },
     {
       title: 'Mulch Installation',
@@ -34,7 +34,7 @@ export const services = {
         'Professional mulch installation that enhances the appearance of your garden beds while promoting healthy plant growth.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/mulch-bed-tree-ring-front-yard.jpg',
+      image: '/images/gallery/landscaping/mulch-bed-tree-ring-front-yard.webp',
     },
     {
       title: 'Property Cleanups',
@@ -42,7 +42,7 @@ export const services = {
         'Comprehensive property cleanups including debris removal, overgrowth clearing, and site preparation to get your landscape ready for planting or renovation.',
       iconPath:
         'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
-      image: '/images/gallery/landscaping/striped-lawn-large-home.jpg',
+      image: '/images/gallery/landscaping/striped-lawn-large-home.webp',
     },
     {
       title: 'Stone Installation',
@@ -50,7 +50,7 @@ export const services = {
         'Natural stone installation for patios, walkways, and garden features that adds timeless beauty and durability to your landscape.',
       iconPath:
         'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z',
-      image: '/images/gallery/landscaping/front-lawn-renovation-residential.jpg',
+      image: '/images/gallery/landscaping/front-lawn-renovation-residential.webp',
     },
     {
       title: 'Planting, Trimming, and Pruning',
@@ -58,7 +58,7 @@ export const services = {
         'Professional planting, trimming, and pruning services that promote healthy growth and enhance the beauty of your trees, shrubs, and garden beds.',
       iconPath:
         'M12 3c-1.5 3-5 7-5 10.5a5 5 0 0010 0C17 10 13.5 6 12 3z',
-      image: '/images/gallery/landscaping/trimmed-hedges-vinyl-fence.png',
+      image: '/images/gallery/landscaping/trimmed-hedges-vinyl-fence.webp',
     },
     {
       title: 'Sodding, Grading, and Leveling',
@@ -66,7 +66,7 @@ export const services = {
         'Professional sodding, grading, and leveling services to create a perfect foundation for your landscape.',
       iconPath:
         'M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm9.2 0l-1.535.887M17.048 8.25a3 3 0 105.196-3 3 3 0 00-5.196 3zM12 20.25l4.286-12.346M12 20.25l-4.286-12.346',
-      image: '/images/gallery/landscaping/backyard-lawn-pool-cover.jpg',
+      image: '/images/gallery/landscaping/backyard-lawn-pool-cover.webp',
     },
     {
       title: 'Bed Creations',
@@ -74,7 +74,7 @@ export const services = {
         'Custom garden bed creation and design services that add structure, color, and visual interest to your landscape.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/curved-mulch-bed-trimmed-boxwoods.jpg',
+      image: '/images/gallery/landscaping/curved-mulch-bed-trimmed-boxwoods.webp',
     },
     {
       title: 'Gravel Driveways',
@@ -82,7 +82,7 @@ export const services = {
         'Gravel driveway installation and maintenance services that provide a cost-effective and attractive solution for your property access needs.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/rock-border-shrub-bed-front-yard.jpg',
+      image: '/images/gallery/landscaping/rock-border-shrub-bed-front-yard.webp',
     },
     {
       title: 'Commercial Maintenance and Mulching',
@@ -90,7 +90,7 @@ export const services = {
         'Comprehensive commercial landscaping maintenance services to keep your property looking its best year-round.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/spring-cleanup-mulch-flowers.jpg',
+      image: '/images/gallery/landscaping/spring-cleanup-mulch-flowers.webp',
     },
     {
       title: 'Aeration, Dethatching, and Overseeding',
@@ -98,7 +98,7 @@ export const services = {
         'Professional aeration, dethatching, and overseeding services that promote healthy lawn growth and improve the overall health of your turf.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/front-lawn-renovation-residential.jpg',
+      image: '/images/gallery/landscaping/front-lawn-renovation-residential.webp',
     },
     {
       title: 'Leaf and Debris Removal',
@@ -106,7 +106,7 @@ export const services = {
         'Efficient leaf and debris removal services to keep your property clean and well-maintained throughout the seasons.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/spring-cleanup-mulch-flowers.jpg',
+      image: '/images/gallery/landscaping/spring-cleanup-mulch-flowers.webp',
     },
     {
       title: 'Gutter Cleanouts and Christmas Lights',
@@ -114,7 +114,7 @@ export const services = {
         'Professional gutter cleanout services to prevent water damage and seasonal Christmas light installation to make your home shine during the holidays.',
       iconPath:
         'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 00-2.455 2.456z',
-      image: '/images/gallery/landscaping/greenscapes-yard-sign-south-jersey.png',
+      image: '/images/gallery/landscaping/greenscapes-yard-sign-south-jersey.webp',
     },
 
   ],
