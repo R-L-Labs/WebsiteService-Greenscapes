@@ -75,14 +75,14 @@ export const services = {
         'M12 3v18m9-9H3M5.636 5.636l12.728 12.728M5.636 18.364L18.364 5.636',
       image: '/images/services/snow-removal.jpg',
     },
-    {
-      title: 'Storm Damage & Insurance Repair',
-      description:
-        'Fast-response storm damage repair for wind, hail, and water damage to roofs, siding, and windows. We work with insurance claims and provide free damage inspections.',
-      iconPath:
-        'M13 10V3L4 14h7v7l9-11h-7z',
-      image: '/images/services/storm-damage.jpg',
-    },
+    // {
+    //   title: 'Storm Damage & Insurance Repair',
+    //   description:
+    //     'Fast-response storm damage repair for wind, hail, and water damage to roofs, siding, and windows. We work with insurance claims and provide free damage inspections.',
+    //   iconPath:
+    //     'M13 10V3L4 14h7v7l9-11h-7z',
+    //   image: '/images/services/storm-damage.jpg',
+    // },
   ],
 };
 
@@ -183,11 +183,11 @@ export const faqs = {
       answer:
         'Yes. We handle commercial snow plowing, parking lot clearing, sidewalk shoveling, salting, and ice management for storefronts, retail centers, office buildings, and property managers across South Jersey. Per-push and seasonal contracts available.',
     },
-    {
-      question: 'Do you work with insurance for storm damage repair?',
-      answer:
-        'Yes. After major wind, hail, or storm events we provide free damage inspections, document the damage for your insurance carrier, and coordinate the repair scope with your adjuster. We handle roof, siding, window, and gutter storm damage claims.',
-    },
+    // {
+    //   question: 'Do you work with insurance for storm damage repair?',
+    //   answer:
+    //     'Yes. After major wind, hail, or storm events we provide free damage inspections, document the damage for your insurance carrier, and coordinate the repair scope with your adjuster. We handle roof, siding, window, and gutter storm damage claims.',
+    // },
     {
       question: 'How much does a new roof cost in South Jersey?',
       answer:
@@ -196,7 +196,7 @@ export const faqs = {
     {
       question: 'Do you offer free exterior estimates?',
       answer:
-        'Yes — all roofing, siding, window, gutter, and storm damage estimates are free. Call (856) 472-5751, email greenscapessj@gmail.com, or fill out the contact form to schedule an on-site visit.',
+        'Yes — all roofing, siding, window, gutter, and storm damage estimates are free. Call (856) 472-5751, email contact@greenscapesnj.com, or fill out the contact form to schedule an on-site visit.',
     },
   ],
 };
