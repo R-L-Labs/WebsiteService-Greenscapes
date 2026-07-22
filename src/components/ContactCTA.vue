@@ -46,14 +46,14 @@
               <span class="text-lg font-medium">856-472-5751</span>
             </a>
 
-            <a href="mailto:greenscapessj@gmail.com" class="flex items-center gap-4 text-white hover:text-white/80 transition-colors group">
+            <a href="mailto:contact@greenscapesnj.com" class="flex items-center gap-4 text-white hover:text-white/80 transition-colors group">
               <div class="w-12 h-12 rounded-lg flex items-center justify-center transition-colors" :style="{ backgroundColor: bgColorFrom }">
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                     d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
                 </svg>
               </div>
-              <span class="text-lg font-medium">greenscapessj@gmail.com</span>
+              <span class="text-lg font-medium">contact@greenscapesnj.com</span>
             </a>
 
             <div class="flex items-center gap-4 text-white">

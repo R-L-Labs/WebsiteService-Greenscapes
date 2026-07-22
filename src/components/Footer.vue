@@ -50,8 +50,8 @@
               </a>
             </li>
             <li>
-              <a href="mailto:greenscapessj@gmail.com" class="text-text-muted hover:text-primary text-sm transition-colors">
-                greenscapessj@gmail.com
+              <a href="mailto:contact@greenscapesnj.com" class="text-text-muted hover:text-primary text-sm transition-colors">
+                contact@greenscapesnj.com
               </a>
             </li>
           </ul>

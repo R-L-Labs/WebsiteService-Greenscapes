@@ -175,7 +175,7 @@ export const faqs = {
     {
       question: 'How do I get a hardscaping estimate?',
       answer:
-        'Call (856) 472-5751, email greenscapessj@gmail.com, or fill out the contact form. For hardscaping we always come on-site to measure, assess grade and drainage, and discuss material options before pricing.',
+        'Call (856) 472-5751, email contact@greenscapesnj.com, or fill out the contact form. For hardscaping we always come on-site to measure, assess grade and drainage, and discuss material options before pricing.',
     },
   ],
 };

@@ -225,7 +225,7 @@ export const faqs = {
     {
       question: 'How do I get a landscaping estimate?',
       answer:
-        'Free estimates are easy — call (856) 472-5751, email greenscapessj@gmail.com, or use the contact form on this page. For most projects we’ll schedule a quick on-site visit within a few business days, then send a written quote you can review at your leisure.',
+        "Free estimates are easy — call (856) 472-5751, email contact@greenscapesnj.com, or use the contact form on this page. For most projects we’ll schedule a quick on-site visit within a few business days, then send a written quote you can review at your leisure.",
     },
   ],
 };

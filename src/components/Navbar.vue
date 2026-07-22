@@ -4,11 +4,11 @@
       <div class="flex items-center justify-between h-30">
         <!-- Logo -->
         <a href="/" class="flex items-center gap-3">
-          <img src="/images/logo.png" alt="Greenscapes Landscaping & Construction" width="337" height="337" fetchpriority="high" class="h-22 object-contain" />
+          <img src="/images/logo.png" alt="Greenscapes New Jersey" width="337" height="337" fetchpriority="high" class="h-22 object-contain" />
           <div class="hidden sm:block h-16 w-px bg-gray-400"></div>
           <div class="hidden sm:flex flex-col leading-tight">
-            <span class="text-2xl font-bold text-text">Greenscapes</span>
-            <span class="text-base font-medium text-text-muted">Landscaping & Construction</span>
+            <span class="text-2xl font-bold text-text">Greenscapes New Jersey</span>
+            <span class="text-base font-medium text-text-muted">A Parent Company</span>
             <span class="mt-0.5 inline-flex items-center gap-1.5 text-[10px] font-semibold uppercase tracking-wider text-primary">
               <span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
               Commercial &amp; Residential
@@ -64,11 +64,11 @@
             </svg>
             <span class="text-sm font-medium">856-472-5751</span>
           </a>
-          <a href="mailto:greenscapessj@gmail.com" class="flex items-center gap-2 text-text-muted hover:text-primary transition-colors">
+          <a href="mailto:contact@greenscapesnj.com" class="flex items-center gap-2 text-text-muted hover:text-primary transition-colors">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
             </svg>
-            <span class="text-sm font-medium">greenscapessj@gmail.com</span>
+            <span class="text-sm font-medium">contact@greenscapesnj.com</span>
           </a>
         </div>
 
