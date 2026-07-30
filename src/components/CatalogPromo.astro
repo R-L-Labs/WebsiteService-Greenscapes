@@ -1,0 +1,39 @@
+---
+// Compact promo band linking to the product catalogs (used on the landscaping page).
+import { catalogList } from '../data/catalog';
+
+interface Props {
+  accentColor?: string;
+}
+
+const { accentColor = '#1e7d1e' } = Astro.props;
+---
+
+<section class="py-20 bg-surface-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="text-sm font-semibold uppercase tracking-wider" style={`color: ${accentColor}`}>Our Products</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-text mt-3">Browse Our Catalogs</h2>
+      <p class="text-text-muted mt-4 max-w-2xl mx-auto">
+        See exactly what we plant and install — trees, shrubs, fruit trees, and bulk stone &amp; mulch,
+        all delivered and installed by our crew.
+      </p>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      {catalogList.map((entry) => (
+        <a
+          href={entry.href}
+          class="group bg-white border border-[#E3E6E0] rounded-xl p-6 text-center shadow-sm hover:shadow-lg hover:border-[#4a6741]/40 transition-all"
+        >
+          <h3 class="font-bold text-text group-hover:text-[#4a6741] transition-colors">{entry.label}</h3>
+          <p class="text-sm text-text-muted mt-1.5">
+            {entry.category.sections.reduce((sum, s) => sum + s.items.length, 0)} items
+          </p>
+          <span class="inline-block mt-3 text-sm font-semibold transition-colors" style={`color: ${accentColor}`}>
+            View →
+          </span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

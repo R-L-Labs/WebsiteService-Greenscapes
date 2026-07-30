@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.vue';
+import CatalogPage from '../../components/CatalogPage.astro';
+import Footer from '../../components/Footer.vue';
+import { stoneMulch } from '../../data/catalog';
+
+const allItems = stoneMulch.sections.flatMap((s) => s.items);
+---
+
+<Layout
+  title="Stone & Mulch Catalog — Greenscapes Landscaping & Construction"
+  description="Bulk mulch and decorative stone delivered and installed in South Jersey — cedar, hardwood, and dyed mulch plus river stone, shale, and boulders in every size."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Catalog', url: '/catalog' },
+    { name: 'Stone & Mulch', url: '/catalog/stone-mulch' },
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Greenscapes Stone & Mulch Catalog',
+    numberOfItems: allItems.length,
+    itemListElement: allItems.map((item, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: `${item.name} ${item.size}`.trim(),
+    })),
+  })} />
+  <Navbar client:load />
+  <main class="pt-16">
+    <CatalogPage category={stoneMulch} />
+  </main>
+  <Footer />
+</Layout>

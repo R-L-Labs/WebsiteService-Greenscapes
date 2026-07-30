@@ -82,6 +82,7 @@ const quickLinks = [
   { label: 'Construction', href: '/construction' },
   { label: 'Service Areas', href: '/service-areas' },
   { label: 'Gallery', href: '/gallery' },
+  { label: 'Catalogs', href: '/catalog' },
 ];
 
 const serviceLinks = [

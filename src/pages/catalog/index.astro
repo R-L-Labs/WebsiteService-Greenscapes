@@ -1,0 +1,108 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.vue';
+import Footer from '../../components/Footer.vue';
+import fs from 'node:fs';
+import path from 'node:path';
+import { catalogList } from '../../data/catalog';
+
+// Resolve cover images at build time; tolerate missing files while photos are
+// still being added (falls back to a branded gradient).
+function coverExists(publicPath: string): boolean {
+  return fs.existsSync(path.join(path.resolve('public'), publicPath.replace(/^\//, '')));
+}
+---
+
+<Layout
+  title="Product Catalogs — Greenscapes Landscaping & Construction"
+  description="Browse the Greenscapes catalogs — trees, shrubs, fruit trees & berries, and bulk stone & mulch, all delivered and professionally installed in South Jersey."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Catalog', url: '/catalog' },
+  ]}
+>
+  <Navbar client:load />
+  <main class="pt-16">
+    <!-- Hero -->
+    <section class="bg-gradient-to-b from-[#22311d] to-[#4a6741] pt-16 pb-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <span class="inline-block text-white/90 text-sm font-semibold uppercase tracking-wider bg-white/10 px-3 py-1 rounded-full mb-4">
+          Our Products
+        </span>
+        <h1 class="text-4xl sm:text-5xl font-bold text-white">Greenscapes Catalogs</h1>
+        <p class="text-white/70 mt-4 max-w-2xl mx-auto text-lg">
+          Everything we plant and install — browse by category, then request a free estimate.
+          Availability changes with the season.
+        </p>
+      </div>
+    </section>
+
+    <!-- Catalog cards -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        {catalogList.map((entry) => {
+          const itemCount = entry.category.sections.reduce((sum, s) => sum + s.items.length, 0);
+          const hasCover = coverExists(entry.coverImage);
+          return (
+            <a
+              href={entry.href}
+              class="group rounded-2xl overflow-hidden border border-[#E3E6E0] shadow-sm hover:shadow-xl transition-all bg-white"
+            >
+              <div class="relative h-56 overflow-hidden">
+                {hasCover ? (
+                  <img
+                    src={entry.coverImage}
+                    alt={entry.category.title}
+                    width="800"
+                    height="450"
+                    loading="lazy"
+                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <div class="w-full h-full bg-gradient-to-br from-[#4a6741] to-[#22311d]"></div>
+                )}
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div class="absolute bottom-4 left-5 right-5">
+                  <h2 class="text-2xl font-bold text-white">{entry.category.title}</h2>
+                  <p class="text-white/80 text-sm mt-0.5">{itemCount} items</p>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-text-muted text-sm leading-relaxed">{entry.category.description}</p>
+                <span class="inline-block mt-3 text-sm font-semibold text-[#4a6741] group-hover:text-[#1e7d1e] transition-colors">
+                  Browse catalog →
+                </span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="bg-[#4a6741]">
+      <div class="max-w-4xl mx-auto px-4 py-14 text-center">
+        <h2 class="text-2xl sm:text-3xl font-bold text-white">Not sure what fits your property?</h2>
+        <p class="text-white/70 mt-3 max-w-xl mx-auto">
+          Tell us about your space and we'll recommend plants and materials that thrive in South Jersey —
+          then deliver and install everything for you.
+        </p>
+        <div class="mt-7 flex flex-wrap justify-center gap-3">
+          <a
+            href="/about#contact"
+            class="bg-white text-[#4a6741] hover:bg-gray-100 px-7 py-3 rounded-lg font-semibold transition-colors"
+          >
+            Get a Free Estimate
+          </a>
+          <a
+            href="tel:+18564725751"
+            class="border border-white/40 text-white hover:bg-white/10 px-7 py-3 rounded-lg font-semibold transition-colors"
+          >
+            Call 856-472-5751
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
