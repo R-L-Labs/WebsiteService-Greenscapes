@@ -1,0 +1,583 @@
+{
+ "trees/bloodgood-japanese-maple": {
+  "item": "Bloodgood Japanese Maple",
+  "file": "File:Acer palmatum 'Bloodgood' kz02.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_%27Bloodgood%27_kz02.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Krzysztof Ziarnek, Kenraiz"
+ },
+ "trees/crimson-queen-japanese-maple": {
+  "item": "Crimson Queen Japanese Maple",
+  "file": "File:Acer palmatum Crimson Queen 0zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_Crimson_Queen_0zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "trees/coral-bark-japanese-maple": {
+  "item": "Coral Bark Japanese Maple",
+  "file": "File:Acer palmatum Sango kaku 8zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Acer_palmatum_Sango_kaku_8zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "trees/emerald-green-arborvitae": {
+  "item": "Emerald Green Arborvitae",
+  "file": "File:Thuja occidentalis Smaragd 0zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Thuja_occidentalis_Smaragd_0zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "trees/green-giant-arborvitae": {
+  "item": "Green Giant Arborvitae",
+  "file": "File:Thuja Green Giant 3zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Thuja_Green_Giant_3zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "trees/weeping-cherry": {
+  "item": "Weeping Cherry",
+  "file": "File:Weeping cherry tree in Daianji elementary school 02.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Weeping_cherry_tree_in_Daianji_elementary_school_02.jpg",
+  "license": "CC BY 3.0",
+  "artist": "Degueulasse"
+ },
+ "trees/kwanzan-cherry": {
+  "item": "Kwanzan Cherry",
+  "file": "File:Cerisier du Japon Prunus serrulata.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Cerisier_du_Japon_Prunus_serrulata.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Myrabella"
+ },
+ "trees/yoshino-cherry": {
+  "item": "Yoshino Cherry",
+  "file": "File:Kirschallee-Grugapark-Prunus-×-yedoensis-2026.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Kirschallee-Grugapark-Prunus-%C3%97-yedoensis-2026.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Tuxyso"
+ },
+ "trees/eastern-redbud": {
+  "item": "Eastern Redbud",
+  "file": "Cercis canadensis flower buds - ready to pop P.2005.04.04",
+  "source": "https://commons.wikimedia.org/w/index.php?curid=98688",
+  "license": "CC BY-SA 3.0",
+  "artist": "Phyzome (Tim McCormack)"
+ },
+ "trees/kousa-dogwood": {
+  "item": "Kousa Dogwood",
+  "file": "File:Cornus kousa var chinensis RB2.JPG",
+  "source": "https://commons.wikimedia.org/wiki/File:Cornus_kousa_var_chinensis_RB2.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "Radomil"
+ },
+ "trees/pink-dogwood": {
+  "item": "Pink Dogwood",
+  "file": "File:Dogwood-pink-flowering-tree - West Virginia - ForestWander.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Dogwood-pink-flowering-tree_-_West_Virginia_-_ForestWander.jpg",
+  "license": "CC BY-SA 3.0 us",
+  "artist": "ForestWander"
+ },
+ "trees/crape-myrtle": {
+  "item": "Crape Myrtle",
+  "file": "File:Lagerstroemia indica MHNT Jardin des Plantes de Toulouse.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Lagerstroemia_indica_MHNT_Jardin_des_Plantes_de_Toulouse.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Didier Descouens"
+ },
+ "trees/star-magnolia": {
+  "item": "Star Magnolia",
+  "file": "File:Magnolia stellata Magnolia gwiaździsta 2017-04-09 01.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Magnolia_stellata_Magnolia_gwia%C5%BAdzista_2017-04-09_01.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Agnieszka Kwiecień, Nova"
+ },
+ "trees/saucer-magnolia": {
+  "item": "Saucer Magnolia",
+  "file": "File:Magnolia × soulangeana blossom.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Magnolia_%C3%97_soulangeana_blossom.jpg",
+  "license": "CC BY 1.0",
+  "artist": "James F."
+ },
+ "trees/autumn-blaze-maple": {
+  "item": "Autumn Blaze Maple",
+  "file": "File:Acer x freemanii Autumn Blaze 5zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Acer_x_freemanii_Autumn_Blaze_5zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "trees/river-birch": {
+  "item": "River Birch",
+  "file": "File:Birch bark peeling off a birch tree 2014-03.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Birch_bark_peeling_off_a_birch_tree_2014-03.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Sosanna"
+ },
+ "trees/colorado-blue-spruce": {
+  "item": "Colorado Blue Spruce",
+  "file": "File:Picea pungens f.glauca, Miranda de Ebro, Spain.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Picea_pungens_f.glauca,_Miranda_de_Ebro,_Spain.jpg",
+  "license": "CC0",
+  "artist": "Jebulon"
+ },
+ "trees/weeping-blue-atlas-cedar": {
+  "item": "Weeping Blue Atlas Cedar",
+  "file": "File:Cedrus libani ssp. atlantica 'Glauca Pendula' 02 by Line1.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Cedrus_libani_ssp._atlantica_%27Glauca_Pendula%27_02_by_Line1.jpg",
+  "license": "CC BY 2.5",
+  "artist": "Liné1"
+ },
+ "trees/skyrocket-juniper": {
+  "item": "Skyrocket Juniper",
+  "file": "Juniperus scopulorum Blue Heaven 1",
+  "source": "https://commons.wikimedia.org/w/index.php?curid=890697",
+  "license": "CC BY-SA 3.0",
+  "artist": "KENPEI"
+ },
+ "trees/thundercloud-plum": {
+  "item": "Thundercloud Plum",
+  "file": "File:Blutpflaume - Prunus cerasifera Nigra - March 22 2026.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Blutpflaume_-_Prunus_cerasifera_Nigra_-_March_22_2026.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "NorbertNagel"
+ },
+ "shrubs/green-velvet-boxwood": {
+  "item": "Green Velvet Boxwood",
+  "file": "File:Buxus 'Green Velvet' Plant 2700px.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Buxus_%27Green_Velvet%27_Plant_2700px.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Photo by and (c)2006 Derek Ramsey (Ram-Man).  Location credit to the Chanticleer Garden."
+ },
+ "shrubs/winter-gem-boxwood": {
+  "item": "Winter Gem Boxwood",
+  "file": "File:Buxus microphylla Morris Dwarf NBG LR.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Buxus_microphylla_Morris_Dwarf_NBG_LR.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "PumpkinSky"
+ },
+ "shrubs/endless-summer-hydrangea": {
+  "item": "Endless Summer Hydrangea",
+  "file": "File:Hydrangea macrophylla 'Endless Summer' IMG 0189.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Hydrangea_macrophylla_%27Endless_Summer%27_IMG_0189.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Captain-tucker"
+ },
+ "shrubs/limelight-hydrangea": {
+  "item": "Limelight Hydrangea",
+  "file": "File:Innis Woods - Hydrangea paniculata in sunset 1.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Innis_Woods_-_Hydrangea_paniculata_in_sunset_1.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Sixflashphoto"
+ },
+ "shrubs/oakleaf-hydrangea": {
+  "item": "Oakleaf Hydrangea",
+  "file": "File:Oakleaf Hydrangea Hydrangea quercifolia Fall Colors 3008px.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Oakleaf_Hydrangea_Hydrangea_quercifolia_Fall_Colors_3008px.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Photo by and (c)2008 Derek Ramsey (Ram-Man).  Co-attribution must be given to the Chanticleer Garden."
+ },
+ "shrubs/knock-out-rose": {
+  "item": "Knock Out Rose",
+  "file": "File:Knock-Out-OriginalIMG 3830 Edit.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Knock-Out-OriginalIMG_3830_Edit.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Hubertl"
+ },
+ "shrubs/otto-luyken-laurel": {
+  "item": "Otto Luyken Laurel",
+  "file": "File:Prunus laurocerasus Otto Luyken 1zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Prunus_laurocerasus_Otto_Luyken_1zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "shrubs/schip-laurel": {
+  "item": "Schip Laurel",
+  "file": "File:Prunus laurocerasus 'Schipkaensis' kz04.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Prunus_laurocerasus_%27Schipkaensis%27_kz04.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Krzysztof Ziarnek, Kenraiz"
+ },
+ "shrubs/rose-of-sharon": {
+  "item": "Rose of Sharon",
+  "file": "File:Hibiscus syriacus broad shrub.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Hibiscus_syriacus_broad_shrub.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Willow Coville"
+ },
+ "shrubs/forsythia": {
+  "item": "Forsythia",
+  "file": "File:Forsythia-golden-bells-bush-macro - West Virginia - ForestWander.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Forsythia-golden-bells-bush-macro_-_West_Virginia_-_ForestWander.jpg",
+  "license": "CC BY-SA 3.0 us",
+  "artist": "ForestWander"
+ },
+ "shrubs/butterfly-bush": {
+  "item": "Butterfly Bush",
+  "file": "File:Buddleja davidii 'Dartmoor' shrub 2.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Buddleja_davidii_%27Dartmoor%27_shrub_2.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Ptelea"
+ },
+ "shrubs/ninebark-diabolo": {
+  "item": "Ninebark 'Diabolo'",
+  "file": "File:Lublin Botanical Garden • Physocarpus opulifolius 'Diabolo' ~22swbwjg.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Lublin_Botanical_Garden_%E2%80%A2_Physocarpus_opulifolius_%27Diabolo%27_~22swbwjg.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Grzegorz W. Tężycki"
+ },
+ "shrubs/red-twig-dogwood": {
+  "item": "Red Twig Dogwood",
+  "file": "File:H20140206-0375—Cornus sericea ssp sericea—RPBG (12400171395).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:H20140206-0375%E2%80%94Cornus_sericea_ssp_sericea%E2%80%94RPBG_(12400171395).jpg",
+  "license": "CC BY 2.0",
+  "artist": "John Rusk from Berkeley, CA, United States of America"
+ },
+ "shrubs/viburnum-cardinal-candy": {
+  "item": "Viburnum 'Cardinal Candy'",
+  "file": "File:Viburnum dilatatum 'Erie'.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Viburnum_dilatatum_%27Erie%27.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "James Steakley"
+ },
+ "shrubs/weigela-wine-and-roses": {
+  "item": "Weigela 'Wine & Roses'",
+  "file": "File:Weigela florida Wine & Roses 1zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Weigela_florida_Wine_%26_Roses_1zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "shrubs/spirea-goldflame": {
+  "item": "Spirea 'Goldflame'",
+  "file": "File:Spiraea japonica 'Gold Mound' 5 2021 Japanese Spirea- (51164411709).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Spiraea_japonica_%27Gold_Mound%27_5_2021_Japanese_Spirea-_(51164411709).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "F. D. Richards from Clinton, MI"
+ },
+ "shrubs/inkberry-holly": {
+  "item": "Inkberry Holly",
+  "file": "File:Ilex glabra Shamrock 0zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ilex_glabra_Shamrock_0zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "shrubs/blue-holly-blue-princess": {
+  "item": "Blue Holly 'Blue Princess'",
+  "file": "File:Ilex x meserveae Blue Princess 2zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ilex_x_meserveae_Blue_Princess_2zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "shrubs/andromeda-pieris": {
+  "item": "Andromeda (Pieris)",
+  "file": "File:2024-03-14 14 37 32 Valley Valentine Andromeda blooming along Aquetong Lane in the Mountainview section of Ewing Township, Mercer County, New Jersey.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:2024-03-14_14_37_32_Valley_Valentine_Andromeda_blooming_along_Aquetong_Lane_in_the_Mountainview_section_of_Ewing_Township,_Mercer_County,_New_Jersey.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Famartin"
+ },
+ "shrubs/rhododendron": {
+  "item": "Rhododendron",
+  "file": "File:File-(Rhododendron catawbiense)- A medium shrub with pink to purple flowers growing above 3000 feet on exposed ridges.-June — Early (ca581d45-1dd8-b71c-07eb-b592074533d0).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:File-(Rhododendron_catawbiense)-_A_medium_shrub_with_pink_to_purple_flowers_growing_above_3000_feet_on_exposed_ridges.-June_%E2%80%94_Early_(ca581d45-1dd8-b71c-07eb-b592074533d0).jpg",
+  "license": "Public domain",
+  "artist": "NPS Photo"
+ },
+ "shrubs/baby-gem-boxwood": {
+  "item": "Baby Gem Boxwood",
+  "file": "File:Buxus x 'Green Mountain' (23292335340).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Buxus_x_%27Green_Mountain%27_(23292335340).jpg",
+  "license": "CC BY-SA 2.0",
+  "artist": "F. D. Richards from Clinton, MI"
+ },
+ "shrubs/sprinter-boxwood": {
+  "item": "Sprinter Boxwood",
+  "file": "File:Formal garden Harlow Museum & Walled Gardens, Essex 01.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Formal_garden_Harlow_Museum_%26_Walled_Gardens,_Essex_01.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Acabashi"
+ },
+ "shrubs/little-lime-hydrangea": {
+  "item": "Little Lime Hydrangea",
+  "file": "File:Hydrangea paniculata “Little Lime”.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Hydrangea_paniculata_%E2%80%9CLittle_Lime%E2%80%9D.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Michele Dorsey Walfred"
+ },
+ "shrubs/bobo-hydrangea": {
+  "item": "Bobo Hydrangea",
+  "file": "File:Hydrangea paniculata 'Grandiflora' kz02.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Hydrangea_paniculata_%27Grandiflora%27_kz02.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Krzysztof Ziarnek, Kenraiz"
+ },
+ "shrubs/gold-mound-spirea": {
+  "item": "Gold Mound Spirea",
+  "file": "File:Spiraea japonica Goldmound 1zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Spiraea_japonica_Goldmound_1zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "shrubs/little-princess-spirea": {
+  "item": "Little Princess Spirea",
+  "file": "File:Spiraea japonica Little Princess 3zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Spiraea_japonica_Little_Princess_3zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "shrubs/dwarf-fothergilla": {
+  "item": "Dwarf Fothergilla",
+  "file": "File:Dwarf Fothergilla Fothergilla gardenii Flower.JPG",
+  "source": "https://commons.wikimedia.org/wiki/File:Dwarf_Fothergilla_Fothergilla_gardenii_Flower.JPG",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by and (c)2016 Derek Ramsey (Ram-Man)"
+ },
+ "shrubs/cityline-hydrangea": {
+  "item": "Cityline Hydrangea",
+  "file": "File:Hydrangea serrata-fully grown flowers with leaves.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Hydrangea_serrata-fully_grown_flowers_with_leaves.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Sabina Bajracharya"
+ },
+ "shrubs/dwarf-alberta-spruce": {
+  "item": "Dwarf Alberta Spruce",
+  "file": "File:Picea glauca 'Conica'.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Picea_glauca_%27Conica%27.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "AfroBrazilian: Aleksandrs Balodis"
+ },
+ "shrubs/gem-box-inkberry": {
+  "item": "Gem Box Inkberry",
+  "file": "File:Ilex glabra 51332530.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ilex_glabra_51332530.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Alex Abair"
+ },
+ "shrubs/little-henry-sweetspire": {
+  "item": "Little Henry Sweetspire",
+  "file": "File:Itea virginica flowers 001.JPG",
+  "source": "https://commons.wikimedia.org/wiki/File:Itea_virginica_flowers_001.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:SB_Johnny"
+ },
+ "shrubs/fire-light-tidbit-hydrangea": {
+  "item": "Fire Light Tidbit Hydrangea",
+  "file": "File:Little Quick Fire dwarf hydrangea paniculata. Blooms in July.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Little_Quick_Fire_dwarf_hydrangea_paniculata._Blooms_in_July.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Michele Dorsey Walfred"
+ },
+ "shrubs/double-play-spirea": {
+  "item": "Double Play Spirea",
+  "file": "File:Red pink flowers.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Red_pink_flowers.jpg",
+  "license": "Public domain",
+  "artist": "Allan Zieser"
+ },
+ "shrubs/dwarf-boxwood-morris-midget": {
+  "item": "Dwarf Boxwood 'Morris Midget'",
+  "file": "File:Buxus microphylla compacta 1zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Buxus_microphylla_compacta_1zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "shrubs/lo-and-behold-butterfly-bush": {
+  "item": "Lo & Behold Butterfly Bush",
+  "file": "File:Buddleja davidii inflorescence high-detail DSC1696-1.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Buddleja_davidii_inflorescence_high-detail_DSC1696-1.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Franz van Duns"
+ },
+ "fruit-trees/brown-turkey-fig": {
+  "item": "Brown Turkey Fig",
+  "file": "File:Ficus carica Brown Turkey 2zz.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ficus_carica_Brown_Turkey_2zz.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Photo by David J. Stang"
+ },
+ "fruit-trees/chicago-hardy-fig": {
+  "item": "Chicago Hardy Fig",
+  "file": "File:Ficus Odessa.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Ficus_Odessa.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Yuriy Kvach"
+ },
+ "fruit-trees/apple-gala": {
+  "item": "Apple 'Gala'",
+  "file": "File:Apfel Gala.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Apfel_Gala.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:MarkusHagenlocher"
+ },
+ "fruit-trees/apple-honeycrisp": {
+  "item": "Apple 'Honeycrisp'",
+  "file": "File:Honeycrisp apple tree.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Honeycrisp_apple_tree.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "MikeyMoose"
+ },
+ "fruit-trees/pear-bartlett": {
+  "item": "Pear 'Bartlett'",
+  "file": "File:Klostergarten Seligenstadt Williams Christ Pear Tree.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Klostergarten_Seligenstadt_Williams_Christ_Pear_Tree.jpg",
+  "license": "CC BY 4.0",
+  "artist": "Alexander Klink"
+ },
+ "fruit-trees/peach-redhaven": {
+  "item": "Peach 'Redhaven'",
+  "file": "File:Peach fruits in the peach tree branch.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Peach_fruits_in_the_peach_tree_branch.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Nirajan pant"
+ },
+ "fruit-trees/cherry-bing": {
+  "item": "Cherry 'Bing'",
+  "file": "File:Bing Cherries.JPG",
+  "source": "https://commons.wikimedia.org/wiki/File:Bing_Cherries.JPG",
+  "license": "CC BY-SA 2.5",
+  "artist": "Christopher Thomas"
+ },
+ "fruit-trees/plum-methley": {
+  "item": "Plum 'Methley'",
+  "file": "File:Plums.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Plums.jpg",
+  "license": "CC BY-SA 3.0",
+  "artist": "Fir0002"
+ },
+ "fruit-trees/blueberry-patriot": {
+  "item": "Blueberry 'Patriot'",
+  "file": "File:Wild blueberries near Sydney.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Wild_blueberries_near_Sydney.jpg",
+  "license": "CC BY 2.0",
+  "artist": "Misty from Sydney, Australia"
+ },
+ "fruit-trees/blueberry-bluecrop": {
+  "item": "Blueberry 'Bluecrop'",
+  "file": "File:Wild Blueberry Bush (19456699639).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Wild_Blueberry_Bush_(19456699639).jpg",
+  "license": "CC BY 2.0",
+  "artist": "Paul VanDerWerf from Brunswick, Maine, USA"
+ },
+ "fruit-trees/raspberry-heritage": {
+  "item": "Raspberry 'Heritage'",
+  "file": "File:Raspberry - whole (Rubus idaeus).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Raspberry_-_whole_(Rubus_idaeus).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Ivar Leidus"
+ },
+ "fruit-trees/blackberry-triple-crown": {
+  "item": "Blackberry 'Triple Crown'",
+  "file": "File:Blackberries (Rubus fruticosus).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Blackberries_(Rubus_fruticosus).jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Ivar Leidus"
+ },
+ "fruit-trees/concord-grape-vine": {
+  "item": "Concord Grape Vine",
+  "file": "File:Concord Grapes on vines.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Concord_Grapes_on_vines.jpg",
+  "license": "CC BY 2.0",
+  "artist": "midiman"
+ },
+ "fruit-trees/strawberry-ozark-beauty": {
+  "item": "Strawberry 'Ozark Beauty'",
+  "file": "File:Garden strawberry (Fragaria × ananassa) single2.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Garden_strawberry_(Fragaria_%C3%97_ananassa)_single2.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Ivar Leidus"
+ },
+ "fruit-trees/elderberry": {
+  "item": "Elderberry",
+  "file": "File:Sambucus canadensis inflorescence 001.JPG",
+  "source": "https://commons.wikimedia.org/wiki/File:Sambucus_canadensis_inflorescence_001.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": "User:SB_Johnny"
+ },
+ "stone-mulch/cedar-mulch": {
+  "item": "Cedar Mulch",
+  "file": "File:Red cedar mulch in New Jersey April.jpg",
+  "source": "https://commons.wikimedia.org/w/index.php?curid=19088119",
+  "license": "CC0",
+  "artist": "Tomwsulcer"
+ },
+ "stone-mulch/aged-bark-mulch": {
+  "item": "Aged Bark Mulch",
+  "file": "File:HK 中環 Central 民耀街 Man Yiu Street 恒基地產 Henderson Land Development Central Yards 行人天橋 footbridge pine bark chips texture March 2026 N13P 02.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:HK_%E4%B8%AD%E7%92%B0_Central_%E6%B0%91%E8%80%80%E8%A1%97_Man_Yiu_Street_%E6%81%92%E5%9F%BA%E5%9C%B0%E7%94%A2_Henderson_Land_Development_Central_Yards_%E8%A1%8C%E4%BA%BA%E5%A4%A9%E6%A9%8B_footbridge_pine_bark_chips_texture_March_2026_N13P_02.jpg",
+  "license": "CC0",
+  "artist": "Luksongm MWLLOPPEE"
+ },
+ "stone-mulch/black-dyed-mulch": {
+  "item": "Black Dyed Mulch",
+  "file": "File:Black cedar mulch in New Jersey April.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Black_cedar_mulch_in_New_Jersey_April.jpg",
+  "license": "CC0",
+  "artist": "Tomwsulcer"
+ },
+ "stone-mulch/certified-playground-mulch": {
+  "item": "Certified Playground Mulch",
+  "file": "File:Gfp-wood-chips.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Gfp-wood-chips.jpg",
+  "license": "Public Domain",
+  "artist": "Yinan Chen"
+ },
+ "stone-mulch/dark-grey-stone": {
+  "item": "Dark Grey Stone",
+  "file": "File:Gray Gravel Rock Texture by Photos Public Domain.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Gray_Gravel_Rock_Texture_by_Photos_Public_Domain.jpg",
+  "license": "CC0",
+  "artist": "Photos Public Domain authors (no names given)"
+ },
+ "stone-mulch/light-grey-stone": {
+  "item": "Light Grey Stone",
+  "file": "File:Crushed Granite Texture.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Crushed_Granite_Texture.jpg",
+  "license": "CC0",
+  "artist": "Paul The Writer"
+ },
+ "stone-mulch/rip-rap": {
+  "item": "Rip Rap",
+  "file": "File:Narayanpur Dam reservoir upstream riprap embankment Krishna River Karnataka India.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Narayanpur_Dam_reservoir_upstream_riprap_embankment_Krishna_River_Karnataka_India.jpg",
+  "license": "CC BY-SA 4.0",
+  "artist": "Vraj Acharya, WELL Labs"
+ },
+ "stone-mulch/delaware-river-stone": {
+  "item": "Delaware River Stone",
+  "file": "File:Gfp-ground-pebble-texture.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Gfp-ground-pebble-texture.jpg",
+  "license": "Public Domain",
+  "artist": "Yinan Chen"
+ },
+ "stone-mulch/white-river-stone": {
+  "item": "White River Stone",
+  "file": "File:Weathered-out quartz & quartzite pebbles from conglomerate (\"Sharon\" Conglomerate, Lower Pennsylvanian; Jackson North roadcut, Ohio, USA) 2 (37511850022).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Weathered-out_quartz_%26_quartzite_pebbles_from_conglomerate_(%22Sharon%22_Conglomerate,_Lower_Pennsylvanian;_Jackson_North_roadcut,_Ohio,_USA)_2_(37511850022).jpg",
+  "license": "CC BY 2.0",
+  "artist": "James St. John"
+ },
+ "stone-mulch/timberlite-eastern-sunrise": {
+  "item": "Timberlite (Eastern Sunrise)",
+  "file": "File:Pea gravel.JPG",
+  "source": "https://commons.wikimedia.org/wiki/File:Pea_gravel.JPG",
+  "license": "CC BY-SA 3.0",
+  "artist": ""
+ },
+ "stone-mulch/goose-egg-stone": {
+  "item": "Goose Egg Stone",
+  "file": "File:Smooth Round Rocks Ocean (Unsplash).jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:Smooth_Round_Rocks_Ocean_(Unsplash).jpg",
+  "license": "CC0",
+  "artist": "Zeny Rosalina iamzeny"
+ },
+ "stone-mulch/delaware-river-boulders": {
+  "item": "Delaware River Boulders",
+  "file": "File:Boulder Landscaping.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Boulder_Landscaping.png",
+  "license": "CC BY-SA 4.0",
+  "artist": "Shelterpro"
+ },
+ "stone-mulch/premium-hardwood-mulch": {
+  "item": "premium-hardwood-mulch",
+  "file": "File:HK 中環 Central 民耀街 Man Yiu Street 恒基地產 Henderson Land Development Central Yards 行人天橋 footbridge pine bark chips texture March 2026 N13P 03.jpg",
+  "source": "https://commons.wikimedia.org/wiki/File:HK_%E4%B8%AD%E7%92%B0_Central_%E6%B0%91%E8%80%80%E8%A1%97_Man_Yiu_Street_%E6%81%92%E5%9F%BA%E5%9C%B0%E7%94%A2_Henderson_Land_Development_Central_Yards_%E8%A1%8C%E4%BA%BA%E5%A4%A9%E6%A9%8B_footbridge_pine_bark_chips_texture_March_2026_N13P_03.jpg",
+  "license": "CC0",
+  "artist": "Luksongm MWLLOPPEE"
+ }
+}

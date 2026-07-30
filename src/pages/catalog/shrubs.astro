@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.vue';
+import CatalogPage from '../../components/CatalogPage.astro';
+import Footer from '../../components/Footer.vue';
+import { shrubs } from '../../data/catalog';
+
+const allItems = shrubs.sections.flatMap((s) => s.items);
+---
+
+<Layout
+  title="Shrub Catalog — Greenscapes Landscaping & Construction"
+  description="Browse shrubs available for professional planting in South Jersey — boxwoods, hydrangeas, hollies, laurels, and dwarf varieties for beds and borders."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Catalog', url: '/catalog' },
+    { name: 'Shrubs', url: '/catalog/shrubs' },
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Greenscapes Shrub Catalog',
+    numberOfItems: allItems.length,
+    itemListElement: allItems.map((item, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: item.name,
+    })),
+  })} />
+  <Navbar client:load />
+  <main class="pt-16">
+    <CatalogPage category={shrubs} />
+  </main>
+  <Footer />
+</Layout>

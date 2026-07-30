@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.vue';
+import CatalogPage from '../../components/CatalogPage.astro';
+import Footer from '../../components/Footer.vue';
+import { fruitTrees } from '../../data/catalog';
+
+const allItems = fruitTrees.sections.flatMap((s) => s.items);
+---
+
+<Layout
+  title="Fruit Tree Catalog — Greenscapes Landscaping & Construction"
+  description="Browse fruit trees, berries, and vines available for professional planting in South Jersey — apples, peaches, figs, blueberries, and more cold-hardy edible varieties."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Catalog', url: '/catalog' },
+    { name: 'Fruit Trees', url: '/catalog/fruit-trees' },
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Greenscapes Fruit Tree Catalog',
+    numberOfItems: allItems.length,
+    itemListElement: allItems.map((item, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: item.name,
+    })),
+  })} />
+  <Navbar client:load />
+  <main class="pt-16">
+    <CatalogPage category={fruitTrees} />
+  </main>
+  <Footer />
+</Layout>

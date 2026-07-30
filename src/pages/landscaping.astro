@@ -5,6 +5,7 @@ import Hero from '../components/Hero.vue';
 import Services from '../components/Services.vue';
 import Projects from '../components/Projects.vue';
 import InstagramGallery from '../components/InstagramGallery.astro';
+import CatalogPromo from '../components/CatalogPromo.astro';
 import Testimonials from '../components/Testimonials.vue';
 import FAQ from '../components/FAQ.vue';
 import ContactCTA from '../components/ContactCTA.vue';
@@ -68,6 +69,7 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
       items={data.services.items}
       accentColor="#1e7d1e"
     />
+    <CatalogPromo accentColor="#1e7d1e" />
     <Testimonials
       subtitle={data.testimonials.subtitle}
       title={data.testimonials.title}

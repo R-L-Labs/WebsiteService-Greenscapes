@@ -1,0 +1,61 @@
+---
+// Attribution page for openly-licensed catalog photos (required by CC BY / CC BY-SA).
+// Generated from src/data/catalog/credits.json — regenerate that file when
+// swapping catalog photos sourced from Wikimedia Commons / other CC sources.
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.vue';
+import Footer from '../../components/Footer.vue';
+import credits from '../../data/catalog/credits.json';
+
+const entries = Object.entries(credits as Record<string, {
+  item: string;
+  file: string;
+  source: string;
+  license: string;
+  artist: string;
+}>).sort(([a], [b]) => a.localeCompare(b));
+---
+
+<Layout
+  title="Photo Credits — Greenscapes Landscaping & Construction"
+  description="Attribution for openly-licensed photographs used in the Greenscapes product catalogs."
+>
+  <Navbar client:load />
+  <main class="pt-24 pb-20">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl sm:text-4xl font-bold text-text">Catalog Photo Credits</h1>
+        <p class="text-text-muted mt-4 max-w-2xl mx-auto">
+          Product photos in our catalogs are representative images used under open licenses.
+          We thank the photographers who share their work. Actual plants and materials may vary.
+        </p>
+      </div>
+
+      <div class="overflow-x-auto rounded-xl border border-[#E3E6E0]">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-surface-light text-left">
+              <th class="px-4 py-3 font-semibold text-text">Catalog Item</th>
+              <th class="px-4 py-3 font-semibold text-text">Photographer / Source</th>
+              <th class="px-4 py-3 font-semibold text-text">License</th>
+            </tr>
+          </thead>
+          <tbody>
+            {entries.map(([key, c]) => (
+              <tr class="border-t border-[#E3E6E0]">
+                <td class="px-4 py-2.5 text-text">{c.item}</td>
+                <td class="px-4 py-2.5 text-text-muted">
+                  <a href={c.source} target="_blank" rel="noopener noreferrer" class="hover:text-[#4a6741] hover:underline">
+                    {c.artist || 'Unknown author'}
+                  </a>
+                </td>
+                <td class="px-4 py-2.5 text-text-muted whitespace-nowrap">{c.license}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</Layout>

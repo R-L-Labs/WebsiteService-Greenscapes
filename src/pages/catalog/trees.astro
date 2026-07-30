@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.vue';
+import CatalogPage from '../../components/CatalogPage.astro';
+import Footer from '../../components/Footer.vue';
+import { trees } from '../../data/catalog';
+
+const allItems = trees.sections.flatMap((s) => s.items);
+---
+
+<Layout
+  title="Tree Catalog — Greenscapes Landscaping & Construction"
+  description="Browse ornamental and shade trees available for professional planting in South Jersey — Japanese maples, flowering cherries, arborvitae privacy trees, and more."
+  breadcrumbs={[
+    { name: 'Home', url: '/' },
+    { name: 'Catalog', url: '/catalog' },
+    { name: 'Trees', url: '/catalog/trees' },
+  ]}
+>
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Greenscapes Tree Catalog',
+    numberOfItems: allItems.length,
+    itemListElement: allItems.map((item, idx) => ({
+      '@type': 'ListItem',
+      position: idx + 1,
+      name: item.name,
+    })),
+  })} />
+  <Navbar client:load />
+  <main class="pt-16">
+    <CatalogPage category={trees} />
+  </main>
+  <Footer />
+</Layout>

@@ -50,6 +50,34 @@
             class="text-text-muted hover:text-primary transition-colors text-base font-medium">
             {{ link.label }}
           </a>
+
+          <!-- Catalogs Dropdown -->
+          <div class="relative" @mouseenter="catalogOpen = true" @mouseleave="catalogOpen = false">
+            <button
+              class="text-text-muted hover:text-primary transition-colors text-base font-medium flex items-center gap-1"
+              @click="catalogOpen = !catalogOpen"
+            >
+              Catalogs
+              <svg class="w-4 h-4 transition-transform" :class="{ 'rotate-180': catalogOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <transition
+              enter-active-class="transition duration-150 ease-out"
+              enter-from-class="opacity-0 scale-95"
+              enter-to-class="opacity-100 scale-100"
+              leave-active-class="transition duration-100 ease-in"
+              leave-from-class="opacity-100 scale-100"
+              leave-to-class="opacity-0 scale-95"
+            >
+              <div v-if="catalogOpen" class="absolute top-full left-0 mt-1 w-52 bg-surface border border-border rounded-lg shadow-lg py-1">
+                <a v-for="item in catalogLinks" :key="item.href" :href="item.href"
+                  class="block px-4 py-2.5 text-base text-text-muted hover:text-primary hover:bg-surface-light transition-colors">
+                  {{ item.label }}
+                </a>
+              </div>
+            </transition>
+          </div>
         </div>
 
         <!-- Right section: contact info + CTA -->
@@ -118,6 +146,24 @@
             class="block text-text-muted hover:text-primary transition-colors text-sm font-medium py-2">
             {{ link.label }}
           </a>
+
+          <!-- Catalogs section with sub-links -->
+          <div>
+            <button @click="mobileCatalogOpen = !mobileCatalogOpen"
+              class="flex items-center justify-between w-full text-text-muted hover:text-primary transition-colors text-sm font-medium py-2">
+              Catalogs
+              <svg class="w-3.5 h-3.5 transition-transform" :class="{ 'rotate-180': mobileCatalogOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div v-if="mobileCatalogOpen" class="pl-4 space-y-1">
+              <a v-for="item in catalogLinks" :key="item.href" :href="item.href"
+                @click="isOpen = false"
+                class="block text-text-muted hover:text-primary transition-colors text-sm py-1.5">
+                {{ item.label }}
+              </a>
+            </div>
+          </div>
           <a href="/about#contact" @click="isOpen = false"
             class="block bg-primary hover:bg-primary-light text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors text-center mt-4">
             Free Estimate
@@ -134,6 +180,8 @@ import { ref } from 'vue';
 const isOpen = ref(false);
 const aboutOpen = ref(false);
 const mobileAboutOpen = ref(false);
+const catalogOpen = ref(false);
+const mobileCatalogOpen = ref(false);
 
 const aboutLinks = [
   { label: 'About Us', href: '/about' },
@@ -145,5 +193,13 @@ const navLinks = [
   { label: 'Landscaping', href: '/landscaping' },
   { label: 'Hardscaping', href: '/hardscaping' },
   { label: 'Construction', href: '/construction' },
+];
+
+const catalogLinks = [
+  { label: 'All Catalogs', href: '/catalog' },
+  { label: 'Trees', href: '/catalog/trees' },
+  { label: 'Shrubs', href: '/catalog/shrubs' },
+  { label: 'Fruit Trees & Berries', href: '/catalog/fruit-trees' },
+  { label: 'Stone & Mulch', href: '/catalog/stone-mulch' },
 ];
 </script>
