@@ -42,16 +42,16 @@ const showPlaceholder = category.showPhotoPlaceholder !== false;
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
   {category.note && (
-    <p class="text-sm text-text-muted text-center bg-surface-light border border-[#E3E6E0] rounded-xl px-5 py-3.5 mb-12 max-w-4xl mx-auto">
+    <p class="text-sm text-text-muted text-center bg-surface-light border border-border rounded-xl px-5 py-3.5 mb-12 max-w-4xl mx-auto">
       {category.note}
     </p>
   )}
   {isPlantCatalog && (
-    <div class="bg-[#EEF1EC] rounded-xl px-5 py-3.5 mb-12 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-sm text-text-muted">
+    <div class="bg-surface-light rounded-xl px-5 py-3.5 mb-12 flex flex-wrap items-center justify-center gap-x-5 gap-y-1.5 text-sm text-text-muted">
       <span>☀️ Sun needs</span>
-      <span class="hidden sm:inline text-gray-400">|</span>
+      <span class="hidden sm:inline text-text-muted/50">|</span>
       <span>💧 Water needs</span>
-      <span class="hidden sm:inline text-gray-400">|</span>
+      <span class="hidden sm:inline text-text-muted/50">|</span>
       <span>🌱 Deer resistance</span>
     </div>
   )}
@@ -70,7 +70,7 @@ const showPlaceholder = category.showPhotoPlaceholder !== false;
             <>
               {newGroup && (
                 <div class="col-span-full mt-4 first:mt-0">
-                  <h3 class="text-sm font-bold uppercase tracking-wider text-[#4a6741] bg-[#EEF1EC] rounded-lg px-4 py-2.5">
+                  <h3 class="text-sm font-bold uppercase tracking-wider text-[#8fbf86] bg-surface-light rounded-lg px-4 py-2.5">
                     {item.group}
                   </h3>
                 </div>

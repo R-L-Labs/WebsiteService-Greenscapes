@@ -67,19 +67,20 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
       title={data.services.title}
       description={data.services.description}
       items={data.services.items}
-      accentColor="#1e7d1e"
+      accentColor="#2ca02c"
+      lightCards
     />
-    <CatalogPromo accentColor="#1e7d1e" />
+    <CatalogPromo accentColor="#2ca02c" />
     <Testimonials
       subtitle={data.testimonials.subtitle}
       title={data.testimonials.title}
       description={data.testimonials.description}
       items={testimonialItems}
       bgColor="#22311d"
-      accentColor="#1e7d1e"
+      accentColor="#2ca02c"
     />
     {lightwidgetUrl ? (
-      <InstagramGallery widgetUrl={lightwidgetUrl} accentColor="#1e7d1e" />
+      <InstagramGallery widgetUrl={lightwidgetUrl} accentColor="#2ca02c" />
     ) : (
       <Projects
         subtitle={data.projects.subtitle}
@@ -93,7 +94,7 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
       subtitle={data.faqs.subtitle}
       title={data.faqs.title}
       items={data.faqs.items}
-      accentColor="#1e7d1e"
+      accentColor="#2ca02c"
     />
     <ContactCTA client:load jobberUrl={jobberUrl} bgColorFrom="#4a6741" bgColorTo="#22311d" />
   </main>

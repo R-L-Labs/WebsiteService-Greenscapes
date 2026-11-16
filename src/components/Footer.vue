@@ -79,7 +79,8 @@
 const quickLinks = [
   { label: 'Landscaping', href: '/landscaping' },
   { label: 'Hardscaping', href: '/hardscaping' },
-  { label: 'Construction', href: '/construction' },
+  // Construction division hidden Nov 2026 — uncomment to restore
+  // { label: 'Construction', href: '/construction' },
   { label: 'Service Areas', href: '/service-areas' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'Catalogs', href: '/catalog' },

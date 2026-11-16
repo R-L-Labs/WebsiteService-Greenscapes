@@ -34,7 +34,7 @@ const countyCount = Object.keys(serviceAreas).length;
         <!-- Priority towns chips -->
         <div class="mt-8 flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
           {priorityTowns.map((town) => (
-            <span class="inline-flex items-center text-sm font-medium text-[#4a6741] bg-[#4a6741]/10 px-3 py-1.5 rounded-full">
+            <span class="inline-flex items-center text-sm font-medium text-[#a8cf9f] bg-[#4a6741]/25 px-3 py-1.5 rounded-full">
               {town}
             </span>
           ))}
@@ -49,7 +49,7 @@ const countyCount = Object.keys(serviceAreas).length;
           </a>
           <a
             href="tel:+18564725751"
-            class="border border-[#4a6741] text-[#4a6741] hover:bg-[#4a6741] hover:text-white px-6 py-3 rounded-lg text-base font-semibold transition-colors"
+            class="border border-[#8fbf86] text-[#8fbf86] hover:bg-[#4a6741] hover:border-[#4a6741] hover:text-white px-6 py-3 rounded-lg text-base font-semibold transition-colors"
           >
             Call 856-472-5751
           </a>
@@ -102,13 +102,13 @@ const countyCount = Object.keys(serviceAreas).length;
     <section class="py-16 bg-surface">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
-          <span class="text-[#1e7d1e] text-sm font-semibold uppercase tracking-wider">By County</span>
+          <span class="text-primary text-sm font-semibold uppercase tracking-wider">By County</span>
           <h2 class="text-3xl sm:text-4xl font-bold text-text mt-2">Towns We Serve</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           {Object.entries(serviceAreas).map(([county, towns]) => (
-            <div class="bg-white border border-border rounded-xl p-6 shadow-sm">
+            <div class="bg-surface border border-border rounded-xl p-6 shadow-sm">
               <h3 class="text-xl font-bold text-text mb-1">{county}</h3>
               <p class="text-sm text-text-muted mb-4">{towns.length} towns served</p>
               <ul class="grid grid-cols-2 gap-x-4 gap-y-2">

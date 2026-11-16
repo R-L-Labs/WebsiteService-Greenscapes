@@ -23,10 +23,10 @@ const { accentColor = '#1e7d1e' } = Astro.props;
       {catalogList.map((entry) => (
         <a
           href={entry.href}
-          class="group bg-white border border-[#E3E6E0] rounded-xl p-6 text-center shadow-sm hover:shadow-lg hover:border-[#4a6741]/40 transition-all"
+          class="group bg-[#dfe2dc] border border-[#c9cdc5] rounded-xl p-6 text-center shadow-sm hover:bg-[#e8eae5] hover:shadow-lg hover:border-[#4a6741]/40 transition-all"
         >
-          <h3 class="font-bold text-text group-hover:text-[#4a6741] transition-colors">{entry.label}</h3>
-          <p class="text-sm text-text-muted mt-1.5">
+          <h3 class="font-bold text-gray-900 group-hover:text-[#4a6741] transition-colors">{entry.label}</h3>
+          <p class="text-sm text-gray-600 mt-1.5">
             {entry.category.sections.reduce((sum, s) => sum + s.items.length, 0)} items
           </p>
           <span class="inline-block mt-3 text-sm font-semibold transition-colors" style={`color: ${accentColor}`}>
