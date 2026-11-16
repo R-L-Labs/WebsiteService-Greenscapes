@@ -14,7 +14,8 @@ const excludedBases = new Set(['greenscapes-yard-sign-south-jersey']);
 
 const images: string[] = [];
 
-for (const cat of ['landscaping', 'hardscaping', 'construction']) {
+// Construction division hidden Nov 2026 — add 'construction' back to restore
+for (const cat of ['landscaping', 'hardscaping']) {
   const dir = path.join(galleryDir, cat);
   if (!fs.existsSync(dir)) continue;
 

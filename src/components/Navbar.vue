@@ -192,7 +192,8 @@ const aboutLinks = [
 const navLinks = [
   { label: 'Landscaping', href: '/landscaping' },
   { label: 'Hardscaping', href: '/hardscaping' },
-  { label: 'Construction', href: '/construction' },
+  // Construction division hidden Nov 2026 — uncomment to restore
+  // { label: 'Construction', href: '/construction' },
 ];
 
 const catalogLinks = [

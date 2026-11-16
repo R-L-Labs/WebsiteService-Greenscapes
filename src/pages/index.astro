@@ -61,7 +61,7 @@ import HomePanel from '../components/HomePanel.vue';
     <div class="w-full max-w-[120rem] border-t border-gray-200 mb-4"></div>
 
     <div class="relative w-full max-w-[120rem]">
-      <!-- 3 panels: side-by-side on desktop, stacked on mobile -->
+      <!-- Division panels: side-by-side on desktop, stacked on mobile -->
       <div class="flex flex-col md:flex-row w-full gap-3 md:gap-4">
         <HomePanel
           client:load
@@ -81,6 +81,10 @@ import HomePanel from '../components/HomePanel.vue';
           buttonColor="#5b9bd5"
           buttonHoverColor="#7bb0e0"
         />
+        {/* Construction division hidden Nov 2026 — to restore, uncomment this
+            panel and see the "Construction division" notes in Navbar.vue,
+            Footer.vue, gallery.astro, and astro.config.mjs, then rename
+            src/pages/_construction.astro back to construction.astro.
         <HomePanel
           client:load
           title="Construction"
@@ -91,6 +95,7 @@ import HomePanel from '../components/HomePanel.vue';
           buttonColor="#8B5E3C"
           buttonHoverColor="#A0724F"
         />
+        */}
       </div>
     </div>
   </div>
