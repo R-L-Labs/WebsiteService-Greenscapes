@@ -1,0 +1,171 @@
+---
+// Single catalog product card — shared by CatalogPage (standard format) and
+// CatalogPageB (banded format B). Resolves the card photo from
+// public/images/catalog/<categoryId>/<slug>.(webp|jpg|jpeg|png) at build time.
+import fs from 'node:fs';
+import path from 'node:path';
+import type { CatalogItem } from '../data/catalog/types';
+import { showPrices } from '../data/catalog/config';
+
+interface Props {
+  item: CatalogItem;
+  categoryId: string;
+  /** When false, cards without a photo render as text cards (no leaf placeholder) */
+  showPlaceholder?: boolean;
+}
+
+const { item, categoryId, showPlaceholder = true } = Astro.props;
+
+const extensions = ['.webp', '.jpg', '.jpeg', '.png'];
+
+function resolveImage(): string | null {
+  if (item.image) return item.image;
+  const dir = path.resolve(`public/images/catalog/${categoryId}`);
+  for (const ext of extensions) {
+    if (fs.existsSync(path.join(dir, item.slug + ext))) {
+      return `/images/catalog/${categoryId}/${item.slug}${ext}`;
+    }
+  }
+  return null;
+}
+
+const img = resolveImage();
+
+const gradeStyles: Record<string, string> = {
+  regular: 'bg-gray-100 text-gray-600',
+  deluxe: 'bg-[#2E7D4F]/10 text-[#2E7D4F]',
+  premium: 'bg-[#8A6D1E]/10 text-[#8A6D1E]',
+};
+
+const deerStyles: Record<string, { label: string; classes: string }> = {
+  resistant: { label: 'Deer Resistant', classes: 'bg-[#C3DAC9] text-[#3F6B4C]' },
+  occasional: { label: 'Occasionally Browsed', classes: 'bg-[#FBF3DC] text-[#9C7C1E]' },
+  frequent: { label: 'Frequently Browsed', classes: 'bg-[#FBE9E7] text-[#B54A3D]' },
+};
+
+const supplierStyles: Record<string, string> = {
+  'Hilltop Block': 'bg-[#7a3b2e] text-white',
+  'Rock Products': 'bg-[#3d4b5c] text-white',
+};
+---
+
+<div class="bg-white border border-[#E3E6E0] rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow flex flex-col">
+  {img ? (
+    <img
+      src={img}
+      alt={item.name}
+      width="640"
+      height="480"
+      loading="lazy"
+      class="w-full h-52 object-cover"
+    />
+  ) : showPlaceholder ? (
+    <div class="w-full h-52 bg-gradient-to-br from-[#4a6741]/15 to-[#22311d]/10 flex items-center justify-center">
+      <svg class="w-12 h-12 text-[#4a6741]/40" fill="none" stroke="currentColor" stroke-width="1.2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8m0 0c4.5 0 7.5-3 7.5-7.5V3.75h-1.75C13.25 3.75 10.25 6.75 10.25 11.25M12 13c0-3.5-2.5-6-6-6H4.5v1.5C4.5 12 7 14.5 10.5 14.5" />
+      </svg>
+    </div>
+  ) : null}
+
+  <div class="p-5 flex flex-col flex-1">
+    {item.supplier && (
+      <span class={`self-start text-[10px] font-bold tracking-wider px-2.5 py-1 rounded-full mb-2 ${supplierStyles[item.supplier] ?? 'bg-gray-600 text-white'}`}>
+        {item.supplier}
+      </span>
+    )}
+    <div class="flex items-start justify-between gap-3">
+      <div>
+        <h3 class="font-bold text-text leading-snug">{item.name}</h3>
+        {item.brand && (
+          <p class="text-[11px] font-semibold uppercase tracking-wider text-[#8a7350] mt-1">{item.brand}</p>
+        )}
+        <p class="text-sm text-text-muted mt-0.5">{item.size}</p>
+      </div>
+      {item.grade && (
+        <span class={`shrink-0 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md ${gradeStyles[item.grade]}`}>
+          {item.grade}
+        </span>
+      )}
+    </div>
+
+    {item.description && (
+      <p class="text-sm text-text-muted mt-2.5">{item.description}</p>
+    )}
+
+    {item.colors?.length ? (
+      <div class="mt-3">
+        <p class="text-[10px] font-bold uppercase tracking-wider text-text-muted mb-1.5">
+          Color Selection ({item.colors.length}{item.colorNote ? '+' : ''})
+        </p>
+        <div class="flex flex-wrap gap-x-2 gap-y-2">
+          {item.colors.map((color) =>
+            color.hex ? (
+              <div class="flex flex-col items-center w-[52px]">
+                <span
+                  class="w-11 h-11 rounded-md border border-[#d8d2bd]"
+                  style={
+                    color.hex2
+                      ? `background:linear-gradient(135deg, ${color.hex} 0%, ${color.hex} 48%, ${color.hex2} 52%, ${color.hex2} 100%)`
+                      : `background:${color.hex}`
+                  }
+                  title={color.name}
+                ></span>
+                <span class="text-[8.5px] leading-[1.15] text-center text-text-muted mt-1">{color.name}</span>
+              </div>
+            ) : (
+              <span class="inline-flex items-center text-xs border border-[#E3E6E0] text-text-muted px-2 py-1 rounded-full self-start">
+                {color.name}
+              </span>
+            )
+          )}
+        </div>
+      </div>
+    ) : null}
+
+    {item.colorNote && (
+      <p class="text-[11px] italic text-text-muted/80 mt-2">{item.colorNote}</p>
+    )}
+
+    {item.tags?.length ? (
+      <div class="flex flex-wrap gap-1.5 mt-3">
+        {item.tags.map((tag) => (
+          <span class="text-xs border border-[#8a7350]/50 text-[#6b5a3c] px-2 py-1 rounded-full">{tag}</span>
+        ))}
+      </div>
+    ) : null}
+
+    {(item.sun || item.water || item.deer) && (
+      <div class="flex flex-wrap gap-1.5 mt-3">
+        {item.sun && (
+          <span class="text-xs border border-[#E3E6E0] text-text-muted px-2 py-1 rounded-full">☀️ {item.sun}</span>
+        )}
+        {item.water && (
+          <span class="text-xs border border-[#E3E6E0] text-text-muted px-2 py-1 rounded-full">💧 {item.water}</span>
+        )}
+        {item.deer && (
+          <span class={`text-xs px-2 py-1 rounded-full ${deerStyles[item.deer].classes}`}>🌱 {deerStyles[item.deer].label}</span>
+        )}
+      </div>
+    )}
+
+    {item.matureSize && (
+      <p class="text-xs text-text-muted mt-3">Mature size: {item.matureSize}</p>
+    )}
+
+    <div class="mt-auto pt-4">
+      {showPrices && (item.price || item.priceRange) ? (
+        <p class="text-lg font-bold text-[#1e7d1e]">
+          {item.priceRange ?? `$${item.price}`}
+          {!item.priceRange && <span class="text-xs font-medium text-text-muted"> est.</span>}
+        </p>
+      ) : (
+        <a
+          href="/about#contact"
+          class="text-sm font-semibold text-[#4a6741] hover:text-[#1e7d1e] transition-colors"
+        >
+          Call for pricing →
+        </a>
+      )}
+    </div>
+  </div>
+</div>

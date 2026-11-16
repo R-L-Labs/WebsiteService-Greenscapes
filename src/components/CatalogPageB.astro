@@ -1,0 +1,115 @@
+---
+// Format B catalog renderer (pavers, bricks & stone) — mirrors the client's
+// original catalog layout: each section ("term") is a full-width colored
+// header band with its own accent gradient and supplier line, followed by
+// collection label bars and the material cards inside that section.
+// Data shape is identical to the other catalogs — sections optionally carry
+// accentFrom/accentTo (band gradient) and supplier.
+import type { CatalogCategory } from '../data/catalog/types';
+import CatalogCard from './CatalogCard.astro';
+
+interface Props {
+  category: CatalogCategory;
+}
+
+const { category } = Astro.props;
+const showPlaceholder = category.showPhotoPlaceholder !== false;
+---
+
+<!-- Hero band -->
+<section class="bg-gradient-to-b from-[#12321f] to-[#1d4a2b] pt-16 pb-14">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="inline-block text-[#c9a349] text-sm font-semibold uppercase tracking-wider bg-white/10 px-3 py-1 rounded-full mb-4">
+      Greenscapes Catalog
+    </span>
+    <h1 class="text-4xl sm:text-5xl font-bold text-white">{category.title}</h1>
+    <p class="text-white/70 mt-4 max-w-2xl mx-auto text-lg">{category.tagline}</p>
+  </div>
+</section>
+
+<!-- Sticky section tab bar -->
+<nav class="sticky top-16 z-40 bg-[#12321f] shadow-md">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-center gap-x-1 gap-y-1">
+    {category.sections.map((section) => (
+      <a
+        href={`#${section.id}`}
+        class="text-white/85 hover:text-white text-xs sm:text-sm font-semibold uppercase tracking-wide px-3 py-1.5 border-b-2 border-transparent hover:border-[#c9a349] transition-colors"
+      >
+        {section.title}
+      </a>
+    ))}
+  </div>
+</nav>
+
+{category.note && (
+  <div class="bg-white border-b border-[#E3E6E0]">
+    <p class="max-w-4xl mx-auto text-sm text-text-muted text-center px-4 py-4">{category.note}</p>
+  </div>
+)}
+
+{category.sections.map((section) => (
+  <section id={section.id} class="scroll-mt-32">
+    <!-- Full-width colored section header -->
+    <div
+      class="text-white text-center px-6 py-9"
+      style={`background:linear-gradient(120deg, ${section.accentFrom ?? '#22311d'}, ${section.accentTo ?? '#4a6741'})`}
+    >
+      <h2 class="text-2xl sm:text-3xl font-extrabold uppercase tracking-widest">{section.title}</h2>
+      {section.subtitle && <p class="italic text-white/85 mt-2 text-sm sm:text-base">{section.subtitle}</p>}
+      {section.supplier && (
+        <p class="text-[11px] font-bold uppercase tracking-[0.15em] text-[#f0e6c8] mt-2.5">{section.supplier}</p>
+      )}
+    </div>
+
+    <div class="bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
+          {section.items.map((item, idx) => {
+            const newGroup = item.group && item.group !== section.items[idx - 1]?.group;
+            return (
+              <>
+                {newGroup && (
+                  <div class="col-span-full -mx-4 sm:-mx-6 lg:-mx-8 mt-4 first:mt-0">
+                    <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-[#12321f] bg-[#eef0e6] border-y border-[#e3ddc9] px-6 lg:px-8 py-3.5">
+                      {item.group}
+                    </h3>
+                  </div>
+                )}
+                <CatalogCard item={item} categoryId={category.id} showPlaceholder={showPlaceholder} />
+              </>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  </section>
+))}
+
+<!-- CTA band -->
+<section class="bg-[#12321f]">
+  <div class="max-w-4xl mx-auto px-4 py-14 text-center">
+    <h2 class="text-2xl sm:text-3xl font-bold text-white">Planning a patio, walkway, or wall?</h2>
+    <p class="text-white/70 mt-3 max-w-xl mx-auto">
+      We design and install every product in this catalog. Colors and availability vary by
+      region and dealer stock — all pricing is quote-based, so reach out for a free estimate.
+    </p>
+    <div class="mt-7 flex flex-wrap justify-center gap-3">
+      <a
+        href="/about#contact"
+        class="bg-white text-[#12321f] hover:bg-gray-100 px-7 py-3 rounded-lg font-semibold transition-colors"
+      >
+        Get a Free Estimate
+      </a>
+      <a
+        href="tel:+18564725751"
+        class="border border-white/40 text-white hover:bg-white/10 px-7 py-3 rounded-lg font-semibold transition-colors"
+      >
+        Call 856-472-5751
+      </a>
+    </div>
+    <p class="text-white/40 text-xs mt-8">
+      Representative colors and imagery; actual materials may vary.
+      <a href="/catalog/photo-credits" class="underline hover:text-white/70">Photo credits</a>
+    </p>
+  </div>
+</section>
