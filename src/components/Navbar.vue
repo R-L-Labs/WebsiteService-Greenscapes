@@ -200,6 +200,8 @@ const catalogLinks = [
   { label: 'Trees', href: '/catalog/trees' },
   { label: 'Shrubs', href: '/catalog/shrubs' },
   { label: 'Fruit Trees & Berries', href: '/catalog/fruit-trees' },
+  { label: 'Flowers', href: '/catalog/flowers' },
   { label: 'Stone & Mulch', href: '/catalog/stone-mulch' },
+  { label: 'Pavers & Brick', href: '/catalog/pavers' },
 ];
 </script>
