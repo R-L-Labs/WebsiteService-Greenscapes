@@ -31,7 +31,8 @@
       <!-- Services Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div v-for="service in items" :key="service.title"
-          class="group relative bg-surface border border-border rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300">
+          class="group relative rounded-xl overflow-hidden hover:border-primary/30 transition-all duration-300"
+          :class="lightCards ? 'bg-[#dfe2dc] border border-[#c9cdc5]' : 'bg-surface border border-border'">
           <!-- Background color fallback on hover -->
           <div
             v-if="accentColor"
@@ -52,12 +53,12 @@
           <!-- Content -->
           <div class="relative z-10 p-6">
             <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
-              <svg class="w-6 h-6 text-primary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <svg class="w-6 h-6 group-hover:text-white transition-colors" :class="lightCards ? 'text-[#1e7d1e]' : 'text-primary'" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" :d="service.iconPath" />
               </svg>
             </div>
-            <h3 class="text-lg font-semibold text-text mb-2 transition-colors" :class="{ 'group-hover:text-white': accentColor || service.image }">{{ service.title }}</h3>
-            <p class="text-text-muted text-sm leading-relaxed transition-colors" :class="{ 'group-hover:text-white/80': accentColor || service.image }">{{ service.description }}</p>
+            <h3 class="text-lg font-semibold mb-2 transition-colors" :class="[lightCards ? 'text-gray-900' : 'text-text', { 'group-hover:text-white': accentColor || service.image }]">{{ service.title }}</h3>
+            <p class="text-sm leading-relaxed transition-colors" :class="[lightCards ? 'text-gray-600' : 'text-text-muted', { 'group-hover:text-white/80': accentColor || service.image }]">{{ service.description }}</p>
           </div>
         </div>
       </div>
@@ -79,6 +80,8 @@ interface Props {
   description?: string;
   items?: ServiceItem[];
   accentColor?: string;
+  /** Light-gray cards (matching the catalog promo tiles) instead of dark panels */
+  lightCards?: boolean;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -86,6 +89,7 @@ withDefaults(defineProps<Props>(), {
   title: 'Our Services',
   description: 'Comprehensive landscaping and construction solutions tailored to transform your property into something extraordinary.',
   accentColor: '',
+  lightCards: false,
   items: () => [
     {
       title: 'Landscape Design',

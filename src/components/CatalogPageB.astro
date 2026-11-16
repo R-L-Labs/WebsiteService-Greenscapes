@@ -28,7 +28,7 @@ const showPlaceholder = category.showPhotoPlaceholder !== false;
 </section>
 
 <!-- Sticky section tab bar -->
-<nav class="sticky top-16 z-40 bg-[#12321f] shadow-md">
+<nav class="sticky top-30 z-40 bg-[#12321f] shadow-md">
   <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap justify-center gap-x-1 gap-y-1">
     {category.sections.map((section) => (
       <a
@@ -42,13 +42,13 @@ const showPlaceholder = category.showPhotoPlaceholder !== false;
 </nav>
 
 {category.note && (
-  <div class="bg-white border-b border-[#E3E6E0]">
+  <div class="border-b border-border">
     <p class="max-w-4xl mx-auto text-sm text-text-muted text-center px-4 py-4">{category.note}</p>
   </div>
 )}
 
 {category.sections.map((section) => (
-  <section id={section.id} class="scroll-mt-32">
+  <section id={section.id} class="scroll-mt-44">
     <!-- Full-width colored section header -->
     <div
       class="text-white text-center px-6 py-9"
@@ -61,7 +61,7 @@ const showPlaceholder = category.showPhotoPlaceholder !== false;
       )}
     </div>
 
-    <div class="bg-white">
+    <div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 pt-8">
           {section.items.map((item, idx) => {
@@ -70,7 +70,7 @@ const showPlaceholder = category.showPhotoPlaceholder !== false;
               <>
                 {newGroup && (
                   <div class="col-span-full -mx-4 sm:-mx-6 lg:-mx-8 mt-4 first:mt-0">
-                    <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-[#12321f] bg-[#eef0e6] border-y border-[#e3ddc9] px-6 lg:px-8 py-3.5">
+                    <h3 class="text-sm font-bold uppercase tracking-[0.12em] text-[#c9a349] bg-surface-light border-y border-border px-6 lg:px-8 py-3.5">
                       {item.group}
                     </h3>
                   </div>

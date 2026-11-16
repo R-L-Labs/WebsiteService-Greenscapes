@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
+/* Dark page theme (Nov 2026): page backgrounds are dark-mode gray and the
+   semantic tokens below are the DARK palette — components using text-text /
+   bg-surface / border-border adapt automatically. The sticky Navbar stays
+   white on purpose (its colors are hardcoded in Navbar.vue), and white cards
+   (CatalogCard, catalog hub, promo tiles) hardcode their own dark text. */
 @theme {
-  --color-primary: #1e7d1e;
-  --color-primary-light: #2ca02c;
-  --color-primary-dark: #165c16;
+  --color-primary: #2ca02c;
+  --color-primary-light: #3fb53f;
+  --color-primary-dark: #1e7d1e;
 
-  --color-surface: #ffffff;
-  --color-surface-light: #f5f5f5;
-  --color-surface-dark: #e5e5e5;
+  --color-surface: #232623;
+  --color-surface-light: #2c302c;
+  --color-surface-dark: #191c19;
 
-  --color-text: #1a1a1a;
-  --color-text-muted: #525252;
-  --color-border: #e0e0e0;
+  --color-text: #eef0ec;
+  --color-text-muted: #a6aaa3;
+  --color-border: #3a3e39;
 }
 
 html {
@@ -19,8 +24,8 @@ html {
 }
 
 body {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: #1b1e1b;
+  color: #eef0ec;
   font-family: system-ui, -apple-system, sans-serif;
 }
 

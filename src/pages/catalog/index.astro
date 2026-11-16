@@ -46,7 +46,7 @@ function coverExists(publicPath: string): boolean {
           return (
             <a
               href={entry.href}
-              class="group rounded-2xl overflow-hidden border border-[#E3E6E0] shadow-sm hover:shadow-xl transition-all bg-white"
+              class="group rounded-2xl overflow-hidden border border-[#c9cdc5] shadow-sm hover:shadow-xl transition-all bg-[#dfe2dc]"
             >
               <div class="relative h-56 overflow-hidden">
                 {hasCover ? (
@@ -68,7 +68,7 @@ function coverExists(publicPath: string): boolean {
                 </div>
               </div>
               <div class="p-5">
-                <p class="text-text-muted text-sm leading-relaxed">{entry.category.description}</p>
+                <p class="text-gray-600 text-sm leading-relaxed">{entry.category.description}</p>
                 <span class="inline-block mt-3 text-sm font-semibold text-[#4a6741] group-hover:text-[#1e7d1e] transition-colors">
                   Browse catalog →
                 </span>

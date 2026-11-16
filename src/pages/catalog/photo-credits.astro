@@ -31,7 +31,7 @@ const entries = Object.entries(credits as Record<string, {
         </p>
       </div>
 
-      <div class="overflow-x-auto rounded-xl border border-[#E3E6E0]">
+      <div class="overflow-x-auto rounded-xl border border-border">
         <table class="w-full text-sm">
           <thead>
             <tr class="bg-surface-light text-left">
@@ -42,10 +42,10 @@ const entries = Object.entries(credits as Record<string, {
           </thead>
           <tbody>
             {entries.map(([key, c]) => (
-              <tr class="border-t border-[#E3E6E0]">
+              <tr class="border-t border-border">
                 <td class="px-4 py-2.5 text-text">{c.item}</td>
                 <td class="px-4 py-2.5 text-text-muted">
-                  <a href={c.source} target="_blank" rel="noopener noreferrer" class="hover:text-[#4a6741] hover:underline">
+                  <a href={c.source} target="_blank" rel="noopener noreferrer" class="hover:text-primary hover:underline">
                     {c.artist || 'Unknown author'}
                   </a>
                 </td>
