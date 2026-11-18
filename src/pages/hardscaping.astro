@@ -24,9 +24,14 @@ const testimonialItems = facebookTestimonials?.length ? facebookTestimonials : d
 const bright = '#5b9bd5';
 const mid = '#416a8a';
 const dark = '#1d2b3d';
+// Hero-only colors: lighter accent + deeper button stay legible over the bright photo
+const heroAccent = '#8ecbff';
+const heroButton = '#2d6aa3';
+const heroButtonHover = '#3a7cbb';
 ---
 
 <Layout
+  estimateColors={{ tab: heroButton, tabHover: heroButtonHover, header: dark }}
   title="Hardscaping Services — Greenscapes Landscaping & Construction"
   description="Professional hardscaping services in Sicklerville, NJ including patios, retaining walls, walkways, outdoor kitchens, fire pits, and driveway construction."
   breadcrumbs={[
@@ -64,7 +69,10 @@ const dark = '#1d2b3d';
       ctaSecondary={data.hero.ctaSecondary}
       stats={data.hero.stats}
       backgroundImage="/images/hardscaping.webp"
-      accentColor={bright}
+      accentColor={heroAccent}
+      buttonColor={heroButton}
+      buttonHoverColor={heroButtonHover}
+      overlayOpacity={0.6}
     />
     <Services
       subtitle={data.services.subtitle}
@@ -73,6 +81,7 @@ const dark = '#1d2b3d';
       items={data.services.items}
       accentColor={bright}
       lightCards
+      iconColor={heroButton}
     />
     <Testimonials
       subtitle={data.testimonials.subtitle}

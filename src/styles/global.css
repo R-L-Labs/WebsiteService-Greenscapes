@@ -19,6 +19,15 @@
   --color-border: #3a3e39;
 }
 
+/* Tailwind v4 resets buttons to cursor: default; restore the pointer
+   (the fix recommended in Tailwind's v4 upgrade guide). */
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
