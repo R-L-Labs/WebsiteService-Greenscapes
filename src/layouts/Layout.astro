@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import EstimatePanel from '../components/EstimatePanel.astro';
 
 interface BreadcrumbItem {
   name: string;
@@ -12,6 +13,8 @@ interface Props {
   image?: string;
   type?: string;
   breadcrumbs?: BreadcrumbItem[];
+  /** Hide the floating Free Estimate drawer (used on the home page) */
+  hideEstimatePanel?: boolean;
 }
 
 const {
@@ -22,7 +25,10 @@ const {
   image = '/images/logo.png',
   type = 'website',
   breadcrumbs,
+  hideEstimatePanel = false,
 } = Astro.props;
+
+const jobberUrl = import.meta.env.JOBBER_URL || '';
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 const imageUrl = new URL(image, Astro.site);
@@ -123,5 +129,6 @@ const breadcrumbSchema = breadcrumbs?.length
   </head>
   <body class="min-h-screen antialiased">
     <slot />
+    {!hideEstimatePanel && <EstimatePanel jobberUrl={jobberUrl} />}
   </body>
 </html>

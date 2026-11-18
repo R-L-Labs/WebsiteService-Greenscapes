@@ -1,0 +1,134 @@
+---
+// Collapsible "Free Estimate" drawer pinned to the right edge of every page.
+// - Mounted once in Layout.astro; the home page opts out via hideEstimatePanel.
+// - Hides itself while the page's own contact section (#contact, which holds
+//   the full embedded Jobber form) is on screen, so the form never shows twice.
+// - The Jobber iframe only loads the first time the drawer is opened, so pages
+//   don't pay for Jobber + reCAPTCHA unless a visitor actually wants it.
+interface Props {
+  jobberUrl: string;
+}
+
+const { jobberUrl } = Astro.props;
+---
+
+{jobberUrl && (
+  <div id="estimate-panel-root" data-jobber-src={jobberUrl}>
+    <!-- Collapsed tab -->
+    <button
+      id="estimate-tab"
+      type="button"
+      aria-expanded="false"
+      aria-controls="estimate-panel"
+      class="estimate-tab fixed right-0 top-1/2 -translate-y-1/2 z-[45] flex items-center gap-2 bg-[#4a6741] hover:bg-[#5a7a51] text-white font-semibold text-sm tracking-wide px-2.5 py-4 rounded-l-lg shadow-lg shadow-black/40 transition-all duration-300"
+    >
+      <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      <span class="[writing-mode:vertical-rl] rotate-180">Free Estimate</span>
+    </button>
+
+    <!-- Expanded drawer -->
+    <aside
+      id="estimate-panel"
+      aria-label="Request a free estimate"
+      inert
+      class="estimate-drawer fixed right-0 top-30 bottom-0 z-[46] w-full sm:w-[440px] bg-white shadow-2xl shadow-black/50 flex flex-col translate-x-full transition-transform duration-300 ease-out"
+    >
+      <div class="flex items-center justify-between gap-3 bg-[#22311d] text-white px-5 py-3.5 shrink-0">
+        <div>
+          <p class="font-bold leading-tight">Request a Free Estimate</p>
+          <p class="text-xs text-white/60 mt-0.5">Or call us at 856-472-5751</p>
+        </div>
+        <button
+          id="estimate-close"
+          type="button"
+          aria-label="Collapse estimate form"
+          class="flex items-center gap-1.5 text-white/80 hover:text-white text-sm font-semibold rounded-md px-2 py-1.5 hover:bg-white/10 transition-colors"
+        >
+          Collapse
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+      <div class="flex-1 overflow-y-auto overscroll-contain bg-white">
+        <div id="estimate-loading" class="flex items-center justify-center gap-3 py-16 text-sm text-gray-500">
+          <span class="w-5 h-5 rounded-full border-2 border-gray-300 border-t-[#4a6741] animate-spin"></span>
+          Loading estimate form…
+        </div>
+        <iframe
+          id="estimate-iframe"
+          title="Request a Free Estimate"
+          class="w-full block bg-white"
+          style="height: 1800px; border: 0;"
+        ></iframe>
+      </div>
+    </aside>
+  </div>
+)}
+
+<style>
+  /* Hidden while the page's own contact form is on screen */
+  /* Tailwind v4 positions with the `translate` property (not `transform`),
+     so these overrides must use `translate` to replace its offsets. */
+  #estimate-panel-root.contact-visible .estimate-tab {
+    opacity: 0;
+    pointer-events: none;
+    translate: 110% -50%;
+  }
+  #estimate-panel-root.is-open .estimate-tab {
+    opacity: 0;
+    pointer-events: none;
+  }
+  #estimate-panel-root.is-open .estimate-drawer {
+    translate: 0 0;
+  }
+</style>
+
+<script>
+  const root = document.getElementById('estimate-panel-root');
+  if (root) {
+    const tab = document.getElementById('estimate-tab') as HTMLButtonElement;
+    const panel = document.getElementById('estimate-panel') as HTMLElement;
+    const closeBtn = document.getElementById('estimate-close') as HTMLButtonElement;
+    const iframe = document.getElementById('estimate-iframe') as HTMLIFrameElement;
+    const loading = document.getElementById('estimate-loading') as HTMLElement;
+
+    iframe.addEventListener('load', () => {
+      if (iframe.src) loading.hidden = true;
+    });
+
+    const open = () => {
+      if (!iframe.src) iframe.src = root.dataset.jobberSrc ?? '';
+      root.classList.add('is-open');
+      panel.inert = false;
+      tab.setAttribute('aria-expanded', 'true');
+      closeBtn.focus({ preventScroll: true });
+    };
+
+    const close = (restoreFocus = true) => {
+      if (!root.classList.contains('is-open')) return;
+      root.classList.remove('is-open');
+      panel.inert = true;
+      tab.setAttribute('aria-expanded', 'false');
+      if (restoreFocus) tab.focus({ preventScroll: true });
+    };
+
+    tab.addEventListener('click', open);
+    closeBtn.addEventListener('click', () => close());
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') close();
+    });
+
+    // Hide the tab (and collapse the drawer) whenever the page's own embedded
+    // contact form is visible — no point showing the same form twice.
+    const contact = document.getElementById('contact');
+    if (contact && 'IntersectionObserver' in window) {
+      new IntersectionObserver(([entry]) => {
+        root.classList.toggle('contact-visible', entry.isIntersecting);
+        if (entry.isIntersecting) close(false);
+      }).observe(contact);
+    }
+  }
+</script>
