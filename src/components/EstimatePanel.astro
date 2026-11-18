@@ -5,22 +5,36 @@
 //   the full embedded Jobber form) is on screen, so the form never shows twice.
 // - The Jobber iframe only loads the first time the drawer is opened, so pages
 //   don't pay for Jobber + reCAPTCHA unless a visitor actually wants it.
-interface Props {
-  jobberUrl: string;
+export interface EstimateColors {
+  /** Tab + spinner color */
+  tab: string;
+  tabHover: string;
+  /** Drawer header bar */
+  header: string;
 }
 
-const { jobberUrl } = Astro.props;
+interface Props {
+  jobberUrl: string;
+  colors?: EstimateColors;
+}
+
+const {
+  jobberUrl,
+  colors = { tab: '#4a6741', tabHover: '#5a7a51', header: '#22311d' },
+} = Astro.props;
+
+const colorVars = `--est-tab:${colors.tab};--est-tab-hover:${colors.tabHover};--est-header:${colors.header};`;
 ---
 
 {jobberUrl && (
-  <div id="estimate-panel-root" data-jobber-src={jobberUrl}>
+  <div id="estimate-panel-root" data-jobber-src={jobberUrl} style={colorVars}>
     <!-- Collapsed tab -->
     <button
       id="estimate-tab"
       type="button"
       aria-expanded="false"
       aria-controls="estimate-panel"
-      class="estimate-tab fixed right-0 top-1/2 -translate-y-1/2 z-[45] flex items-center gap-2 bg-[#4a6741] hover:bg-[#5a7a51] text-white font-semibold text-sm tracking-wide px-2.5 py-4 rounded-l-lg shadow-lg shadow-black/40 transition-all duration-300"
+      class="estimate-tab fixed right-0 top-1/2 -translate-y-1/2 z-[45] flex items-center gap-2 bg-[var(--est-tab)] hover:bg-[var(--est-tab-hover)] text-white font-semibold text-sm tracking-wide px-2.5 py-4 rounded-l-lg shadow-lg shadow-black/40 transition-all duration-300"
     >
       <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
@@ -35,7 +49,7 @@ const { jobberUrl } = Astro.props;
       inert
       class="estimate-drawer fixed right-0 top-30 bottom-0 z-[46] w-full sm:w-[440px] bg-white shadow-2xl shadow-black/50 flex flex-col translate-x-full transition-transform duration-300 ease-out"
     >
-      <div class="flex items-center justify-between gap-3 bg-[#22311d] text-white px-5 py-3.5 shrink-0">
+      <div class="flex items-center justify-between gap-3 bg-[var(--est-header)] text-white px-5 py-3.5 shrink-0">
         <div>
           <p class="font-bold leading-tight">Request a Free Estimate</p>
           <p class="text-xs text-white/60 mt-0.5">Or call us at 856-472-5751</p>
@@ -54,7 +68,7 @@ const { jobberUrl } = Astro.props;
       </div>
       <div class="flex-1 overflow-y-auto overscroll-contain bg-white">
         <div id="estimate-loading" class="flex items-center justify-center gap-3 py-16 text-sm text-gray-500">
-          <span class="w-5 h-5 rounded-full border-2 border-gray-300 border-t-[#4a6741] animate-spin"></span>
+          <span class="w-5 h-5 rounded-full border-2 border-gray-300 border-t-[var(--est-tab)] animate-spin"></span>
           Loading estimate form…
         </div>
         <iframe

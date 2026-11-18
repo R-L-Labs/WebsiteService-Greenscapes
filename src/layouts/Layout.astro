@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import EstimatePanel from '../components/EstimatePanel.astro';
+import type { EstimateColors } from '../components/EstimatePanel.astro';
 
 interface BreadcrumbItem {
   name: string;
@@ -15,6 +16,8 @@ interface Props {
   breadcrumbs?: BreadcrumbItem[];
   /** Hide the floating Free Estimate drawer (used on the home page) */
   hideEstimatePanel?: boolean;
+  /** Page-specific colors for the Free Estimate drawer (defaults to green) */
+  estimateColors?: EstimateColors;
 }
 
 const {
@@ -26,6 +29,7 @@ const {
   type = 'website',
   breadcrumbs,
   hideEstimatePanel = false,
+  estimateColors,
 } = Astro.props;
 
 const jobberUrl = import.meta.env.JOBBER_URL || '';
@@ -129,6 +133,6 @@ const breadcrumbSchema = breadcrumbs?.length
   </head>
   <body class="min-h-screen antialiased">
     <slot />
-    {!hideEstimatePanel && <EstimatePanel jobberUrl={jobberUrl} />}
+    {!hideEstimatePanel && <EstimatePanel jobberUrl={jobberUrl} colors={estimateColors} />}
   </body>
 </html>
