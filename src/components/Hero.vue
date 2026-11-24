@@ -7,7 +7,7 @@
       :style="{ backgroundImage: `url(${backgroundImage})`, filter: 'blur(4px)', transform: 'scale(1.05)' }"
     ></div>
     <!-- Dark overlay for text readability -->
-    <div v-if="backgroundImage" class="absolute inset-0 bg-black/50"></div>
+    <div v-if="backgroundImage" class="absolute inset-0" :style="{ backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})` }"></div>
     <!-- Fallback gradient when no image -->
     <div v-else class="absolute inset-0 bg-gradient-to-br from-emerald-50 via-white to-green-50"></div>
 
@@ -40,7 +40,9 @@
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a :href="ctaPrimary.href"
-          class="w-full sm:w-auto bg-primary hover:bg-primary-light text-white px-8 py-3.5 rounded-lg font-semibold transition-colors text-center">
+          class="w-full sm:w-auto text-white px-8 py-3.5 rounded-lg font-semibold transition-colors text-center"
+          :class="buttonColor ? 'bg-[var(--hero-btn)] hover:bg-[var(--hero-btn-hover)]' : 'bg-primary hover:bg-primary-light'"
+          :style="buttonColor ? { '--hero-btn': buttonColor, '--hero-btn-hover': buttonHoverColor || buttonColor } : {}">
           {{ ctaPrimary.label }}
         </a>
         <a :href="ctaSecondary.href"
@@ -84,6 +86,11 @@ interface Props {
   stats?: Array<{ value: string; label: string }>;
   backgroundImage?: string;
   accentColor?: string;
+  /** Primary CTA button color; defaults to the theme primary */
+  buttonColor?: string;
+  buttonHoverColor?: string;
+  /** Darkness of the overlay on the background photo (0–1) */
+  overlayOpacity?: number;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -95,6 +102,9 @@ withDefaults(defineProps<Props>(), {
   ctaSecondary: () => ({ label: 'Our Services', href: '#services' }),
   backgroundImage: '',
   accentColor: '#1e7d1e',
+  buttonColor: '',
+  buttonHoverColor: '',
+  overlayOpacity: 0.5,
   stats: () => [
     { value: '5+', label: 'Years Experience' },
     { value: '500+', label: 'Projects Completed' },

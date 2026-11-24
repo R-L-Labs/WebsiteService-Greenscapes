@@ -53,7 +53,7 @@
           <!-- Content -->
           <div class="relative z-10 p-6">
             <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white/20 transition-colors">
-              <svg class="w-6 h-6 group-hover:text-white transition-colors" :class="lightCards ? 'text-[#1e7d1e]' : 'text-primary'" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+              <svg class="w-6 h-6 group-hover:text-white transition-colors" :class="lightCards ? 'text-[var(--svc-icon)]' : 'text-primary'" :style="lightCards ? { '--svc-icon': iconColor } : {}" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
                 <path stroke-linecap="round" stroke-linejoin="round" :d="service.iconPath" />
               </svg>
             </div>
@@ -82,6 +82,8 @@ interface Props {
   accentColor?: string;
   /** Light-gray cards (matching the catalog promo tiles) instead of dark panels */
   lightCards?: boolean;
+  /** Icon color on light cards — pick a shade dark enough to read on light gray */
+  iconColor?: string;
 }
 
 withDefaults(defineProps<Props>(), {
@@ -90,6 +92,7 @@ withDefaults(defineProps<Props>(), {
   description: 'Comprehensive landscaping and construction solutions tailored to transform your property into something extraordinary.',
   accentColor: '',
   lightCards: false,
+  iconColor: '#1e7d1e',
   items: () => [
     {
       title: 'Landscape Design',
